@@ -4,122 +4,187 @@ import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import { getCategoryPill } from '@/lib/utils'
-import { ChevronLeft, Star } from 'lucide-react'
+import { ChevronLeft } from 'lucide-react'
 import { AddToShelfButton } from './AddToShelfButton'
 
 export default async function FragrancePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const supabase = await createClient()
 
-  const { data: fragrance } = await supabase
-    .from('fragrances')
-    .select('*')
-    .eq('id', id)
-    .single()
+  const [{ data: fragrance }, { data: reviews }] = await Promise.all([
+    supabase.from('fragrances').select('*').eq('id', id).single(),
+    supabase.from('reviews').select('*, profiles(display_name, handle)')
+      .eq('fragrance_id', id).order('created_at', { ascending: false }).limit(10),
+  ])
 
   if (!fragrance) notFound()
-
-  const { data: reviews } = await supabase
-    .from('reviews')
-    .select('*, profiles(display_name, handle)')
-    .eq('fragrance_id', id)
-    .order('created_at', { ascending: false })
-    .limit(10)
-
   const pill = getCategoryPill(fragrance.category)
 
   return (
     <AppShell>
-      <div className="max-w-[900px] mx-auto px-5 md:px-10 py-6">
-        {/* Back */}
-        <Link href="/discover" className="inline-flex items-center gap-1 text-sm text-stone-400 hover:text-stone-700 mb-6">
-          <ChevronLeft size={16} /> Discover
-        </Link>
+      <div className="max-w-[900px] mx-auto">
 
-        <div className="md:grid md:grid-cols-[280px_1fr] md:gap-12">
-          {/* ── Bottle ── */}
-          <div className="flex flex-col items-center mb-8 md:mb-0">
-            <div className="relative w-48 h-64 md:w-64 md:h-80 mb-6">
-              {fragrance.bottle_image_url ? (
-                <Image src={fragrance.bottle_image_url} alt={fragrance.name} fill className="object-contain" sizes="280px" />
-              ) : (
-                <div className="w-full h-full bg-stone-100 rounded-2xl flex items-center justify-center">
-                  <span className="font-serif text-4xl text-stone-400">{fragrance.house.charAt(0)}</span>
-                </div>
-              )}
-            </div>
-            <AddToShelfButton fragranceId={fragrance.id} fragranceName={fragrance.name} />
-          </div>
-
-          {/* ── Info ── */}
-          <div>
-            <span className={`inline-block text-[9px] font-bold uppercase tracking-wide px-2 py-1 rounded-full mb-3 ${pill.className}`}>
-              {pill.label}
-            </span>
-            <p className="text-sm font-semibold text-stone-400 uppercase tracking-wide mb-1">{fragrance.house}</p>
-            <h1 className="font-serif text-4xl text-stone-900 mb-2">{fragrance.name}</h1>
-            <div className="flex items-center gap-2 mb-4">
-              <Star size={14} fill="#c9a227" stroke="none" />
-              <span className="text-sm font-semibold text-stone-700">{fragrance.avg_rating}</span>
-              <span className="text-xs text-stone-400">({fragrance.review_count?.toLocaleString()} ratings)</span>
-            </div>
-            <p className="text-sm text-stone-500 mb-6">{fragrance.type} · {fragrance.seasons?.join(' · ')}</p>
-
-            {/* Notes */}
-            {[
-              { label: 'Top Notes', notes: fragrance.top_notes },
-              { label: 'Heart Notes', notes: fragrance.heart_notes },
-              { label: 'Base Notes', notes: fragrance.base_notes },
-            ].map(({ label, notes }) => notes?.length > 0 && (
-              <div key={label} className="mb-4">
-                <p className="text-[9px] font-bold uppercase tracking-widest text-stone-400 mb-2">{label}</p>
-                <div className="flex flex-wrap gap-2">
-                  {(notes as string[]).map((n: string) => (
-                    <span key={n} className="text-xs bg-stone-100 text-stone-600 px-3 py-1 rounded-full">{n}</span>
-                  ))}
-                </div>
-              </div>
-            ))}
-
-            {/* Attributes */}
-            {fragrance.attributes?.length > 0 && (
-              <div className="mt-4 pt-4 border-t border-stone-100">
-                <div className="flex flex-wrap gap-2">
-                  {fragrance.attributes.map((a: string) => (
-                    <span key={a} className="text-xs text-stone-500 bg-stone-50 border border-stone-200 px-3 py-1 rounded-full">{a}</span>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
+        {/* ── Back ── */}
+        <div className="px-5 md:px-10 pt-6 pb-0">
+          <Link href="/discover"
+            className="inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.1em] uppercase text-stone-400"
+            style={{ transition: 'color 200ms var(--ease-out-expo)' }}>
+            <ChevronLeft size={14} strokeWidth={1.5} />
+            Discover
+          </Link>
         </div>
 
-        {/* ── Reviews ── */}
-        {reviews && reviews.length > 0 && (
-          <section className="mt-12 pt-8 border-t border-stone-100">
-            <h2 className="font-serif text-2xl text-stone-900 mb-6">Reviews</h2>
-            <div className="space-y-4">
-              {reviews.map((r: any) => (
-                <div key={r.id} className="bg-white rounded-xl p-4 border border-stone-100">
-                  <div className="flex items-center gap-2 mb-2">
-                    <div className="w-8 h-8 rounded-full bg-stone-900 flex items-center justify-center text-white text-xs font-bold">
-                      {(r.profiles?.display_name ?? 'U')[0].toUpperCase()}
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-stone-800">{r.profiles?.display_name ?? 'Anonymous'}</p>
-                      <div className="flex">
-                        {Array.from({ length: 5 }).map((_, i) => (
-                          <Star key={i} size={10} fill={i < r.rating ? '#c9a227' : 'none'} stroke={i < r.rating ? 'none' : '#d4c8bc'} />
-                        ))}
-                      </div>
+        {/* ── Mobile: bottle full-bleed top ── */}
+        <div className="md:hidden flex justify-center pt-8 pb-4 px-10">
+          {fragrance.bottle_image_url ? (
+            <div className="relative w-44 h-56">
+              <Image src={fragrance.bottle_image_url} alt={fragrance.name} fill
+                className="object-contain" sizes="180px" />
+            </div>
+          ) : (
+            <div className="w-44 h-56 rounded-3xl flex items-center justify-center"
+              style={{ background: 'rgba(28,20,16,0.04)' }}>
+              <span className="font-serif text-5xl text-stone-300">{fragrance.house.charAt(0)}</span>
+            </div>
+          )}
+        </div>
+
+        <div className="px-5 md:px-10 pb-10">
+          <div className="md:grid md:grid-cols-[260px_1fr] md:gap-14 md:pt-10">
+
+            {/* ── Desktop: bottle column ── */}
+            <div className="hidden md:flex flex-col items-center gap-6">
+              {fragrance.bottle_image_url ? (
+                <div className="relative w-56 h-72">
+                  <Image src={fragrance.bottle_image_url} alt={fragrance.name} fill
+                    className="object-contain" sizes="224px" />
+                </div>
+              ) : (
+                <div className="w-56 h-72 rounded-3xl flex items-center justify-center"
+                  style={{ background: 'rgba(28,20,16,0.04)' }}>
+                  <span className="font-serif text-6xl text-stone-300">{fragrance.house.charAt(0)}</span>
+                </div>
+              )}
+              <AddToShelfButton fragranceId={fragrance.id} fragranceName={fragrance.name} />
+            </div>
+
+            {/* ── Info column ── */}
+            <div>
+              {/* Category */}
+              <span className={`inline-block text-[8px] font-bold uppercase tracking-widest px-2 py-0.5 mb-4 ${pill.className}`}
+                style={{ borderRadius: '2px' }}>
+                {pill.label}
+              </span>
+
+              {/* House + Name */}
+              <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-stone-400 mb-1">
+                {fragrance.house}
+              </p>
+              <h1 className="font-serif text-4xl md:text-5xl text-stone-900 leading-tight tracking-tight mb-3">
+                {fragrance.name}
+              </h1>
+
+              {/* Rating */}
+              <div className="flex items-center gap-2 mb-3">
+                <div className="flex gap-0.5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <div key={i} className="w-2.5 h-2.5 rounded-sm"
+                      style={{ background: i < Math.round(fragrance.avg_rating) ? '#c9a227' : 'rgba(28,20,16,0.10)' }} />
+                  ))}
+                </div>
+                <span className="text-[12px] font-semibold text-stone-700">{fragrance.avg_rating}</span>
+                <span className="text-[11px] text-stone-400">
+                  {fragrance.review_count?.toLocaleString()} ratings
+                </span>
+              </div>
+
+              <p className="text-[12px] text-stone-400 mb-8">
+                {fragrance.type}
+                {fragrance.seasons?.length > 0 && <> · {fragrance.seasons.join(' · ')}</>}
+              </p>
+
+              {/* Notes — pyramid */}
+              <div className="space-y-5 mb-8">
+                {[
+                  { label: 'Top', notes: fragrance.top_notes },
+                  { label: 'Heart', notes: fragrance.heart_notes },
+                  { label: 'Base', notes: fragrance.base_notes },
+                ].map(({ label, notes }) => notes?.length > 0 && (
+                  <div key={label}>
+                    <p className="text-[9px] font-semibold tracking-[0.2em] uppercase text-stone-400 mb-2">
+                      {label} Notes
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {(notes as string[]).map((n: string) => (
+                        <span key={n}
+                          className="text-[11px] text-stone-600 px-2.5 py-1 font-medium"
+                          style={{
+                            background: 'rgba(28,20,16,0.05)',
+                            borderRadius: '4px',
+                          }}>
+                          {n}
+                        </span>
+                      ))}
                     </div>
                   </div>
-                  <p className="text-sm text-stone-600 italic">&ldquo;{r.body}&rdquo;</p>
+                ))}
+              </div>
+
+              {/* Attributes */}
+              {fragrance.attributes?.length > 0 && (
+                <div className="flex flex-wrap gap-1.5 pt-5"
+                  style={{ borderTop: '1px solid rgba(28,20,16,0.07)' }}>
+                  {fragrance.attributes.map((a: string) => (
+                    <span key={a}
+                      className="text-[10px] text-stone-400 px-2.5 py-1"
+                      style={{ border: '1px solid rgba(28,20,16,0.10)', borderRadius: '4px' }}>
+                      {a}
+                    </span>
+                  ))}
                 </div>
-              ))}
+              )}
+
+              {/* Mobile: Add to shelf */}
+              <div className="md:hidden mt-8">
+                <AddToShelfButton fragranceId={fragrance.id} fragranceName={fragrance.name} />
+              </div>
             </div>
-          </section>
-        )}
+          </div>
+
+          {/* ── Reviews ── */}
+          {reviews && reviews.length > 0 && (
+            <section className="mt-14 pt-10" style={{ borderTop: '1px solid rgba(28,20,16,0.07)' }}>
+              <h2 className="font-serif text-2xl text-stone-900 mb-8 tracking-tight">Reviews</h2>
+              <div className="space-y-6">
+                {reviews.map((r: any) => (
+                  <div key={r.id} style={{ borderBottom: '1px solid rgba(28,20,16,0.06)' }}
+                    className="pb-6 last:border-0 last:pb-0">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-semibold text-white"
+                        style={{ background: 'var(--brand-dark)' }}>
+                        {(r.profiles?.display_name ?? 'U')[0].toUpperCase()}
+                      </div>
+                      <div>
+                        <p className="text-[12px] font-semibold text-stone-800">
+                          {r.profiles?.display_name ?? 'Anonymous'}
+                        </p>
+                        <div className="flex gap-0.5 mt-0.5">
+                          {Array.from({ length: 5 }).map((_, i) => (
+                            <div key={i} className="w-2 h-2 rounded-sm"
+                              style={{ background: i < r.rating ? '#c9a227' : 'rgba(28,20,16,0.10)' }} />
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                    <p className="text-[13px] text-stone-500 leading-relaxed italic">
+                      &ldquo;{r.body}&rdquo;
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+        </div>
       </div>
     </AppShell>
   )

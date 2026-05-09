@@ -5,10 +5,10 @@ import { FragranceCard } from '@/components/ui/FragranceCard'
 import type { Fragrance } from '@/lib/supabase/types'
 
 const CATS = [
-  { value: 'all', label: 'All' },
-  { value: 'designer', label: 'Designer' },
-  { value: 'niche', label: 'Niche' },
-  { value: 'ultra-niche', label: 'Ultra Niche' },
+  { value: 'all',            label: 'All' },
+  { value: 'designer',       label: 'Designer' },
+  { value: 'niche',          label: 'Niche' },
+  { value: 'ultra-niche',    label: 'Ultra Niche' },
   { value: 'middle-eastern', label: 'Middle Eastern' },
 ]
 
@@ -17,21 +17,19 @@ export function DiscoverClient({ fragrances, initialSearch, initialCat }: {
   initialSearch: string
   initialCat: string
 }) {
-  const [q, setQ] = useState(initialSearch)
+  const [q, setQ]     = useState(initialSearch)
   const [cat, setCat] = useState(initialCat)
 
   const filtered = useMemo(() => {
     return fragrances.filter(f => {
-      // Category filter
       if (cat !== 'all') {
         if (cat === 'niche' && !['niche','ultra-niche'].includes(f.category)) return false
         if (cat !== 'niche' && f.category !== cat) return false
       }
-      // Text search
       if (q) {
         const search = q.toLowerCase()
         const hay = [f.name, f.house, f.type, f.category,
-          ...f.top_notes, ...f.heart_notes, ...f.base_notes
+          ...f.top_notes, ...f.heart_notes, ...f.base_notes,
         ].join(' ').toLowerCase()
         return hay.includes(search)
       }
@@ -41,54 +39,69 @@ export function DiscoverClient({ fragrances, initialSearch, initialCat }: {
 
   return (
     <div className="max-w-[1400px] mx-auto">
-      {/* Search bar */}
-      <div className="sticky top-0 z-30 bg-[#F7F3EE]/95 backdrop-blur px-5 md:px-10 pt-5 pb-3 border-b border-stone-100">
+
+      {/* ── Sticky header ── */}
+      <div className="sticky top-0 z-30 bg-[#F7F3EE]/95 backdrop-blur-md px-5 md:px-10 pt-6 pb-4"
+        style={{ borderBottom: '1px solid rgba(28,20,16,0.07)' }}>
+
+        {/* Title row */}
+        <div className="flex items-baseline justify-between mb-4">
+          <h1 className="font-serif text-3xl text-stone-900 tracking-tight">Discover</h1>
+          <span className="text-[11px] text-stone-400">
+            {filtered.length} {filtered.length === 1 ? 'fragrance' : 'fragrances'}
+          </span>
+        </div>
+
+        {/* Search */}
         <div className="relative mb-3">
-          <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400" />
+          <Search size={14} className="absolute left-4 top-1/2 -translate-y-1/2 text-stone-400" strokeWidth={1.5} />
           <input
             value={q}
             onChange={e => setQ(e.target.value)}
-            placeholder="Search fragrances, houses, notes…"
-            className="w-full pl-9 pr-9 py-2.5 rounded-xl border border-stone-200 bg-white text-sm text-stone-900 outline-none focus:border-stone-400 placeholder:text-stone-400"
+            placeholder="Search by name, house, or note…"
+            className="w-full pl-10 pr-10 py-3 text-[13px] text-stone-900 placeholder:text-stone-400 outline-none"
+            style={{
+              background: 'rgba(255,255,255,0.7)',
+              border: '1px solid rgba(28,20,16,0.10)',
+              borderRadius: '10px',
+            }}
           />
           {q && (
-            <button onClick={() => setQ('')} className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-700">
-              <X size={16} />
+            <button onClick={() => setQ('')}
+              className="absolute right-3.5 top-1/2 -translate-y-1/2 text-stone-400"
+              style={{ transition: 'color 150ms var(--ease-out-expo)' }}>
+              <X size={14} strokeWidth={1.5} />
             </button>
           )}
         </div>
-        {/* Category chips */}
-        <div className="flex gap-2 overflow-x-auto pb-1">
+
+        {/* Category tabs */}
+        <div className="flex gap-1.5 overflow-x-auto pb-0.5">
           {CATS.map(c => (
             <button
               key={c.value}
               onClick={() => setCat(c.value)}
-              className={`flex-shrink-0 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-colors ${
-                cat === c.value
-                  ? 'bg-stone-900 text-white'
-                  : 'bg-stone-100 text-stone-500 hover:bg-stone-200'
-              }`}
-            >
+              className="flex-shrink-0 px-3.5 py-1.5 text-[11px] font-semibold tracking-[0.06em]"
+              style={{
+                borderRadius: '6px',
+                transition: 'background 180ms var(--ease-out-expo), color 180ms var(--ease-out-expo)',
+                background: cat === c.value ? 'var(--brand-dark)' : 'rgba(28,20,16,0.05)',
+                color: cat === c.value ? '#fff' : 'var(--ink-3)',
+              }}>
               {c.label}
             </button>
           ))}
         </div>
       </div>
 
-      {/* Count */}
-      <div className="px-5 md:px-10 py-3 text-xs text-stone-400 font-medium">
-        {q ? `${filtered.length} result${filtered.length !== 1 ? 's' : ''} for "${q}"` : `${filtered.length} fragrances`}
-      </div>
-
-      {/* Grid */}
+      {/* ── Grid ── */}
       {filtered.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-24 text-center px-10">
-          <p className="text-4xl mb-4">🔍</p>
-          <p className="font-serif text-xl text-stone-700 mb-2">No results for &ldquo;{q}&rdquo;</p>
-          <p className="text-sm text-stone-400">Try a note name, house, or scent family</p>
+          <p className="font-serif text-2xl text-stone-400 mb-2">Nothing found</p>
+          <p className="text-sm text-stone-400">Try searching a note, house, or scent family</p>
         </div>
       ) : (
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 px-3 md:px-8">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 px-3 md:px-7">
           {filtered.map(f => <FragranceCard key={f.id} fragrance={f} />)}
         </div>
       )}

@@ -1,10 +1,9 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { createClient } from '@/lib/supabase/client'
-import { Plus, Check } from 'lucide-react'
 
 export function AddToShelfButton({ fragranceId, fragranceName }: { fragranceId: string; fragranceName: string }) {
-  const [owned, setOwned] = useState(false)
+  const [owned, setOwned]     = useState(false)
   const [loading, setLoading] = useState(true)
   const supabase = createClient()
 
@@ -39,14 +38,31 @@ export function AddToShelfButton({ fragranceId, fragranceName }: { fragranceId: 
     <button
       onClick={toggle}
       disabled={loading}
-      className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-semibold transition-all ${
-        owned
-          ? 'bg-green-50 text-green-700 border border-green-200'
-          : 'bg-stone-900 text-white hover:bg-stone-800'
-      }`}
-    >
-      {owned ? <Check size={16} /> : <Plus size={16} />}
-      {owned ? 'On Your Shelf' : 'Add to Shelf'}
+      className="w-full flex items-center justify-center gap-2 py-3.5 text-sm font-semibold disabled:opacity-40"
+      style={{
+        borderRadius: '10px',
+        transition: 'background 220ms var(--ease-out-expo), color 220ms var(--ease-out-expo)',
+        background: owned ? 'rgba(28,20,16,0.06)' : 'var(--brand-dark)',
+        color: owned ? 'var(--ink-3)' : '#fff',
+        border: owned ? '1px solid rgba(28,20,16,0.12)' : 'none',
+      }}>
+      {loading ? (
+        <span className="w-4 h-4 rounded-full border border-current border-t-transparent animate-spin" />
+      ) : owned ? (
+        <>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M2 7L5.5 10.5L12 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          On Your Shelf
+        </>
+      ) : (
+        <>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M7 2V12M2 7H12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+          </svg>
+          Add to Shelf
+        </>
+      )}
     </button>
   )
 }
