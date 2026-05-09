@@ -103,28 +103,44 @@ export default async function FragrancePage({ params }: { params: Promise<{ id: 
                 {fragrance.seasons?.length > 0 && <> · {fragrance.seasons.join(' · ')}</>}
               </p>
 
-              {/* Notes — pyramid */}
-              <div className="space-y-5 mb-8">
+              {/* Notes — bar pyramid */}
+              <div className="space-y-6 mb-8">
                 {[
-                  { label: 'Top', notes: fragrance.top_notes },
-                  { label: 'Heart', notes: fragrance.heart_notes },
-                  { label: 'Base', notes: fragrance.base_notes },
-                ].map(({ label, notes }) => notes?.length > 0 && (
+                  { label: 'Top',   notes: fragrance.top_notes,   baseOpacity: 0.95 },
+                  { label: 'Heart', notes: fragrance.heart_notes, baseOpacity: 0.72 },
+                  { label: 'Base',  notes: fragrance.base_notes,  baseOpacity: 0.52 },
+                ].map(({ label, notes, baseOpacity }) => notes?.length > 0 && (
                   <div key={label}>
-                    <p className="text-[9px] font-semibold tracking-[0.2em] uppercase text-stone-400 mb-2">
+                    <p className="text-[9px] font-semibold tracking-[0.2em] uppercase text-stone-400 mb-3">
                       {label} Notes
                     </p>
-                    <div className="flex flex-wrap gap-1.5">
-                      {(notes as string[]).map((n: string) => (
-                        <span key={n}
-                          className="text-[11px] text-stone-600 px-2.5 py-1 font-medium"
-                          style={{
-                            background: 'rgba(28,20,16,0.05)',
-                            borderRadius: '4px',
-                          }}>
-                          {n}
-                        </span>
-                      ))}
+                    <div className="space-y-2">
+                      {(notes as string[]).map((n: string, i: number) => {
+                        // First note = dominant, taper down. Max 5 visible bars, min 30% width.
+                        const total = (notes as string[]).length
+                        const pct = Math.round(100 - (i / Math.max(total, 1)) * 62)
+                        const barOpacity = baseOpacity * (1 - (i / Math.max(total, 1)) * 0.35)
+                        return (
+                          <div key={n} className="flex items-center gap-3">
+                            {/* Note name */}
+                            <span className="text-[12px] text-stone-700 font-medium w-28 flex-shrink-0 truncate">
+                              {n}
+                            </span>
+                            {/* Bar track */}
+                            <div className="flex-1 h-[3px] rounded-full"
+                              style={{ background: 'rgba(28,20,16,0.07)' }}>
+                              <div
+                                className="h-full rounded-full"
+                                style={{
+                                  width: `${pct}%`,
+                                  background: `rgba(58,46,40,${barOpacity})`,
+                                  transition: 'width 600ms cubic-bezier(0.16,1,0.3,1)',
+                                }}
+                              />
+                            </div>
+                          </div>
+                        )
+                      })}
                     </div>
                   </div>
                 ))}
