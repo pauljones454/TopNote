@@ -69,3 +69,30 @@ export type LeaderboardEntry = {
   handle: string
   xp: number
 }
+
+export type Combo = {
+  id: string
+  user_id: string
+  name: string | null
+  description: string | null
+  fragrance_ids: string[]
+  application_order: string[] | null
+  instructions: string | null
+  occasions: string[] | null
+  rating: number | null
+  likes: number
+  save_count: number
+  is_public: boolean
+  created_at: string
+  // joined
+  fragrances?: Fragrance[]
+  profile?: Profile
+  saved?: boolean  // whether the current user has saved this
+}
+
+export type ComboSave = {
+  id: string
+  user_id: string
+  combo_id: string
+  created_at: string
+}
