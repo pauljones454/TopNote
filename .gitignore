@@ -1,3 +1,10 @@
+
+# Catalog import working data (large dataset dump + live-catalog snapshot;
+# regenerate via scripts/import-parfumo-catalog.ts — see scripts/README.md).
+/data/
+
+# TypeScript incremental build info
+tsconfig.tsbuildinfo
 # Next.js
 .next/
 out/
