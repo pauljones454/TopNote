@@ -15,3 +15,6 @@ yarn-error.log*
 
 # Autobuild setup artifacts
 .obvious-install/
+
+# Imported datasets (downloaded, not committed — see scripts/import-parfumo.ts)
+/data/*.csv
