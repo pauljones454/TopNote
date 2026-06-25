@@ -13,8 +13,12 @@ export function SignOutButton() {
   }
 
   return (
-    <button onClick={signOut} className="w-full py-3 rounded-xl border border-stone-200 text-sm text-stone-400 hover:text-red-500 hover:border-red-200 transition-colors">
-      Sign Out
+    <button
+      onClick={signOut}
+      className="w-full flex items-center justify-between px-5 py-4 text-sm text-stone-400 hover:text-red-400 transition-colors duration-200"
+      style={{ transitionTimingFunction: 'var(--ease-out-expo)' }}
+    >
+      <span>Sign Out</span>
     </button>
   )
 }
