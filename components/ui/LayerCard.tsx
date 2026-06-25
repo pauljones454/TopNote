@@ -5,6 +5,8 @@ import type { Fragrance } from '@/lib/supabase/types'
 import type { CompatibilityResult } from '@/lib/layering'
 import { getScoreLabel } from '@/lib/layering'
 
+type BottleOwnership = { owned: boolean; wishlisted: boolean }
+
 interface LayerCardProps {
   fragranceA: Fragrance
   fragranceB: Fragrance
@@ -17,6 +19,73 @@ interface LayerCardProps {
   onSave?: () => void
   showSave?: boolean
   variant?: 'suggestion' | 'saved' | 'community'
+  // When provided, renders an own-vs-missing strip beneath the bottles.
+  ownership?: { a: BottleOwnership; b: BottleOwnership }
+  onAddToWishlist?: (fragranceId: string) => void
+}
+
+function OwnershipChip({
+  fragrance,
+  state,
+  onAddToWishlist,
+}: {
+  fragrance: Fragrance
+  state: BottleOwnership
+  onAddToWishlist?: (fragranceId: string) => void
+}) {
+  const shortName = fragrance.name.split(' ').slice(-1)[0]
+
+  if (state.owned) {
+    return (
+      <div
+        className="flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg min-w-0"
+        style={{ background: 'rgba(28,20,16,0.04)' }}
+      >
+        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" className="flex-shrink-0">
+          <path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="rgba(58,46,40,0.55)" strokeWidth="1.4"
+            strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+        <span className="text-[10px] font-medium text-stone-500 truncate">
+          {shortName} · On your shelf
+        </span>
+      </div>
+    )
+  }
+
+  if (state.wishlisted) {
+    return (
+      <div
+        className="flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg min-w-0"
+        style={{ background: 'rgba(28,20,16,0.04)' }}
+      >
+        <svg width="11" height="11" viewBox="0 0 13 13" fill="currentColor" className="flex-shrink-0 text-stone-400">
+          <path d="M6.5 11L1.8 6.3C1.8 4.5 3.1 3.1 4.5 3.1C5.3 3.1 6 3.5 6.5 4.1C7 3.5 7.7 3.1 8.5 3.1C9.9 3.1 11.2 4.5 11.2 6.3L6.5 11Z" />
+        </svg>
+        <span className="text-[10px] font-medium text-stone-400 truncate">
+          {shortName} · Wishlisted
+        </span>
+      </div>
+    )
+  }
+
+  return (
+    <button
+      onClick={e => { e.preventDefault(); onAddToWishlist?.(fragrance.id) }}
+      className="flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg min-w-0 text-left"
+      style={{
+        background: 'rgba(255,255,255,0.6)',
+        border: '1px solid rgba(28,20,16,0.10)',
+        transition: 'background 200ms var(--ease-out-expo)',
+      }}
+    >
+      <svg width="11" height="11" viewBox="0 0 12 12" fill="none" className="flex-shrink-0">
+        <path d="M6 2.2V9.8M2.2 6H9.8" stroke="rgba(58,46,40,0.7)" strokeWidth="1.4" strokeLinecap="round" />
+      </svg>
+      <span className="text-[10px] font-semibold text-stone-600 truncate">
+        {shortName} · Wishlist
+      </span>
+    </button>
+  )
 }
 
 export function LayerCard({
@@ -31,6 +100,8 @@ export function LayerCard({
   onSave,
   showSave = false,
   variant = 'suggestion',
+  ownership,
+  onAddToWishlist,
 }: LayerCardProps) {
   const scoreInfo = compatibility ? getScoreLabel(compatibility.score) : null
 
@@ -95,6 +166,14 @@ export function LayerCard({
           </div>
         </div>
       </div>
+
+      {/* Own vs. missing strip (community combos) */}
+      {ownership && (
+        <div className="flex gap-2 mb-4">
+          <OwnershipChip fragrance={fragranceA} state={ownership.a} onAddToWishlist={onAddToWishlist} />
+          <OwnershipChip fragrance={fragranceB} state={ownership.b} onAddToWishlist={onAddToWishlist} />
+        </div>
+      )}
 
       {/* Combo name or auto-generated */}
       <div className="mb-3">

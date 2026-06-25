@@ -136,6 +136,31 @@ export function getSuggestions(fragrances: Fragrance[], topN = 6): LayerSuggesti
     .slice(0, topN)
 }
 
+// ── Shared notes ──────────────────────────────────────────────────────────────
+
+/**
+ * Returns the notes both fragrances share, capitalized and de-duplicated.
+ * Read-only helper used by the combo detail page to make the
+ * "why these layer" reasoning explicit. Does not affect scoring.
+ */
+export function getSharedNotes(a: Fragrance, b: Fragrance): string[] {
+  const aAll = [...(a.top_notes ?? []), ...(a.heart_notes ?? []), ...(a.base_notes ?? [])]
+    .map(n => n.toLowerCase())
+  const bAll = new Set(
+    [...(b.top_notes ?? []), ...(b.heart_notes ?? []), ...(b.base_notes ?? [])]
+      .map(n => n.toLowerCase())
+  )
+  const seen = new Set<string>()
+  const shared: string[] = []
+  for (const note of aAll) {
+    if (bAll.has(note) && !seen.has(note)) {
+      seen.add(note)
+      shared.push(note.charAt(0).toUpperCase() + note.slice(1))
+    }
+  }
+  return shared
+}
+
 // ── Score label ───────────────────────────────────────────────────────────────
 
 export function getScoreLabel(score: number): { label: string; color: string } {
