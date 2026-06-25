@@ -2,13 +2,15 @@
 import { useState } from 'react'
 
 const SCREENS = [
-  { label: 'Home',            href: '/' },
-  { label: 'Discover',        href: '/discover' },
-  { label: 'Daily',           href: '/daily' },
-  { label: 'Collection',      href: '/collection' },
-  { label: 'Profile',         href: '/profile' },
-  { label: 'Auth',            href: '/auth' },
-  { label: 'Fragrance Detail',href: '/fragrance/7b3f8c2a-1d4e-4f9b-b6a2-5e8d3c0f2a1b' },
+  { label: 'Home',             href: '/' },
+  { label: 'Discover',         href: '/discover' },
+  { label: 'Collection',       href: '/collection' },
+  { label: 'Layers',           href: '/layers' },
+  { label: 'Layer Create',     href: '/layers/create' },
+  { label: 'Daily',            href: '/daily' },
+  { label: 'Profile',          href: '/profile' },
+  { label: 'Auth',             href: '/auth' },
+  { label: 'Fragrance Detail', href: '/fragrance/7b3f8c2a-1d4e-4f9b-b6a2-5e8d3c0f2a1b' },
 ]
 
 // iPhone 15 Pro dimensions: 393 × 852 logical px
