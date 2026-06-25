@@ -21,19 +21,36 @@ export function DiscoverClient({ fragrances, initialSearch, initialCat }: {
   const [cat, setCat] = useState(initialCat)
 
   const filtered = useMemo(() => {
-    return fragrances.filter(f => {
+    // Filter: for ≤2-char queries, restrict to name + house only — prevents
+    // note fragments (e.g. "ch" in "birch" / "patchouli") from matching ahead
+    // of brand-name results like Chanel.
+    const matches = fragrances.filter(f => {
       if (cat !== 'all') {
-        if (cat === 'niche' && !['niche','ultra-niche'].includes(f.category)) return false
+        if (cat === 'niche' && !['niche', 'ultra-niche'].includes(f.category)) return false
         if (cat !== 'niche' && f.category !== cat) return false
       }
       if (q) {
         const search = q.toLowerCase()
-        const hay = [f.name, f.house, f.type, f.category,
-          ...f.top_notes, ...f.heart_notes, ...f.base_notes,
-        ].join(' ').toLowerCase()
+        const hay = q.length <= 2
+          ? [f.name, f.house].join(' ').toLowerCase()
+          : [f.name, f.house, f.type, f.category,
+             ...f.top_notes, ...f.heart_notes, ...f.base_notes,
+            ].join(' ').toLowerCase()
         return hay.includes(search)
       }
       return true
+    })
+
+    // Two-tier sort: name/house matches rank above note-only matches.
+    // Within each tier, the server's avg_rating DESC order is preserved.
+    if (!q) return matches
+    const search = q.toLowerCase()
+    return [...matches].sort((a, b) => {
+      const aNameMatch = `${a.name} ${a.house}`.toLowerCase().includes(search)
+      const bNameMatch = `${b.name} ${b.house}`.toLowerCase().includes(search)
+      if (aNameMatch && !bNameMatch) return -1
+      if (!aNameMatch && bNameMatch) return 1
+      return 0
     })
   }, [fragrances, q, cat])
 
