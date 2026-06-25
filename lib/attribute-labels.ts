@@ -73,3 +73,71 @@ export function formatAttribute(raw: string): string {
   return mapped !== undefined ? `${key}: ${mapped}` : raw
 }
 
+/**
+ * Returns the mapped display value for a given key+value pair, or the raw
+ * value if no mapping exists. Unlike formatAttribute, this omits the
+ * "Key: " prefix — useful when the label is rendered separately.
+ */
+export function formatAttributeValue(key: string, value: string): string {
+  const trimmed = value.trim()
+  const valueMap = ATTRIBUTE_VALUES[key]
+  if (!valueMap) return trimmed
+  return valueMap[trimmed] ?? trimmed
+}
+
+// ─── Scalar bar metrics ──────────────────────────────────────────────────────
+
+/**
+ * Keys that render as segmented quality bars rather than text chips.
+ * Each maps to a 4-point ordinal scale (1 = lowest, 4 = highest).
+ */
+export const SCALAR_METRIC_KEYS = new Set(['Longevity', 'Sillage'])
+
+/** Ordinal level lookup — value → 1-based position on the 1–4 scale. */
+const SCALAR_LEVELS: Record<string, Record<string, number>> = {
+  Longevity: {
+    'Weak': 1, 'Poor': 1,
+    'Moderate': 2, 'Average': 2,
+    'Long': 3, 'Very Long': 3,
+    'Eternal': 4, 'Immortal': 4,
+  },
+  Sillage: {
+    'Intimate': 1, 'Soft': 1,
+    'Moderate': 2,
+    'Strong': 3, 'Heavy': 3,
+    'Enormous': 4, 'Beast': 4,
+  },
+}
+
+const SCALAR_MAX: Record<string, number> = { Longevity: 4, Sillage: 4 }
+
+/**
+ * Returns the ordinal level and scale maximum for a scalar metric, or null
+ * when the key/value combination is not recognised.
+ */
+export function getScalarLevel(
+  key: string,
+  value: string,
+): { level: number; max: number } | null {
+  const levelMap = SCALAR_LEVELS[key]
+  if (!levelMap) return null
+  const level = levelMap[value.trim()]
+  if (level === undefined) return null
+  return { level, max: SCALAR_MAX[key] }
+}
+
+// ─── Price tier meter ────────────────────────────────────────────────────────
+
+/** Maps a raw Price value ($–$$$$$) to a 1-based tier index (1–5). */
+const PRICE_TIERS: Record<string, number> = {
+  '$': 1, '$$': 2, '$$$': 3, '$$$$': 4, '$$$$$': 5,
+}
+
+/**
+ * Returns the price tier (1–5) for a raw price value, or null if unmapped.
+ * Drives the dollar-sign tier meter on the detail page.
+ */
+export function getPriceTier(value: string): number | null {
+  return PRICE_TIERS[value.trim()] ?? null
+}
+
