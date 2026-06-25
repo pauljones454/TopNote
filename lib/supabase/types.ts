@@ -28,7 +28,7 @@ export type CollectionItem = {
   id: string
   user_id: string
   fragrance_id: string
-  status: 'owned' | 'tried' | 'wishlist'
+  status: 'owned' | 'sample' | 'tried' | 'wishlist'
   created_at: string
   fragrance?: Fragrance
 }
