@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { getCategoryPill } from '@/lib/utils'
 import { ChevronLeft } from 'lucide-react'
 import { AddToShelfButton } from './AddToShelfButton'
-import { formatAttribute } from '@/lib/attribute-labels'
+import { AttributeMetrics } from './AttributeMetrics'
 
 export default async function FragrancePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
@@ -147,19 +147,8 @@ export default async function FragrancePage({ params }: { params: Promise<{ id: 
                 ))}
               </div>
 
-              {/* Attributes — qualitative labels mapped to precise display values */}
-              {fragrance.attributes?.length > 0 && (
-                <div className="flex flex-wrap gap-1.5 pt-5"
-                  style={{ borderTop: '1px solid rgba(28,20,16,0.07)' }}>
-                  {fragrance.attributes.map((a: string) => (
-                    <span key={a}
-                      className="text-[10px] text-stone-400 px-2.5 py-1"
-                      style={{ border: '1px solid rgba(28,20,16,0.10)', borderRadius: '4px' }}>
-                      {formatAttribute(a)}
-                    </span>
-                  ))}
-                </div>
-              )}
+              {/* Attributes — bars for scalar metrics, tier meter for price, chips for the rest */}
+              <AttributeMetrics attributes={fragrance.attributes ?? []} />
 
               {/* Mobile: Add to shelf */}
               <div className="md:hidden mt-8">
