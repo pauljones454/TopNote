@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Home, Search, Heart, User, Layers, Settings } from 'lucide-react'
+import { Home, Search, Heart, User, Layers } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const nav = [
@@ -9,8 +9,7 @@ const nav = [
   { href: '/discover',   icon: Search, label: 'Discover' },
   { href: '/collection', icon: Heart,  label: 'Collection' },
   { href: '/layers',     icon: Layers, label: 'Layers' },
-  { href: '/profile',    icon: User,     label: 'Profile' },
-  { href: '/settings',   icon: Settings, label: 'Settings' },
+  { href: '/profile',    icon: User,   label: 'Profile' },
 ]
 
 export function Sidebar() {
