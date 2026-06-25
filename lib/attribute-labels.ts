@@ -11,7 +11,8 @@
  *
  * Value spellings are inferred from Fragrantica community conventions (no seed
  * file exists in the repo — data lives in Supabase cloud). Alternate spellings
- * that are commonly observed are included defensively.
+ * that are commonly observed are included defensively. Price tiers cover $
+ * through $$$$$ to ensure no raw symbol string reaches the UI.
  */
 
 type ValueMap = Record<string, string>
@@ -38,10 +39,11 @@ const ATTRIBUTE_VALUES: Record<string, ValueMap> = {
     'Beast':    'projects broadly',
   },
   Price: {
-    '$':    'under $50',
-    '$$':   '$50–$100',
-    '$$$':  '$100–$250',
-    '$$$$': '$250+',
+    '$':      'under $50',
+    '$$':     '$50–$100',
+    '$$$':    '$100–$250',
+    '$$$$':   '$250–$400',
+    '$$$$$':  '$400+',
   },
   Versatility: {
     'Occasion-specific': '1–2 occasions',
