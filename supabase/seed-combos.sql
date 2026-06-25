@@ -18,21 +18,24 @@
 --   1. Run supabase/layering-migration.sql FIRST. This file depends on
 --      combos.rating, combos.application_order and combos.save_count,
 --      which that migration adds.
---   2. Choose the curator account (see below), edit ONE line, run this.
+--   2. Run this file. The curator is resolved automatically by email
+--      (see CURATOR below) — no edits required.
 --
--- SET THE CURATOR (the only edit you need to make):
---   Community combos need combos.user_id -> profiles(id). First list
---   the available profiles and pick the editorial / house account:
---
---       SELECT id, handle, display_name FROM profiles ORDER BY created_at;
---
---   Then replace the handle on the marked line in the `curator` CTE
---   below with the chosen profile's handle. If no editorial account
---   exists yet, use your own profile's handle.
+-- CURATOR (resolved automatically — no edit required):
+--   Community combos need combos.user_id -> profiles(id). This file
+--   resolves the curator by email in the `curator` CTE below, mapping
+--   profiles.id to auth.users.id (1:1 in standard Supabase). It is set
+--   to the project owner, paul.jones@flatfile.io, so the file runs
+--   cleanly with no manual edits.
 --
 --   Pre-flight check (should return exactly one row before you run):
---       SELECT id, handle, display_name FROM profiles
---       WHERE handle = 'REPLACE_WITH_CURATOR_HANDLE';
+--       SELECT p.id, p.handle, p.display_name
+--       FROM profiles p
+--       JOIN auth.users u ON u.id = p.id
+--       WHERE u.email = 'paul.jones@flatfile.io';
+--
+--   Manual override: to attribute to a different account, see the
+--   commented fallback line inside the `curator` CTE below.
 --
 -- IDEMPOTENT: safe to re-run. Each combo is guarded by NOT EXISTS on
 --   (name, user_id), so re-running inserts nothing new and never
@@ -46,14 +49,21 @@
 --   JOIN fragrances f1 ON f1.id = c.application_order[1]
 --   JOIN fragrances f2 ON f2.id = c.application_order[2]
 --   WHERE c.user_id = (SELECT id FROM profiles
---                      WHERE handle = 'REPLACE_WITH_CURATOR_HANDLE')
+--                      WHERE id = (SELECT id FROM auth.users
+--                                  WHERE email = 'paul.jones@flatfile.io'))
 --   ORDER BY c.created_at;
 -- ============================================================
 
 WITH curator AS (
-  -- vvv EDIT THIS HANDLE vvv  (run: SELECT id, handle, display_name FROM profiles;)
-  SELECT id FROM profiles WHERE handle = 'REPLACE_WITH_CURATOR_HANDLE' LIMIT 1
-  -- ^^^ EDIT THIS HANDLE ^^^
+  -- Resolves the curator automatically by email — no manual edit required.
+  -- profiles.id maps 1:1 to auth.users.id in standard Supabase.
+  SELECT id FROM profiles
+  WHERE id = (SELECT id FROM auth.users WHERE email = 'paul.jones@flatfile.io')
+  LIMIT 1
+  -- Manual override (optional): comment out the three lines above and
+  -- uncomment the line below, replacing the handle, to attribute to a
+  -- different account.
+  -- SELECT id FROM profiles WHERE handle = 'REPLACE_WITH_CURATOR_HANDLE' LIMIT 1
 ),
 seed (name, description, fragrance_ids, application_order, instructions, occasions, rating) AS (
   VALUES
