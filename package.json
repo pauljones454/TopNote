@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@obvi/feedback-sdk": "^1.2.0",
     "@supabase/ssr": "^0.10.2",
     "@supabase/supabase-js": "^2.105.1",
     "clsx": "^2.1.1",
+    "jose": "^6.2.3",
     "lucide-react": "^1.14.0",
     "next": "16.2.4",
     "react": "19.2.4",
