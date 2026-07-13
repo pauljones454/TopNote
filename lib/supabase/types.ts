@@ -13,6 +13,10 @@ export type Fragrance = {
   avg_rating: number
   review_count: number
   bottle_image_url: string | null
+  price_tier: '$' | '$$' | '$$$' | '$$$$' | '$$$$$' | null
+  gender: 'Masculine' | 'Feminine' | 'Unisex' | null
+  release_year: number | null
+  perfumer: string | null
 }
 
 export type Profile = {

@@ -24,6 +24,13 @@ import {
 
 interface Props {
   attributes: string[]
+  /**
+   * Structured price tier ($ – $$$$$) from the fragrances.price_tier column.
+   * This is now the source of truth for the price meter — the legacy
+   * "Price: $$$" string is no longer stored in `attributes`. Kept optional
+   * for defensive rendering against any row that predates backfill.
+   */
+  priceTier?: string | null
 }
 
 // ─── Scalar bar row ──────────────────────────────────────────────────────────
@@ -98,9 +105,7 @@ function PriceTier({ tier, caption }: { tier: number; caption: string }) {
 
 // ─── Main component ──────────────────────────────────────────────────────────
 
-export function AttributeMetrics({ attributes }: Props) {
-  if (!attributes?.length) return null
-
+export function AttributeMetrics({ attributes, priceTier }: Props) {
   // Classify each attribute into its rendering bucket.
   type ScalarRow = { label: string; level: number; max: number; caption: string }
   const scalarRows: ScalarRow[] = []
@@ -108,7 +113,15 @@ export function AttributeMetrics({ attributes }: Props) {
   // Store as { raw, display } so `raw` is a stable React key.
   const textChips: Array<{ raw: string; display: string }> = []
 
-  for (const raw of attributes) {
+  // Price now comes from the structured price_tier column, not attributes.
+  if (priceTier) {
+    const tier = getPriceTier(priceTier)
+    if (tier !== null) {
+      priceRow = { tier, caption: formatAttributeValue('Price', priceTier) }
+    }
+  }
+
+  for (const raw of attributes ?? []) {
     const sep = raw.indexOf(': ')
     if (sep === -1) {
       textChips.push({ raw, display: raw })
@@ -132,17 +145,24 @@ export function AttributeMetrics({ attributes }: Props) {
         textChips.push({ raw, display: formatAttribute(raw) })
       }
     } else if (key === 'Price') {
-      const tier = getPriceTier(value)
-      if (tier !== null) {
-        priceRow = { tier, caption: formatAttributeValue('Price', value) }
+      // Legacy fallback for any row that still has "Price: $$$" baked into
+      // attributes (shouldn't happen post-backfill, but never crash).
+      if (!priceRow) {
+        const tier = getPriceTier(value)
+        if (tier !== null) {
+          priceRow = { tier, caption: formatAttributeValue('Price', value) }
+          continue
+        }
       } else {
-        // Unmapped price symbol — degrade to text chip.
-        textChips.push({ raw, display: formatAttribute(raw) })
+        continue
       }
+      textChips.push({ raw, display: formatAttribute(raw) })
     } else {
       textChips.push({ raw, display: formatAttribute(raw) })
     }
   }
+
+  if (!attributes?.length && !priceRow) return null
 
   const hasMetricRows = scalarRows.length > 0 || priceRow !== null
 

@@ -148,7 +148,10 @@ export default async function FragrancePage({ params }: { params: Promise<{ id: 
               </div>
 
               {/* Attributes — bars for scalar metrics, tier meter for price, chips for the rest */}
-              <AttributeMetrics attributes={fragrance.attributes ?? []} />
+              <AttributeMetrics
+                attributes={fragrance.attributes ?? []}
+                priceTier={fragrance.price_tier}
+              />
 
               {/* Mobile: Add to shelf */}
               <div className="md:hidden mt-8">
