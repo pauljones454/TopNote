@@ -1,0 +1,1670 @@
+{
+  "creed ||| silver mountain water": [
+    {
+      "id": "silver-mountain",
+      "house": "Creed",
+      "name": "Silver Mountain Water",
+      "type": "EDP",
+      "category": "ultra-niche",
+      "scent_family": "fresh",
+      "top_notes": [
+        "Bergamot",
+        "Mandarin",
+        "Green Tea"
+      ],
+      "heart_notes": [
+        "Blackcurrant",
+        "Galbanum"
+      ],
+      "base_notes": [
+        "Musk",
+        "Sandalwood"
+      ],
+      "attributes": [
+        "Crisp",
+        "Clean",
+        "Alpine"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.5,
+      "review_count": 6700,
+      "bottle_image_url": null,
+      "created_at": "2026-04-26T22:35:34.616173+00:00"
+    },
+    {
+      "id": "silver-mount",
+      "house": "Creed",
+      "name": "Silver Mountain Water",
+      "type": "Aromatic Aquatic",
+      "category": "niche",
+      "scent_family": "Fresh",
+      "top_notes": [
+        "Bergamot",
+        "Mandarin",
+        "Green Tea"
+      ],
+      "heart_notes": [
+        "Blackcurrant",
+        "Neroli",
+        "Peach"
+      ],
+      "base_notes": [
+        "Musk",
+        "Sandalwood",
+        "Vetiver"
+      ],
+      "attributes": [
+        "Longevity: Medium",
+        "Sillage: Moderate",
+        "Price: $$$$$",
+        "Versatility: Everyday"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.5,
+      "review_count": 2,
+      "bottle_image_url": "https://res.cloudinary.com/da9sgkuxp/image/upload/v1777819528/topnote/bottles/silver-mountain.png",
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "maison margiela ||| lazy sunday morning": [
+    {
+      "id": "margiela-lazy",
+      "house": "Maison Margiela",
+      "name": "Lazy Sunday Morning",
+      "type": "EDT",
+      "category": "designer",
+      "scent_family": "floral",
+      "top_notes": [
+        "Aldehydes",
+        "Peony",
+        "Bergamot"
+      ],
+      "heart_notes": [
+        "Rose",
+        "Lily of the Valley",
+        "Iris"
+      ],
+      "base_notes": [
+        "Musk",
+        "Cedarwood",
+        "Sandalwood"
+      ],
+      "attributes": [
+        "Soft",
+        "Powdery",
+        "Comforting"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.3,
+      "review_count": 5400,
+      "bottle_image_url": "https://res.cloudinary.com/da9sgkuxp/image/upload/v1777819509/topnote/bottles/margiela-lazy.png",
+      "created_at": "2026-04-26T22:35:34.664213+00:00"
+    },
+    {
+      "id": "replica-lazy",
+      "house": "Maison Margiela",
+      "name": "Lazy Sunday Morning",
+      "type": "Floral Musky",
+      "category": "designer",
+      "scent_family": "Floral",
+      "top_notes": [
+        "Aldehyde",
+        "Bergamot",
+        "Peony"
+      ],
+      "heart_notes": [
+        "Rose",
+        "Iris",
+        "Heliotrope"
+      ],
+      "base_notes": [
+        "White Musk",
+        "Sandalwood",
+        "Amber"
+      ],
+      "attributes": [
+        "Longevity: Medium",
+        "Sillage: Intimate",
+        "Price: $$$",
+        "Versatility: Everyday"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.4,
+      "review_count": 2,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "maison margiela ||| beach walk": [
+    {
+      "id": "margiela-beach",
+      "house": "Maison Margiela",
+      "name": "Beach Walk",
+      "type": "EDT",
+      "category": "designer",
+      "scent_family": "fresh",
+      "top_notes": [
+        "Bergamot",
+        "Coconut Water",
+        "Lemon"
+      ],
+      "heart_notes": [
+        "Heliotrope",
+        "Ylang-Ylang",
+        "Jasmine"
+      ],
+      "base_notes": [
+        "Musk",
+        "Cedarwood",
+        "Vanilla"
+      ],
+      "attributes": [
+        "Sunny",
+        "Beachy",
+        "Carefree"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.4,
+      "review_count": 7800,
+      "bottle_image_url": "https://res.cloudinary.com/da9sgkuxp/image/upload/v1777819507/topnote/bottles/margiela-beach.png",
+      "created_at": "2026-04-26T22:35:34.664213+00:00"
+    },
+    {
+      "id": "replica-beach",
+      "house": "Maison Margiela",
+      "name": "Beach Walk",
+      "type": "Citrus Woody",
+      "category": "designer",
+      "scent_family": "Fresh",
+      "top_notes": [
+        "Bergamot",
+        "Lemon",
+        "Coconut"
+      ],
+      "heart_notes": [
+        "Heliotrope",
+        "Ylang Ylang",
+        "Rose"
+      ],
+      "base_notes": [
+        "Musk",
+        "Cedarwood",
+        "Sandalwood"
+      ],
+      "attributes": [
+        "Longevity: Light",
+        "Sillage: Subtle",
+        "Price: $$$",
+        "Versatility: Everyday"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.3,
+      "review_count": 2,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "guerlain ||| shalimar": [
+    {
+      "id": "guerlain-shalimar",
+      "house": "Guerlain",
+      "name": "Shalimar",
+      "type": "EDP",
+      "category": "designer",
+      "scent_family": "oriental",
+      "top_notes": [
+        "Bergamot",
+        "Lemon"
+      ],
+      "heart_notes": [
+        "Jasmine",
+        "Rose",
+        "Iris"
+      ],
+      "base_notes": [
+        "Vanilla",
+        "Opoponax",
+        "Civet"
+      ],
+      "attributes": [
+        "Iconic",
+        "Sensual",
+        "Vintage"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.6,
+      "review_count": 19800,
+      "bottle_image_url": "https://res.cloudinary.com/da9sgkuxp/image/upload/v1777819500/topnote/bottles/guerlain-shalimar.png",
+      "created_at": "2026-04-26T22:35:34.706974+00:00"
+    },
+    {
+      "id": "shalimar",
+      "house": "Guerlain",
+      "name": "Shalimar",
+      "type": "Oriental Floral",
+      "category": "designer",
+      "scent_family": "Oriental",
+      "top_notes": [
+        "Bergamot",
+        "Lemon",
+        "Citrus"
+      ],
+      "heart_notes": [
+        "Rose",
+        "Jasmine",
+        "Iris"
+      ],
+      "base_notes": [
+        "Vanilla",
+        "Benzoin",
+        "Civet"
+      ],
+      "attributes": [
+        "Longevity: Long",
+        "Sillage: Moderate",
+        "Price: $$$",
+        "Versatility: Evening"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.3,
+      "review_count": 2,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "herm\u00e8s ||| terre d'herm\u00e8s": [
+    {
+      "id": "hermes-terre",
+      "house": "Herm\u00e8s",
+      "name": "Terre d'Herm\u00e8s",
+      "type": "EDP",
+      "category": "designer",
+      "scent_family": "woody",
+      "top_notes": [
+        "Grapefruit",
+        "Orange"
+      ],
+      "heart_notes": [
+        "Pepper",
+        "Petitgrain",
+        "Geranium"
+      ],
+      "base_notes": [
+        "Vetiver",
+        "Flint",
+        "Benzoin"
+      ],
+      "attributes": [
+        "Earthy",
+        "Mineral",
+        "Iconic"
+      ],
+      "seasons": [
+        "Spring",
+        "Fall"
+      ],
+      "avg_rating": 4.6,
+      "review_count": 18900,
+      "bottle_image_url": "https://res.cloudinary.com/da9sgkuxp/image/upload/v1777819502/topnote/bottles/hermes-terre.png",
+      "created_at": "2026-04-26T22:35:34.706974+00:00"
+    },
+    {
+      "id": "terre-hermes",
+      "house": "Herm\u00e8s",
+      "name": "Terre d'Herm\u00e8s",
+      "type": "Woody Citrus",
+      "category": "designer",
+      "scent_family": "Woody",
+      "top_notes": [
+        "Grapefruit",
+        "Orange",
+        "Pepper"
+      ],
+      "heart_notes": [
+        "Flint",
+        "Benzene",
+        "Geranium"
+      ],
+      "base_notes": [
+        "Vetiver",
+        "Sandalwood",
+        "Cedarwood"
+      ],
+      "attributes": [
+        "Longevity: Good",
+        "Sillage: Moderate",
+        "Price: $$$",
+        "Versatility: Everyday"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.5,
+      "review_count": 5,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "herm\u00e8s ||| un jardin sur le nil": [
+    {
+      "id": "hermes-jardin",
+      "house": "Herm\u00e8s",
+      "name": "Un Jardin sur le Nil",
+      "type": "EDT",
+      "category": "designer",
+      "scent_family": "fresh",
+      "top_notes": [
+        "Green Mango",
+        "Lotus",
+        "Sycamore"
+      ],
+      "heart_notes": [
+        "Grapefruit",
+        "Peony",
+        "Bulrush"
+      ],
+      "base_notes": [
+        "Incense",
+        "Woody Notes"
+      ],
+      "attributes": [
+        "Green",
+        "Fresh",
+        "Exotic"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.4,
+      "review_count": 5800,
+      "bottle_image_url": "https://res.cloudinary.com/da9sgkuxp/image/upload/v1777819501/topnote/bottles/hermes-jardin.png",
+      "created_at": "2026-04-26T22:35:34.706974+00:00"
+    },
+    {
+      "id": "un-jardin",
+      "house": "Herm\u00e8s",
+      "name": "Un Jardin sur le Nil",
+      "type": "Floral Green",
+      "category": "designer",
+      "scent_family": "Fresh",
+      "top_notes": [
+        "Grapefruit",
+        "Green Mango",
+        "Lotus"
+      ],
+      "heart_notes": [
+        "Peony",
+        "Water Lily",
+        "Papyrus"
+      ],
+      "base_notes": [
+        "Sycamore",
+        "Musk",
+        "Incense"
+      ],
+      "attributes": [
+        "Longevity: Light",
+        "Sillage: Subtle",
+        "Price: $$$",
+        "Versatility: Everyday"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.3,
+      "review_count": 2,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "givenchy ||| gentleman intense": [
+    {
+      "id": "givenchy-gentleman",
+      "house": "Givenchy",
+      "name": "Gentleman Intense",
+      "type": "EDP",
+      "category": "designer",
+      "scent_family": "oriental",
+      "top_notes": [
+        "Iris",
+        "Pear",
+        "Bergamot"
+      ],
+      "heart_notes": [
+        "Patchouli",
+        "Vetiver",
+        "Orris"
+      ],
+      "base_notes": [
+        "Vanilla",
+        "Cedarwood",
+        "Amber"
+      ],
+      "attributes": [
+        "Smooth",
+        "Sweet",
+        "Refined"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.3,
+      "review_count": 7600,
+      "bottle_image_url": "https://res.cloudinary.com/da9sgkuxp/image/upload/v1777819494/topnote/bottles/givenchy-gentleman.png",
+      "created_at": "2026-04-26T22:35:34.706974+00:00"
+    },
+    {
+      "id": "gentleman-intense",
+      "house": "Givenchy",
+      "name": "Gentleman Intense",
+      "type": "Oriental Woody",
+      "category": "designer",
+      "scent_family": "Oriental",
+      "top_notes": [
+        "Pepper",
+        "Bergamot",
+        "Apple"
+      ],
+      "heart_notes": [
+        "Iris",
+        "Patchouli",
+        "Vetiver"
+      ],
+      "base_notes": [
+        "Amber",
+        "Vanilla",
+        "Sandalwood"
+      ],
+      "attributes": [
+        "Longevity: Good",
+        "Sillage: Moderate",
+        "Price: $$$",
+        "Versatility: Evening"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.2,
+      "review_count": 2,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "giorgio armani ||| acqua di gi\u00f2 profumo": [
+    {
+      "id": "armani-acquagio",
+      "house": "Giorgio Armani",
+      "name": "Acqua di Gi\u00f2 Profumo",
+      "type": "EDP",
+      "category": "designer",
+      "scent_family": "fresh",
+      "top_notes": [
+        "Bergamot",
+        "Sea Notes",
+        "Geranium"
+      ],
+      "heart_notes": [
+        "Sage",
+        "Rosemary",
+        "Incense"
+      ],
+      "base_notes": [
+        "Patchouli",
+        "Incense",
+        "Labdanum"
+      ],
+      "attributes": [
+        "Fresh",
+        "Aquatic",
+        "Sophisticated"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.6,
+      "review_count": 21000,
+      "bottle_image_url": "https://res.cloudinary.com/da9sgkuxp/image/upload/v1777819480/topnote/bottles/armani-acquagio.png",
+      "created_at": "2026-04-26T22:35:34.706974+00:00"
+    },
+    {
+      "id": "acqua-gio",
+      "house": "Giorgio Armani",
+      "name": "Acqua di Gi\u00f2 Profumo",
+      "type": "Aromatic Aquatic",
+      "category": "designer",
+      "scent_family": "Aquatic",
+      "top_notes": [
+        "Bergamot",
+        "Neroli",
+        "Aquatic"
+      ],
+      "heart_notes": [
+        "Geranium",
+        "Sage",
+        "Rosemary"
+      ],
+      "base_notes": [
+        "Incense",
+        "Patchouli",
+        "Musk"
+      ],
+      "attributes": [
+        "Longevity: Good",
+        "Sillage: Moderate",
+        "Price: $$$",
+        "Versatility: Everyday"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.4,
+      "review_count": 5,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    },
+    {
+      "id": "acqua-di-gi-profumo",
+      "house": "Giorgio Armani",
+      "name": "Acqua di Gi\u00f2 Profumo",
+      "type": "Aromatic Aquatic",
+      "category": "designer",
+      "scent_family": "Aromatic",
+      "top_notes": [
+        "Bergamot",
+        "Rosemary",
+        "Grapefruit"
+      ],
+      "heart_notes": [
+        "Geranium",
+        "Jasmine",
+        "Marine"
+      ],
+      "base_notes": [
+        "Musk",
+        "Cedar",
+        "Amber"
+      ],
+      "attributes": [
+        "Longevity: Long",
+        "Sillage: Strong",
+        "Price: $$$",
+        "Versatility: Versatile"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.8,
+      "review_count": 4940000,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:11.015629+00:00"
+    }
+  ],
+  "yves saint laurent ||| la nuit de l'homme": [
+    {
+      "id": "ysl-lanuit",
+      "house": "Yves Saint Laurent",
+      "name": "La Nuit de l'Homme",
+      "type": "EDT",
+      "category": "designer",
+      "scent_family": "oriental",
+      "top_notes": [
+        "Cardamom",
+        "Bergamot"
+      ],
+      "heart_notes": [
+        "Lavender",
+        "Cedar",
+        "Caraway"
+      ],
+      "base_notes": [
+        "Vetiver",
+        "Coumarin",
+        "Virginia Cedar"
+      ],
+      "attributes": [
+        "Seductive",
+        "Spicy",
+        "Date Night"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.5,
+      "review_count": 14200,
+      "bottle_image_url": "https://res.cloudinary.com/da9sgkuxp/image/upload/v1777819532/topnote/bottles/ysl-lanuit.png",
+      "created_at": "2026-04-26T22:35:34.706974+00:00"
+    },
+    {
+      "id": "ysl-la-nuit",
+      "house": "Yves Saint Laurent",
+      "name": "La Nuit de l'Homme",
+      "type": "Oriental Woody",
+      "category": "designer",
+      "scent_family": "Spicy",
+      "top_notes": [
+        "Cardamom",
+        "Bergamot",
+        "Grapefruit"
+      ],
+      "heart_notes": [
+        "Cedar",
+        "Lavender",
+        "Coumarin"
+      ],
+      "base_notes": [
+        "Amber",
+        "Vetiver",
+        "Sandalwood"
+      ],
+      "attributes": [
+        "Longevity: Long",
+        "Sillage: Moderate",
+        "Price: $$$",
+        "Versatility: Evening"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.4,
+      "review_count": 3,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "paco rabanne ||| 1 million": [
+    {
+      "id": "paco-million",
+      "house": "Paco Rabanne",
+      "name": "1 Million",
+      "type": "EDT",
+      "category": "designer",
+      "scent_family": "oriental",
+      "top_notes": [
+        "Blood Mandarin",
+        "Mint",
+        "Grapefruit"
+      ],
+      "heart_notes": [
+        "Rose",
+        "Cinnamon",
+        "Spices"
+      ],
+      "base_notes": [
+        "Leather",
+        "Amber",
+        "Patchouli"
+      ],
+      "attributes": [
+        "Bold",
+        "Sexy",
+        "Club"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.3,
+      "review_count": 22000,
+      "bottle_image_url": "https://res.cloudinary.com/da9sgkuxp/image/upload/v1777819514/topnote/bottles/paco-million.png",
+      "created_at": "2026-04-26T22:35:34.706974+00:00"
+    },
+    {
+      "id": "million",
+      "house": "Paco Rabanne",
+      "name": "1 Million",
+      "type": "Spicy Leather",
+      "category": "designer",
+      "scent_family": "Spicy",
+      "top_notes": [
+        "Grapefruit",
+        "Mint",
+        "Blood Mandarin"
+      ],
+      "heart_notes": [
+        "Cinnamon",
+        "Rose",
+        "Spices"
+      ],
+      "base_notes": [
+        "Leather",
+        "Amber",
+        "Patchouli"
+      ],
+      "attributes": [
+        "Longevity: Long",
+        "Sillage: Strong",
+        "Price: $$",
+        "Versatility: Evening"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.2,
+      "review_count": 6,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "guerlain ||| habit rouge": [
+    {
+      "id": "guerlain-habit",
+      "house": "Guerlain",
+      "name": "Habit Rouge",
+      "type": "EDP",
+      "category": "designer",
+      "scent_family": "oriental",
+      "top_notes": [
+        "Bergamot",
+        "Lemon",
+        "Neroli"
+      ],
+      "heart_notes": [
+        "Rose",
+        "Patchouli",
+        "Sandalwood"
+      ],
+      "base_notes": [
+        "Vanilla",
+        "Leather",
+        "Amber"
+      ],
+      "attributes": [
+        "Classic",
+        "Powdery",
+        "Heritage"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.5,
+      "review_count": 6700,
+      "bottle_image_url": "https://res.cloudinary.com/da9sgkuxp/image/upload/v1777819498/topnote/bottles/guerlain-habit.png",
+      "created_at": "2026-04-26T22:35:34.706974+00:00"
+    },
+    {
+      "id": "habit-rouge",
+      "house": "Guerlain",
+      "name": "Habit Rouge",
+      "type": "Oriental Citrus",
+      "category": "designer",
+      "scent_family": "Oriental",
+      "top_notes": [
+        "Bergamot",
+        "Lemon",
+        "Grapefruit"
+      ],
+      "heart_notes": [
+        "Rose",
+        "Sandalwood",
+        "Patchouli"
+      ],
+      "base_notes": [
+        "Vanilla",
+        "Amber",
+        "Leather"
+      ],
+      "attributes": [
+        "Longevity: Long",
+        "Sillage: Moderate",
+        "Price: $$$",
+        "Versatility: Versatile"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.4,
+      "review_count": 1,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "fr\u00e9d\u00e9ric malle ||| carnal flower": [
+    {
+      "id": "malle-carnal",
+      "house": "Fr\u00e9d\u00e9ric Malle",
+      "name": "Carnal Flower",
+      "type": "EDP",
+      "category": "ultra-niche",
+      "scent_family": "floral",
+      "top_notes": [
+        "Eucalyptus",
+        "Melon"
+      ],
+      "heart_notes": [
+        "Tuberose",
+        "Jasmine",
+        "Ylang-Ylang"
+      ],
+      "base_notes": [
+        "Musk",
+        "Coconut",
+        "Sandalwood"
+      ],
+      "attributes": [
+        "Creamy",
+        "White Floral",
+        "Sensual"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.7,
+      "review_count": 6700,
+      "bottle_image_url": null,
+      "created_at": "2026-04-26T22:35:34.749422+00:00"
+    },
+    {
+      "id": "carnal-flower",
+      "house": "Fr\u00e9d\u00e9ric Malle",
+      "name": "Carnal Flower",
+      "type": "Floral",
+      "category": "ultra-niche",
+      "scent_family": "Floral",
+      "top_notes": [
+        "Melon",
+        "Eucalyptus",
+        "Bergamot"
+      ],
+      "heart_notes": [
+        "Tuberose",
+        "Jasmine",
+        "Ylang Ylang"
+      ],
+      "base_notes": [
+        "Musk",
+        "Sandalwood",
+        "Coconut"
+      ],
+      "attributes": [
+        "Longevity: Long",
+        "Sillage: Moderate",
+        "Price: $$$$$",
+        "Versatility: Evening"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.6,
+      "review_count": 1,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "fr\u00e9d\u00e9ric malle ||| portrait of a lady": [
+    {
+      "id": "malle-portrait",
+      "house": "Fr\u00e9d\u00e9ric Malle",
+      "name": "Portrait of a Lady",
+      "type": "EDP",
+      "category": "ultra-niche",
+      "scent_family": "floral",
+      "top_notes": [
+        "Rose",
+        "Blackcurrant",
+        "Cinnamon"
+      ],
+      "heart_notes": [
+        "Turkish Rose",
+        "Patchouli",
+        "Sandalwood"
+      ],
+      "base_notes": [
+        "Musk",
+        "Benzoin",
+        "Incense"
+      ],
+      "attributes": [
+        "Bold",
+        "Rose",
+        "Masterpiece"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.8,
+      "review_count": 9800,
+      "bottle_image_url": null,
+      "created_at": "2026-04-26T22:35:34.749422+00:00"
+    },
+    {
+      "id": "portrait-lady",
+      "house": "Fr\u00e9d\u00e9ric Malle",
+      "name": "Portrait of a Lady",
+      "type": "Floral Woody",
+      "category": "ultra-niche",
+      "scent_family": "Floral",
+      "top_notes": [
+        "Rose",
+        "Blackcurrant",
+        "Raspberry"
+      ],
+      "heart_notes": [
+        "Patchouli",
+        "Sandalwood",
+        "Incense"
+      ],
+      "base_notes": [
+        "Musk",
+        "Amber",
+        "Benzoin"
+      ],
+      "attributes": [
+        "Longevity: All Day",
+        "Sillage: Strong",
+        "Price: $$$$$",
+        "Versatility: Evening"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.7,
+      "review_count": 2,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "parfums de marly ||| herod": [
+    {
+      "id": "marly-herod",
+      "house": "Parfums de Marly",
+      "name": "Herod",
+      "type": "EDP",
+      "category": "niche",
+      "scent_family": "oriental",
+      "top_notes": [
+        "Pepper",
+        "Cinnamon"
+      ],
+      "heart_notes": [
+        "Tobacco",
+        "Osmanthus",
+        "Cypress"
+      ],
+      "base_notes": [
+        "Vanilla",
+        "Sandalwood",
+        "Amber"
+      ],
+      "attributes": [
+        "Smoky",
+        "Tobacco",
+        "Rich"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.5,
+      "review_count": 7800,
+      "bottle_image_url": null,
+      "created_at": "2026-04-26T22:35:34.749422+00:00"
+    },
+    {
+      "id": "herod",
+      "house": "Parfums de Marly",
+      "name": "Herod",
+      "type": "Oriental Woody",
+      "category": "niche",
+      "scent_family": "Oriental",
+      "top_notes": [
+        "Cinnamon",
+        "Pepper",
+        "Bergamot"
+      ],
+      "heart_notes": [
+        "Tobacco",
+        "Virginia Cedar",
+        "Incense"
+      ],
+      "base_notes": [
+        "Vanilla",
+        "Oud",
+        "Musk"
+      ],
+      "attributes": [
+        "Longevity: All Day",
+        "Sillage: Strong",
+        "Price: $$$$",
+        "Versatility: Evening"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.5,
+      "review_count": 1,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "parfums de marly ||| layton": [
+    {
+      "id": "marly-layton",
+      "house": "Parfums de Marly",
+      "name": "Layton",
+      "type": "EDP",
+      "category": "niche",
+      "scent_family": "oriental",
+      "top_notes": [
+        "Apple",
+        "Bergamot",
+        "Lavender"
+      ],
+      "heart_notes": [
+        "Jasmine",
+        "Geranium",
+        "Violet"
+      ],
+      "base_notes": [
+        "Sandalwood",
+        "Vanilla",
+        "Pepper"
+      ],
+      "attributes": [
+        "Fresh",
+        "Sweet",
+        "Versatile"
+      ],
+      "seasons": [
+        "All Season"
+      ],
+      "avg_rating": 4.7,
+      "review_count": 14800,
+      "bottle_image_url": null,
+      "created_at": "2026-04-26T22:35:34.749422+00:00"
+    },
+    {
+      "id": "layton",
+      "house": "Parfums de Marly",
+      "name": "Layton",
+      "type": "Aromatic Floral",
+      "category": "niche",
+      "scent_family": "Floral",
+      "top_notes": [
+        "Apple",
+        "Bergamot",
+        "Lavender"
+      ],
+      "heart_notes": [
+        "Jasmine",
+        "Violet",
+        "Geranium"
+      ],
+      "base_notes": [
+        "Sandalwood",
+        "Vanilla",
+        "Musk"
+      ],
+      "attributes": [
+        "Longevity: All Day",
+        "Sillage: Strong",
+        "Price: $$$$",
+        "Versatility: Everyday"
+      ],
+      "seasons": [
+        "All Season"
+      ],
+      "avg_rating": 4.7,
+      "review_count": 3,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "parfums de marly ||| pegasus": [
+    {
+      "id": "marly-pegasus",
+      "house": "Parfums de Marly",
+      "name": "Pegasus",
+      "type": "EDP",
+      "category": "niche",
+      "scent_family": "oriental",
+      "top_notes": [
+        "Bergamot",
+        "Heliotrope",
+        "Lavender"
+      ],
+      "heart_notes": [
+        "Jasmine",
+        "Sandalwood",
+        "Vetiver"
+      ],
+      "base_notes": [
+        "Vanilla",
+        "Amber",
+        "Musk"
+      ],
+      "attributes": [
+        "Sweet",
+        "Powdery",
+        "Crowd Pleaser"
+      ],
+      "seasons": [
+        "All Season"
+      ],
+      "avg_rating": 4.6,
+      "review_count": 12400,
+      "bottle_image_url": null,
+      "created_at": "2026-04-26T22:35:34.749422+00:00"
+    },
+    {
+      "id": "pegasus",
+      "house": "Parfums de Marly",
+      "name": "Pegasus",
+      "type": "Oriental Floral",
+      "category": "niche",
+      "scent_family": "Oriental",
+      "top_notes": [
+        "Bergamot",
+        "Lavender",
+        "Heliotrope"
+      ],
+      "heart_notes": [
+        "Jasmine",
+        "Sandalwood",
+        "Vanilla"
+      ],
+      "base_notes": [
+        "Amber",
+        "Musk",
+        "Tonka"
+      ],
+      "attributes": [
+        "Longevity: All Day",
+        "Sillage: Strong",
+        "Price: $$$$",
+        "Versatility: Versatile"
+      ],
+      "seasons": [
+        "All Season"
+      ],
+      "avg_rating": 4.6,
+      "review_count": 2,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "valentino ||| uomo intense": [
+    {
+      "id": "valentino-uomo",
+      "house": "Valentino",
+      "name": "Uomo Intense",
+      "type": "EDP",
+      "category": "designer",
+      "scent_family": "oriental",
+      "top_notes": [
+        "Bergamot",
+        "Grapefruit",
+        "Lemon"
+      ],
+      "heart_notes": [
+        "Iris",
+        "Hawthorn",
+        "Lavender"
+      ],
+      "base_notes": [
+        "Leather",
+        "Tonka Bean",
+        "Vanilla"
+      ],
+      "attributes": [
+        "Smooth",
+        "Warm",
+        "Elegant"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.3,
+      "review_count": 5600,
+      "bottle_image_url": null,
+      "created_at": "2026-04-26T22:35:34.749422+00:00"
+    },
+    {
+      "id": "uomo-intense",
+      "house": "Valentino",
+      "name": "Uomo Intense",
+      "type": "Oriental Woody",
+      "category": "designer",
+      "scent_family": "Oriental",
+      "top_notes": [
+        "Bergamot",
+        "Pepper",
+        "Cardamom"
+      ],
+      "heart_notes": [
+        "Iris",
+        "Hawthorn",
+        "Leather"
+      ],
+      "base_notes": [
+        "Tobacco",
+        "Musk",
+        "Amber"
+      ],
+      "attributes": [
+        "Longevity: Long",
+        "Sillage: Moderate",
+        "Price: $$$",
+        "Versatility: Evening"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.2,
+      "review_count": 1,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "diptyque ||| tam dao": [
+    {
+      "id": "diptyque-tamdao",
+      "house": "Diptyque",
+      "name": "Tam Dao",
+      "type": "EDP",
+      "category": "niche",
+      "scent_family": "woody",
+      "top_notes": [
+        "Cypress",
+        "Rosewood",
+        "Myrtle"
+      ],
+      "heart_notes": [
+        "Sandalwood",
+        "White Cedar"
+      ],
+      "base_notes": [
+        "Musk",
+        "Sandalwood",
+        "Amber"
+      ],
+      "attributes": [
+        "Woody",
+        "Meditative",
+        "Calm"
+      ],
+      "seasons": [
+        "All Season"
+      ],
+      "avg_rating": 4.5,
+      "review_count": 5600,
+      "bottle_image_url": null,
+      "created_at": "2026-04-26T22:35:34.749422+00:00"
+    },
+    {
+      "id": "diptyque-tam",
+      "house": "Diptyque",
+      "name": "Tam Dao",
+      "type": "Woody Floral",
+      "category": "niche",
+      "scent_family": "Woody",
+      "top_notes": [
+        "Cypress",
+        "Rosewood",
+        "Myrtle"
+      ],
+      "heart_notes": [
+        "Sandalwood",
+        "Cedarwood",
+        "Rose"
+      ],
+      "base_notes": [
+        "White Musk",
+        "Amber",
+        "Sandalwood"
+      ],
+      "attributes": [
+        "Longevity: Good",
+        "Sillage: Moderate",
+        "Price: $$$",
+        "Versatility: Everyday"
+      ],
+      "seasons": [
+        "All Season"
+      ],
+      "avg_rating": 4.4,
+      "review_count": 2,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:10.894963+00:00"
+    }
+  ],
+  "diptyque ||| do son": [
+    {
+      "id": "diptyque-doson",
+      "house": "Diptyque",
+      "name": "Do Son",
+      "type": "EDT",
+      "category": "niche",
+      "scent_family": "floral",
+      "top_notes": [
+        "Tuberose",
+        "Water",
+        "Pepper"
+      ],
+      "heart_notes": [
+        "Tuberose",
+        "White Musk"
+      ],
+      "base_notes": [
+        "Musk",
+        "Cedarwood"
+      ],
+      "attributes": [
+        "Aquatic",
+        "Floral",
+        "Breezy"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.3,
+      "review_count": 4200,
+      "bottle_image_url": null,
+      "created_at": "2026-04-26T22:35:35.131012+00:00"
+    },
+    {
+      "id": "diptyque-do",
+      "house": "Diptyque",
+      "name": "Do Son",
+      "type": "Floral",
+      "category": "niche",
+      "scent_family": "Floral",
+      "top_notes": [
+        "Tuberose",
+        "Orange Blossom",
+        "Bergamot"
+      ],
+      "heart_notes": [
+        "Rose",
+        "Jasmine",
+        "Iris"
+      ],
+      "base_notes": [
+        "Musk",
+        "Amber",
+        "Sandalwood"
+      ],
+      "attributes": [
+        "Longevity: Medium",
+        "Sillage: Moderate",
+        "Price: $$$",
+        "Versatility: Versatile"
+      ],
+      "seasons": [
+        "Spring",
+        "Summer"
+      ],
+      "avg_rating": 4.2,
+      "review_count": 1,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:11.015629+00:00"
+    }
+  ],
+  "kilian ||| black phantom": [
+    {
+      "id": "kilian-phantom",
+      "house": "Kilian",
+      "name": "Black Phantom",
+      "type": "EDP",
+      "category": "niche",
+      "scent_family": "oriental",
+      "top_notes": [
+        "Rum",
+        "Coffee",
+        "Caramel"
+      ],
+      "heart_notes": [
+        "Jasmine",
+        "Black Orchid"
+      ],
+      "base_notes": [
+        "Musk",
+        "Sandalwood",
+        "Vetiver"
+      ],
+      "attributes": [
+        "Dark",
+        "Boozy",
+        "Gourmand"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.5,
+      "review_count": 7800,
+      "bottle_image_url": null,
+      "created_at": "2026-04-26T22:35:35.131012+00:00"
+    },
+    {
+      "id": "kilian-black",
+      "house": "Kilian",
+      "name": "Black Phantom",
+      "type": "Oriental Gourmand",
+      "category": "niche",
+      "scent_family": "Gourmand",
+      "top_notes": [
+        "Rum",
+        "Blackcurrant",
+        "Bergamot"
+      ],
+      "heart_notes": [
+        "Coffee",
+        "Jasmine",
+        "Rose"
+      ],
+      "base_notes": [
+        "Vanilla",
+        "Caramel",
+        "Musk"
+      ],
+      "attributes": [
+        "Longevity: All Day",
+        "Sillage: Strong",
+        "Price: $$$$",
+        "Versatility: Evening"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.6,
+      "review_count": 2,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:11.015629+00:00"
+    }
+  ],
+  "montale ||| intense cafe": [
+    {
+      "id": "montale-cafe",
+      "house": "Montale",
+      "name": "Intense Cafe",
+      "type": "EDP",
+      "category": "niche",
+      "scent_family": "oriental",
+      "top_notes": [
+        "Rose",
+        "Jasmine"
+      ],
+      "heart_notes": [
+        "Coffee",
+        "Vanilla",
+        "Oud"
+      ],
+      "base_notes": [
+        "Musk",
+        "Sandalwood",
+        "Amber"
+      ],
+      "attributes": [
+        "Coffee",
+        "Sweet",
+        "Romantic"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.6,
+      "review_count": 9200,
+      "bottle_image_url": null,
+      "created_at": "2026-04-26T22:35:35.131012+00:00"
+    },
+    {
+      "id": "montale-intense",
+      "house": "Montale",
+      "name": "Intense Cafe",
+      "type": "Oriental Gourmand",
+      "category": "niche",
+      "scent_family": "Gourmand",
+      "top_notes": [
+        "Coffee",
+        "Rose",
+        "Saffron"
+      ],
+      "heart_notes": [
+        "Vanilla",
+        "Musk",
+        "Patchouli"
+      ],
+      "base_notes": [
+        "Amber",
+        "Sandalwood",
+        "Tonka"
+      ],
+      "attributes": [
+        "Longevity: Long",
+        "Sillage: Moderate",
+        "Price: $$$",
+        "Versatility: Versatile"
+      ],
+      "seasons": [
+        "All Season"
+      ],
+      "avg_rating": 4.4,
+      "review_count": 2,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:11.015629+00:00"
+    }
+  ],
+  "dolce & gabbana ||| dolce & gabbana the one": [
+    {
+      "id": "dolce-gabbana-the-one",
+      "house": "Dolce & Gabbana",
+      "name": "Dolce & Gabbana The One",
+      "type": "Oriental Spicy",
+      "category": "designer",
+      "scent_family": "Oriental",
+      "top_notes": [
+        "Cardamom",
+        "Bergamot",
+        "Pepper"
+      ],
+      "heart_notes": [
+        "Rose",
+        "Cinnamon",
+        "Oud"
+      ],
+      "base_notes": [
+        "Amber",
+        "Sandalwood",
+        "Musk"
+      ],
+      "attributes": [
+        "Longevity: Long",
+        "Sillage: Strong",
+        "Price: $$$",
+        "Versatility: Versatile"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.8,
+      "review_count": 4780,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:11.015629+00:00"
+    },
+    {
+      "id": "dolce-gabbana-the-one-2",
+      "house": "Dolce & Gabbana",
+      "name": "Dolce & Gabbana The One",
+      "type": "Oriental Floral",
+      "category": "designer",
+      "scent_family": "Oriental",
+      "top_notes": [
+        "Bergamot",
+        "Mandarin",
+        "Cardamom"
+      ],
+      "heart_notes": [
+        "Rose",
+        "Jasmine",
+        "Ylang Ylang"
+      ],
+      "base_notes": [
+        "Amber",
+        "Sandalwood",
+        "Musk"
+      ],
+      "attributes": [
+        "Longevity: Long",
+        "Sillage: Strong",
+        "Price: $$$",
+        "Versatility: Versatile"
+      ],
+      "seasons": [
+        "Fall",
+        "Winter"
+      ],
+      "avg_rating": 4.7,
+      "review_count": 4280,
+      "bottle_image_url": null,
+      "created_at": "2026-05-03T14:30:11.121637+00:00"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ const SCREENS = [
   { label: 'Daily',            href: '/daily' },
   { label: 'Profile',          href: '/profile' },
   { label: 'Auth',             href: '/auth' },
-  { label: 'Fragrance Detail', href: '/fragrance/7b3f8c2a-1d4e-4f9b-b6a2-5e8d3c0f2a1b' },
+  { label: 'Fragrance Detail', href: '/fragrance/aventus' },
 ]
 
 // iPhone 15 Pro dimensions: 393 × 852 logical px
