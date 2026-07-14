@@ -1,0 +1,7414 @@
+[
+  {
+    "id": "chloe-nomade",
+    "house": "Chlo\u00e9",
+    "name": "Nomade",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Fruity Chypre",
+    "top_notes": [
+      "Mirabelle Plum",
+      "Freesia"
+    ],
+    "heart_notes": [
+      "Oakmoss",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Amber",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$$",
+    "gender": "Feminine",
+    "release_year": 2018,
+    "perfumer": "Quentin Bisch"
+  },
+  {
+    "id": "chloe-love-story",
+    "house": "Chlo\u00e9",
+    "name": "Love Story",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral",
+    "top_notes": [
+      "Orange Blossom",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Jasmine Sambac",
+      "Stephanotis"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2014,
+    "perfumer": "Anne Flipo"
+  },
+  {
+    "id": "chloe-roses-de-chloe",
+    "house": "Chlo\u00e9",
+    "name": "Roses de Chlo\u00e9",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Floral",
+    "top_notes": [
+      "Litchi",
+      "Rose Leaf"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Peony"
+    ],
+    "base_notes": [
+      "Musk",
+      "Cedar"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2012,
+    "perfumer": "Michel Almairac"
+  },
+  {
+    "id": "bottega-veneta-pour-homme",
+    "house": "Bottega Veneta",
+    "name": "Pour Homme",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Spicy",
+    "top_notes": [
+      "Cardamom",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Leather",
+      "Patchouli"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Tonka Bean"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Masculine",
+    "release_year": 2011,
+    "perfumer": "Michel Almairac"
+  },
+  {
+    "id": "bottega-veneta-knot",
+    "house": "Bottega Veneta",
+    "name": "Knot",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Woody",
+    "top_notes": [
+      "Mandarin",
+      "Elemi"
+    ],
+    "heart_notes": [
+      "Freesia",
+      "Osmanthus"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Feminine",
+    "release_year": 2012,
+    "perfumer": "Michel Almairac"
+  },
+  {
+    "id": "davidoff-cool-water-woman",
+    "house": "Davidoff",
+    "name": "Cool Water Woman",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aquatic Floral",
+    "top_notes": [
+      "Sea Notes",
+      "Mint"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Lily"
+    ],
+    "base_notes": [
+      "Musk",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 1996,
+    "perfumer": "Pierre Bourdon"
+  },
+  {
+    "id": "davidoff-the-game",
+    "house": "Davidoff",
+    "name": "The Game",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Woody",
+    "top_notes": [
+      "Grapefruit",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Lavender",
+      "Geranium"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Amberwood"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2014,
+    "perfumer": "Nathalie Lorson"
+  },
+  {
+    "id": "azzaro-pour-homme",
+    "house": "Azzaro",
+    "name": "Pour Homme",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Foug\u00e8re",
+    "top_notes": [
+      "Anise",
+      "Lavender"
+    ],
+    "heart_notes": [
+      "Cedar",
+      "Sage"
+    ],
+    "base_notes": [
+      "Leather",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 1978,
+    "perfumer": "Richard Wirtz"
+  },
+  {
+    "id": "azzaro-most-wanted",
+    "house": "Azzaro",
+    "name": "The Most Wanted",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Amber Spicy",
+    "top_notes": [
+      "Cardamom",
+      "Ginger"
+    ],
+    "heart_notes": [
+      "Toffee",
+      "Sage"
+    ],
+    "base_notes": [
+      "Fava Bean",
+      "Amberwood"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2021,
+    "perfumer": "Fabrice Pellegrin"
+  },
+  {
+    "id": "azzaro-chrome",
+    "house": "Azzaro",
+    "name": "Chrome",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Fresh Aromatic",
+    "top_notes": [
+      "Bergamot",
+      "Lemon"
+    ],
+    "heart_notes": [
+      "Sage",
+      "Rosemary"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 1996,
+    "perfumer": "Jean-Claude Ellena"
+  },
+  {
+    "id": "clive-christian-no1",
+    "house": "Clive Christian",
+    "name": "No. 1",
+    "type": "Extrait de Parfum",
+    "category": "ultra-niche",
+    "scent_family": "Floral Oriental",
+    "top_notes": [
+      "Bergamot",
+      "Cassis"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Rose"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Amber",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Eternal",
+      "Sillage: Enormous",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$$",
+    "gender": "Unisex",
+    "release_year": 2001,
+    "perfumer": "Clive Christian"
+  },
+  {
+    "id": "clive-christian-x",
+    "house": "Clive Christian",
+    "name": "X",
+    "type": "Extrait de Parfum",
+    "category": "ultra-niche",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Bergamot",
+      "Lime"
+    ],
+    "heart_notes": [
+      "Rosemary",
+      "Nutmeg"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Eternal",
+      "Sillage: Enormous",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$$",
+    "gender": "Masculine",
+    "release_year": 2003,
+    "perfumer": "Clive Christian"
+  },
+  {
+    "id": "tommy-girl",
+    "house": "Tommy Hilfiger",
+    "name": "Tommy Girl",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Citrus Floral",
+    "top_notes": [
+      "Grapefruit",
+      "Marigold"
+    ],
+    "heart_notes": [
+      "Freesia",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Musk",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 1996,
+    "perfumer": "Sophia Grojsman"
+  },
+  {
+    "id": "tommy-true-star",
+    "house": "Tommy Hilfiger",
+    "name": "True Star",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Fruity Floral",
+    "top_notes": [
+      "Peach",
+      "Mandarin"
+    ],
+    "heart_notes": [
+      "Orchid",
+      "Peony"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2004,
+    "perfumer": "Yann Vasnier"
+  },
+  {
+    "id": "nautica-blue",
+    "house": "Nautica",
+    "name": "Blue",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aquatic Fresh",
+    "top_notes": [
+      "Sea Spray",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Water Lily",
+      "Sage"
+    ],
+    "base_notes": [
+      "Musk",
+      "Cedar"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 1998,
+    "perfumer": null
+  },
+  {
+    "id": "nautica-classic",
+    "house": "Nautica",
+    "name": "Classic",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Fresh",
+    "top_notes": [
+      "Lemon",
+      "Pineapple"
+    ],
+    "heart_notes": [
+      "Geranium",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 1992,
+    "perfumer": null
+  },
+  {
+    "id": "fragrance-world-oud-stallion",
+    "house": "Fragrance World",
+    "name": "Oud Stallion",
+    "type": "EDP",
+    "category": "middle-eastern",
+    "scent_family": "Woody Amber",
+    "top_notes": [
+      "Saffron",
+      "Cinnamon"
+    ],
+    "heart_notes": [
+      "Oud",
+      "Rose"
+    ],
+    "base_notes": [
+      "Amber",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": null,
+    "perfumer": null
+  },
+  {
+    "id": "fragrance-world-grand-soir",
+    "house": "Fragrance World",
+    "name": "Grand Soir",
+    "type": "EDP",
+    "category": "middle-eastern",
+    "scent_family": "Amber Vanilla",
+    "top_notes": [
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Amber",
+      "Benzoin"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Unisex",
+    "release_year": null,
+    "perfumer": null
+  },
+  {
+    "id": "joop-homme-sport",
+    "house": "Joop!",
+    "name": "Homme Sport",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Aquatic",
+    "top_notes": [
+      "Bergamot",
+      "Mint"
+    ],
+    "heart_notes": [
+      "Sage",
+      "Lavender"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2007,
+    "perfumer": null
+  },
+  {
+    "id": "joop-nightflight",
+    "house": "Joop!",
+    "name": "Nightflight",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Grapefruit",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Lavender",
+      "Nutmeg"
+    ],
+    "base_notes": [
+      "Leather",
+      "Vetiver"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2009,
+    "perfumer": null
+  },
+  {
+    "id": "elizabeth-arden-green-tea",
+    "house": "Elizabeth Arden",
+    "name": "Green Tea",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Fresh Green",
+    "top_notes": [
+      "Green Tea",
+      "Lemon"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Mint"
+    ],
+    "base_notes": [
+      "Musk",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 1999,
+    "perfumer": "Yann Vasnier"
+  },
+  {
+    "id": "elizabeth-arden-red-door",
+    "house": "Elizabeth Arden",
+    "name": "Red Door",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Floral",
+    "top_notes": [
+      "Aldehydes",
+      "Plum"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Ylang-Ylang"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 1989,
+    "perfumer": null
+  },
+  {
+    "id": "memo-african-leather",
+    "house": "Memo Paris",
+    "name": "African Leather",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Leather",
+    "top_notes": [
+      "Cardamom",
+      "Saffron"
+    ],
+    "heart_notes": [
+      "Leather",
+      "Cade"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2012,
+    "perfumer": "Alienor Massenet"
+  },
+  {
+    "id": "memo-italian-leather",
+    "house": "Memo Paris",
+    "name": "Italian Leather",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Leather Floral",
+    "top_notes": [
+      "Bergamot",
+      "Violet"
+    ],
+    "heart_notes": [
+      "Leather",
+      "Iris"
+    ],
+    "base_notes": [
+      "Musk",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2012,
+    "perfumer": "Alienor Massenet"
+  },
+  {
+    "id": "narciso-for-him",
+    "house": "Narciso Rodriguez",
+    "name": "For Him",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Musk",
+    "top_notes": [
+      "Blue Cedar",
+      "Musk"
+    ],
+    "heart_notes": [
+      "Amber",
+      "Vanilla"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2007,
+    "perfumer": "Christine Nagel"
+  },
+  {
+    "id": "narciso-musc-noir",
+    "house": "Narciso Rodriguez",
+    "name": "Musc Noir",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Musk Floral",
+    "top_notes": [
+      "Clary Sage",
+      "Wisteria"
+    ],
+    "heart_notes": [
+      "Amber",
+      "Musk"
+    ],
+    "base_notes": [
+      "Musk",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2012,
+    "perfumer": "Christine Nagel"
+  },
+  {
+    "id": "vera-wang-original",
+    "house": "Vera Wang",
+    "name": "Vera Wang",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Oriental",
+    "top_notes": [
+      "Mandarin",
+      "Freesia"
+    ],
+    "heart_notes": [
+      "Calla Lily",
+      "Gardenia"
+    ],
+    "base_notes": [
+      "Amber",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2002,
+    "perfumer": "Rodrigo Flores-Roux"
+  },
+  {
+    "id": "vera-wang-embrace",
+    "house": "Vera Wang",
+    "name": "Embrace",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Floral Fresh",
+    "top_notes": [
+      "Bergamot",
+      "Water Lily"
+    ],
+    "heart_notes": [
+      "Peony",
+      "Iris"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2009,
+    "perfumer": null
+  },
+  {
+    "id": "dkny-be-delicious-men",
+    "house": "DKNY",
+    "name": "Be Delicious Men",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Fresh Fruity",
+    "top_notes": [
+      "Green Apple",
+      "Cucumber"
+    ],
+    "heart_notes": [
+      "Basil",
+      "Clary Sage"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2005,
+    "perfumer": null
+  },
+  {
+    "id": "dkny-golden-delicious",
+    "house": "DKNY",
+    "name": "Golden Delicious",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Fruity Floral",
+    "top_notes": [
+      "Golden Delicious Apple",
+      "Kumquat"
+    ],
+    "heart_notes": [
+      "Osmanthus",
+      "Freesia"
+    ],
+    "base_notes": [
+      "Amber",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2011,
+    "perfumer": null
+  },
+  {
+    "id": "lanvin-eclat-arpege",
+    "house": "Lanvin",
+    "name": "\u00c9clat d'Arp\u00e8ge",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Fruity",
+    "top_notes": [
+      "Blackcurrant",
+      "Peony"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Freesia"
+    ],
+    "base_notes": [
+      "Musk",
+      "Cedar"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2002,
+    "perfumer": "Sophie Labbe"
+  },
+  {
+    "id": "lanvin-lhomme",
+    "house": "Lanvin",
+    "name": "L'Homme",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Bergamot",
+      "Lavender"
+    ],
+    "heart_notes": [
+      "Rosewood",
+      "Iris"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Tonka Bean"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 1997,
+    "perfumer": null
+  },
+  {
+    "id": "nina-ricci-nina",
+    "house": "Nina Ricci",
+    "name": "Nina",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Fruity Floral",
+    "top_notes": [
+      "Red Apple",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Toffee",
+      "Peony"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2006,
+    "perfumer": "Olivier Cresp"
+  },
+  {
+    "id": "nina-ricci-premier-jour",
+    "house": "Nina Ricci",
+    "name": "Premier Jour",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral",
+    "top_notes": [
+      "Rose",
+      "Aldehydes"
+    ],
+    "heart_notes": [
+      "Lily of the Valley",
+      "Iris"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 1996,
+    "perfumer": null
+  },
+  {
+    "id": "kenzo-homme",
+    "house": "Kenzo",
+    "name": "Kenzo Homme",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Spicy",
+    "top_notes": [
+      "Star Anise",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Ginger",
+      "Nutmeg"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2001,
+    "perfumer": null
+  },
+  {
+    "id": "kenzo-world",
+    "house": "Kenzo",
+    "name": "Kenzo World",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Woody",
+    "top_notes": [
+      "Pear",
+      "Ylang-Ylang"
+    ],
+    "heart_notes": [
+      "Jasmine Rice",
+      "Rose"
+    ],
+    "base_notes": [
+      "Musk",
+      "Ambrette"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2016,
+    "perfumer": "Aurelien Guichard"
+  },
+  {
+    "id": "elie-saab-girl-of-now",
+    "house": "Elie Saab",
+    "name": "Girl of Now",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Fruity Floral",
+    "top_notes": [
+      "Pear",
+      "Orange Blossom"
+    ],
+    "heart_notes": [
+      "Caramel",
+      "Almond"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2017,
+    "perfumer": "Francis Kurkdjian"
+  },
+  {
+    "id": "elie-saab-rose-couture",
+    "house": "Elie Saab",
+    "name": "Le Parfum Rose Couture",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Floral",
+    "top_notes": [
+      "Mandarin",
+      "Peony"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Cedar"
+    ],
+    "base_notes": [
+      "Musk",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2016,
+    "perfumer": null
+  },
+  {
+    "id": "jo-malone-english-pear",
+    "house": "Jo Malone London",
+    "name": "English Pear & Freesia",
+    "type": "Cologne",
+    "category": "niche",
+    "scent_family": "Fruity Floral",
+    "top_notes": [
+      "Pear",
+      "Melon"
+    ],
+    "heart_notes": [
+      "Freesia",
+      "Patchouli"
+    ],
+    "base_notes": [
+      "Amber",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2010,
+    "perfumer": "Christine Nagel"
+  },
+  {
+    "id": "jo-malone-peony-blush",
+    "house": "Jo Malone London",
+    "name": "Peony & Blush Suede",
+    "type": "Cologne",
+    "category": "niche",
+    "scent_family": "Floral",
+    "top_notes": [
+      "Red Apple",
+      "Rhubarb"
+    ],
+    "heart_notes": [
+      "Peony",
+      "Rose"
+    ],
+    "base_notes": [
+      "Suede Accord",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$",
+    "gender": "Feminine",
+    "release_year": 2013,
+    "perfumer": "Christine Nagel"
+  },
+  {
+    "id": "jo-malone-lime-basil-mandarin",
+    "house": "Jo Malone London",
+    "name": "Lime Basil & Mandarin",
+    "type": "Cologne",
+    "category": "niche",
+    "scent_family": "Citrus Aromatic",
+    "top_notes": [
+      "Lime",
+      "Mandarin"
+    ],
+    "heart_notes": [
+      "Basil",
+      "Thyme"
+    ],
+    "base_notes": [
+      "Musk",
+      "Vetiver"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 1999,
+    "perfumer": "Elizabeth Wachter"
+  },
+  {
+    "id": "jimmy-choo-eponymous",
+    "house": "Jimmy Choo",
+    "name": "Jimmy Choo",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Fruity",
+    "top_notes": [
+      "Pear",
+      "Tiger Orchid"
+    ],
+    "heart_notes": [
+      "Toffee",
+      "Indian Jasmine"
+    ],
+    "base_notes": [
+      "Patchouli",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2011,
+    "perfumer": "Olivier Polge"
+  },
+  {
+    "id": "jimmy-choo-man-blue",
+    "house": "Jimmy Choo",
+    "name": "Man Blue",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Aquatic",
+    "top_notes": [
+      "Grapefruit",
+      "Pineapple Leaf"
+    ],
+    "heart_notes": [
+      "Lavender",
+      "Nutmeg"
+    ],
+    "base_notes": [
+      "Patchouli",
+      "Ambergris"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2016,
+    "perfumer": null
+  },
+  {
+    "id": "michael-kors-wonderlust",
+    "house": "Michael Kors",
+    "name": "Wonderlust",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Oriental Floral",
+    "top_notes": [
+      "Pomegranate",
+      "Blood Orange"
+    ],
+    "heart_notes": [
+      "Turkish Rose",
+      "Lily"
+    ],
+    "base_notes": [
+      "Amber",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2016,
+    "perfumer": null
+  },
+  {
+    "id": "michael-kors-gold-rose",
+    "house": "Michael Kors",
+    "name": "Gold Rose",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral",
+    "top_notes": [
+      "Bergamot",
+      "Litchi"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Peony"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2013,
+    "perfumer": null
+  },
+  {
+    "id": "lacoste-pour-femme",
+    "house": "Lacoste",
+    "name": "Pour Femme",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Fruity",
+    "top_notes": [
+      "Peach",
+      "Rose"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Iris"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2003,
+    "perfumer": null
+  },
+  {
+    "id": "lacoste-blanc",
+    "house": "Lacoste",
+    "name": "Eau de Lacoste L.12.12 Blanc",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Fresh Aromatic",
+    "top_notes": [
+      "Bergamot",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Iris",
+      "Freesia"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2011,
+    "perfumer": null
+  },
+  {
+    "id": "ferragamo-signorina",
+    "house": "Salvatore Ferragamo",
+    "name": "Signorina",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Fruity Chypre",
+    "top_notes": [
+      "Black Currant",
+      "Pear"
+    ],
+    "heart_notes": [
+      "Panama Flower",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Musk",
+      "Praline"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2012,
+    "perfumer": "Olivier Polge"
+  },
+  {
+    "id": "ferragamo-incanto",
+    "house": "Salvatore Ferragamo",
+    "name": "Incanto",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Fruity",
+    "top_notes": [
+      "Sicilian Lemon",
+      "Green Apple"
+    ],
+    "heart_notes": [
+      "Peach Blossom",
+      "Lily"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 1999,
+    "perfumer": null
+  },
+  {
+    "id": "ariana-grande-thank-u-next",
+    "house": "Ariana Grande",
+    "name": "Thank U, Next",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Fruity Gourmand",
+    "top_notes": [
+      "Rose Petals",
+      "Pear"
+    ],
+    "heart_notes": [
+      "Cotton Candy",
+      "Marshmallow"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2019,
+    "perfumer": null
+  },
+  {
+    "id": "ariana-grande-sweet-like-candy",
+    "house": "Ariana Grande",
+    "name": "Sweet Like Candy",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Fruity Gourmand",
+    "top_notes": [
+      "Bergamot",
+      "Pear"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Vanilla Orchid"
+    ],
+    "base_notes": [
+      "Musk",
+      "Caramel"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2016,
+    "perfumer": null
+  },
+  {
+    "id": "hugo-boss-hugo-man",
+    "house": "Hugo Boss",
+    "name": "Hugo Man",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Fresh",
+    "top_notes": [
+      "Green Apple",
+      "Mint"
+    ],
+    "heart_notes": [
+      "Geranium",
+      "Cedar"
+    ],
+    "base_notes": [
+      "Oak Moss",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 1995,
+    "perfumer": "Michel Almairac"
+  },
+  {
+    "id": "hugo-boss-bottled-intense",
+    "house": "Hugo Boss",
+    "name": "Boss Bottled Intense",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Cinnamon",
+      "Apple"
+    ],
+    "heart_notes": [
+      "Cedar",
+      "Fir"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2015,
+    "perfumer": null
+  },
+  {
+    "id": "hugo-boss-bottled-united",
+    "house": "Hugo Boss",
+    "name": "Boss Bottled United",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Woody",
+    "top_notes": [
+      "Grapefruit",
+      "Lavender"
+    ],
+    "heart_notes": [
+      "Geranium",
+      "Clary Sage"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Vetiver"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2021,
+    "perfumer": null
+  },
+  {
+    "id": "ralph-lauren-polo",
+    "house": "Ralph Lauren",
+    "name": "Polo",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Foug\u00e8re",
+    "top_notes": [
+      "Artemisia",
+      "Thyme"
+    ],
+    "heart_notes": [
+      "Leather",
+      "Pine"
+    ],
+    "base_notes": [
+      "Oakmoss",
+      "Cedar"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 1978,
+    "perfumer": "Carlos Benaim"
+  },
+  {
+    "id": "ralph-lauren-romance",
+    "house": "Ralph Lauren",
+    "name": "Romance",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral",
+    "top_notes": [
+      "Rose Petals",
+      "Marigold"
+    ],
+    "heart_notes": [
+      "Iris",
+      "Violet"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 1998,
+    "perfumer": "Loc Dong"
+  },
+  {
+    "id": "ralph-lauren-polo-sport",
+    "house": "Ralph Lauren",
+    "name": "Polo Sport",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Fresh",
+    "top_notes": [
+      "Mint",
+      "Green Nuance"
+    ],
+    "heart_notes": [
+      "Cardamom",
+      "Juniper"
+    ],
+    "base_notes": [
+      "Musk",
+      "Vetiver"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 1994,
+    "perfumer": null
+  },
+  {
+    "id": "cartier-pasha",
+    "house": "Cartier",
+    "name": "Pasha de Cartier",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Fresh",
+    "top_notes": [
+      "Bergamot",
+      "Mandarin"
+    ],
+    "heart_notes": [
+      "Basil",
+      "Fennel"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 1992,
+    "perfumer": "Jean-Claude Ellena"
+  },
+  {
+    "id": "cartier-lenvol",
+    "house": "Cartier",
+    "name": "L'Envol de Cartier",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Cardamom",
+      "Apple"
+    ],
+    "heart_notes": [
+      "Sage",
+      "Angelica"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Vetiver"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2016,
+    "perfumer": "Mathilde Laurent"
+  },
+  {
+    "id": "cartier-must",
+    "house": "Cartier",
+    "name": "Must de Cartier",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Oriental Floral",
+    "top_notes": [
+      "Aldehydes",
+      "Jasmine"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Carnation"
+    ],
+    "base_notes": [
+      "Oakmoss",
+      "Leather"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 1981,
+    "perfumer": null
+  },
+  {
+    "id": "jpg-le-male-le-parfum",
+    "house": "Jean Paul Gaultier",
+    "name": "Le Male Le Parfum",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Amber Aromatic",
+    "top_notes": [
+      "Lavender",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Vanilla",
+      "Iris"
+    ],
+    "base_notes": [
+      "Tonka Bean",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2020,
+    "perfumer": "Quentin Bisch"
+  },
+  {
+    "id": "jpg-scandal",
+    "house": "Jean Paul Gaultier",
+    "name": "Scandal",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Chypre Floral Gourmand",
+    "top_notes": [
+      "Blood Orange",
+      "Honey"
+    ],
+    "heart_notes": [
+      "Gardenia",
+      "Honey"
+    ],
+    "base_notes": [
+      "Patchouli",
+      "Beeswax"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2017,
+    "perfumer": "Daphne Bugey"
+  },
+  {
+    "id": "jpg-ultra-male",
+    "house": "Jean Paul Gaultier",
+    "name": "Ultra Male",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Amber Vanilla",
+    "top_notes": [
+      "Lavender",
+      "Mandarin"
+    ],
+    "heart_notes": [
+      "Cinnamon",
+      "Caramel"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Patchouli"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2015,
+    "perfumer": null
+  },
+  {
+    "id": "vr-spicebomb",
+    "house": "Viktor & Rolf",
+    "name": "Spicebomb",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Spicy Woody",
+    "top_notes": [
+      "Bergamot",
+      "Pink Pepper"
+    ],
+    "heart_notes": [
+      "Cinnamon",
+      "Saffron"
+    ],
+    "base_notes": [
+      "Tobacco",
+      "Vetiver"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2012,
+    "perfumer": "Olivier Polge"
+  },
+  {
+    "id": "vr-spicebomb-extreme",
+    "house": "Viktor & Rolf",
+    "name": "Spicebomb Extreme",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Amber Spicy",
+    "top_notes": [
+      "Pink Pepper",
+      "Cinnamon"
+    ],
+    "heart_notes": [
+      "Tobacco",
+      "Cumin"
+    ],
+    "base_notes": [
+      "Bourbon Vanilla",
+      "Leather"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2014,
+    "perfumer": "Olivier Polge"
+  },
+  {
+    "id": "vr-antidote",
+    "house": "Viktor & Rolf",
+    "name": "Antidote",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Bergamot",
+      "Grapefruit"
+    ],
+    "heart_notes": [
+      "Ginger",
+      "Clary Sage"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Amberwood"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2019,
+    "perfumer": null
+  },
+  {
+    "id": "gucci-rush",
+    "house": "Gucci",
+    "name": "Rush",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Oriental Floral",
+    "top_notes": [
+      "Peach",
+      "Casablanca Lily"
+    ],
+    "heart_notes": [
+      "Coriander",
+      "Orange Blossom"
+    ],
+    "base_notes": [
+      "Amber",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 1999,
+    "perfumer": null
+  },
+  {
+    "id": "gucci-guilty-absolute",
+    "house": "Gucci",
+    "name": "Guilty Absolute",
+    "type": "Parfum",
+    "category": "designer",
+    "scent_family": "Woody Leather",
+    "top_notes": [
+      "Patchouli"
+    ],
+    "heart_notes": [
+      "Leather",
+      "Cypress"
+    ],
+    "base_notes": [
+      "Woody Notes",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Masculine",
+    "release_year": 2017,
+    "perfumer": null
+  },
+  {
+    "id": "gucci-memoire",
+    "house": "Gucci",
+    "name": "M\u00e9moire d'une Odeur",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Foug\u00e8re",
+    "top_notes": [
+      "Chamomile",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Sage",
+      "Osmanthus"
+    ],
+    "base_notes": [
+      "Musk",
+      "Ambrette"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Unisex",
+    "release_year": 2019,
+    "perfumer": "Alberto Morillas"
+  },
+  {
+    "id": "burberry-touch",
+    "house": "Burberry",
+    "name": "Touch",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Floral",
+    "top_notes": [
+      "Mandarin",
+      "Ginger"
+    ],
+    "heart_notes": [
+      "Lily",
+      "Cyclamen"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2000,
+    "perfumer": null
+  },
+  {
+    "id": "burberry-body",
+    "house": "Burberry",
+    "name": "Body",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Musk",
+    "top_notes": [
+      "Pink Pepper",
+      "Red Berries"
+    ],
+    "heart_notes": [
+      "Sambac Jasmine",
+      "Rose"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2011,
+    "perfumer": null
+  },
+  {
+    "id": "burberry-mr-burberry",
+    "house": "Burberry",
+    "name": "Mr. Burberry",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Woody",
+    "top_notes": [
+      "Grapefruit",
+      "Tarragon"
+    ],
+    "heart_notes": [
+      "Nutmeg",
+      "Birch Leaf"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Cedarwood"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2016,
+    "perfumer": "Francis Kurkdjian"
+  },
+  {
+    "id": "bvlgari-pour-homme",
+    "house": "Bvlgari",
+    "name": "Pour Homme",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Green Tea",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Orris",
+      "Cardamom"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 1996,
+    "perfumer": null
+  },
+  {
+    "id": "bvlgari-omnia-amethyste",
+    "house": "Bvlgari",
+    "name": "Omnia Amethyste",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Floral Fruity",
+    "top_notes": [
+      "Grapefruit",
+      "Litchi"
+    ],
+    "heart_notes": [
+      "Peony",
+      "Water Lily"
+    ],
+    "base_notes": [
+      "Musk",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2010,
+    "perfumer": null
+  },
+  {
+    "id": "bvlgari-man-extreme",
+    "house": "Bvlgari",
+    "name": "Man Extreme",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Green Apple",
+      "Ginger"
+    ],
+    "heart_notes": [
+      "Guaiac Wood",
+      "Green Notes"
+    ],
+    "base_notes": [
+      "Musk",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2013,
+    "perfumer": null
+  },
+  {
+    "id": "issey-a-scent",
+    "house": "Issey Miyake",
+    "name": "A Scent",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Green Floral",
+    "top_notes": [
+      "Pear",
+      "Yuzu"
+    ],
+    "heart_notes": [
+      "Grass",
+      "Muguet"
+    ],
+    "base_notes": [
+      "Musk",
+      "Cedar"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2009,
+    "perfumer": "Jacques Cavallier"
+  },
+  {
+    "id": "issey-leau-pure",
+    "house": "Issey Miyake",
+    "name": "L'Eau d'Issey Pure",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aquatic Floral",
+    "top_notes": [
+      "Water Lotus",
+      "Yuzu"
+    ],
+    "heart_notes": [
+      "White Musk",
+      "Lotus"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2013,
+    "perfumer": null
+  },
+  {
+    "id": "montblanc-legend-spirit",
+    "house": "Montblanc",
+    "name": "Legend Spirit",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Fresh",
+    "top_notes": [
+      "Bergamot",
+      "Green Apple"
+    ],
+    "heart_notes": [
+      "Lavender",
+      "Violet Leaf"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2016,
+    "perfumer": null
+  },
+  {
+    "id": "montblanc-individuel",
+    "house": "Montblanc",
+    "name": "Individuel",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Spicy",
+    "top_notes": [
+      "Cardamom",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Violet Leaf",
+      "Cinnamon"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2003,
+    "perfumer": null
+  },
+  {
+    "id": "herrera-ch-men",
+    "house": "Carolina Herrera",
+    "name": "CH Men",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Bergamot",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Nutmeg",
+      "Leather"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2007,
+    "perfumer": null
+  },
+  {
+    "id": "herrera-for-men",
+    "house": "Carolina Herrera",
+    "name": "Herrera for Men",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Foug\u00e8re",
+    "top_notes": [
+      "Lavender",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Geranium",
+      "Cedar"
+    ],
+    "base_notes": [
+      "Oakmoss",
+      "Tonka Bean"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 1991,
+    "perfumer": null
+  },
+  {
+    "id": "herrera-212-vip",
+    "house": "Carolina Herrera",
+    "name": "212 VIP",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Fruity Floral",
+    "top_notes": [
+      "Passion Fruit",
+      "Rum"
+    ],
+    "heart_notes": [
+      "Musk",
+      "Gardenia"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Caramel"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2010,
+    "perfumer": null
+  },
+  {
+    "id": "marc-jacobs-daisy-love",
+    "house": "Marc Jacobs",
+    "name": "Daisy Love",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Fruity Floral Musk",
+    "top_notes": [
+      "Strawberry",
+      "Pear"
+    ],
+    "heart_notes": [
+      "Violet Petals",
+      "Muguet"
+    ],
+    "base_notes": [
+      "Musk",
+      "Cashmere Woods"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2018,
+    "perfumer": null
+  },
+  {
+    "id": "marc-jacobs-decadence",
+    "house": "Marc Jacobs",
+    "name": "Decadence",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Chypre Fruity",
+    "top_notes": [
+      "Plum",
+      "Iris"
+    ],
+    "heart_notes": [
+      "Bulgarian Rose",
+      "Sambac Jasmine"
+    ],
+    "base_notes": [
+      "Amber",
+      "Vetiver"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2015,
+    "perfumer": null
+  },
+  {
+    "id": "marc-jacobs-perfect-intense",
+    "house": "Marc Jacobs",
+    "name": "Perfect Intense",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral",
+    "top_notes": [
+      "Rhubarb"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Daisy"
+    ],
+    "base_notes": [
+      "Musk",
+      "Ambrette"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2021,
+    "perfumer": null
+  },
+  {
+    "id": "versace-man-eau-fraiche",
+    "house": "Versace",
+    "name": "Man Eau Fra\u00eeche",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Aquatic",
+    "top_notes": [
+      "Bergamot",
+      "Lemon"
+    ],
+    "heart_notes": [
+      "Cedar",
+      "Tarragon"
+    ],
+    "base_notes": [
+      "Musk",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2006,
+    "perfumer": null
+  },
+  {
+    "id": "versace-crystal-noir",
+    "house": "Versace",
+    "name": "Crystal Noir",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Oriental",
+    "top_notes": [
+      "Ginger",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Gardenia",
+      "Peony"
+    ],
+    "base_notes": [
+      "Musk",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2004,
+    "perfumer": null
+  },
+  {
+    "id": "versace-yellow-diamond",
+    "house": "Versace",
+    "name": "Yellow Diamond",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Floral Fruity",
+    "top_notes": [
+      "Citrus",
+      "Nectarine"
+    ],
+    "heart_notes": [
+      "Mimosa",
+      "Freesia"
+    ],
+    "base_notes": [
+      "Musk",
+      "Cedarwood"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2011,
+    "perfumer": null
+  },
+  {
+    "id": "dg-light-blue-pour-homme",
+    "house": "Dolce & Gabbana",
+    "name": "Light Blue Pour Homme",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aquatic Citrus",
+    "top_notes": [
+      "Sicilian Lemon",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Rosemary",
+      "Bamboo"
+    ],
+    "base_notes": [
+      "Musk",
+      "Cedar"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2007,
+    "perfumer": null
+  },
+  {
+    "id": "dg-q",
+    "house": "Dolce & Gabbana",
+    "name": "Q by Dolce&Gabbana",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Fruity Floral",
+    "top_notes": [
+      "Sicilian Lemon",
+      "Cherry"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Orange Blossom"
+    ],
+    "base_notes": [
+      "Musk",
+      "Amberwood"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2023,
+    "perfumer": null
+  },
+  {
+    "id": "dg-the-only-one",
+    "house": "Dolce & Gabbana",
+    "name": "The Only One",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Oriental Floral",
+    "top_notes": [
+      "Bergamot",
+      "Tea"
+    ],
+    "heart_notes": [
+      "Iris",
+      "Vanilla"
+    ],
+    "base_notes": [
+      "Amber",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2017,
+    "perfumer": null
+  },
+  {
+    "id": "ck-in2u-him",
+    "house": "Calvin Klein",
+    "name": "CK IN2U Him",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Cardamom",
+      "Mandarin"
+    ],
+    "heart_notes": [
+      "Guaiac Wood",
+      "Suede"
+    ],
+    "base_notes": [
+      "Musk",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2007,
+    "perfumer": null
+  },
+  {
+    "id": "ck-reveal",
+    "house": "Calvin Klein",
+    "name": "Reveal Men",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Ginger",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Sandalwood",
+      "Cedar"
+    ],
+    "base_notes": [
+      "Musk",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2014,
+    "perfumer": null
+  },
+  {
+    "id": "ck-eternity-men",
+    "house": "Calvin Klein",
+    "name": "Eternity for Men",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Foug\u00e8re",
+    "top_notes": [
+      "Mandarin",
+      "Lavender"
+    ],
+    "heart_notes": [
+      "Basil",
+      "Sage"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 1989,
+    "perfumer": null
+  },
+  {
+    "id": "paco-phantom",
+    "house": "Paco Rabanne",
+    "name": "Phantom",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Foug\u00e8re",
+    "top_notes": [
+      "Apple",
+      "Lavender"
+    ],
+    "heart_notes": [
+      "Vetiver",
+      "Sage"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2021,
+    "perfumer": null
+  },
+  {
+    "id": "paco-invictus-legend",
+    "house": "Paco Rabanne",
+    "name": "Invictus Legend",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Aromatic Woody",
+    "top_notes": [
+      "Grapefruit",
+      "Bay Leaf"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Hedione"
+    ],
+    "base_notes": [
+      "Guaiac Wood",
+      "Patchouli"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2022,
+    "perfumer": null
+  },
+  {
+    "id": "paco-pure-xs",
+    "house": "Paco Rabanne",
+    "name": "Pure XS",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Oriental Vanilla",
+    "top_notes": [
+      "Mandarin",
+      "Ginger"
+    ],
+    "heart_notes": [
+      "Orange Blossom",
+      "Cedar"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Amberwood"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2017,
+    "perfumer": null
+  },
+  {
+    "id": "valentino-coral-fantasy",
+    "house": "Valentino",
+    "name": "Uomo Born in Roma Coral Fantasy",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Fresh",
+    "top_notes": [
+      "Bergamot",
+      "Grapefruit"
+    ],
+    "heart_notes": [
+      "Cardamom",
+      "Clary Sage"
+    ],
+    "base_notes": [
+      "Amberwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2021,
+    "perfumer": null
+  },
+  {
+    "id": "valentino-v-donna",
+    "house": "Valentino",
+    "name": "V Donna",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Woody",
+    "top_notes": [
+      "Bergamot",
+      "Pear"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2021,
+    "perfumer": null
+  },
+  {
+    "id": "valentino-voce-viva",
+    "house": "Valentino",
+    "name": "Voce Viva",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Amber",
+    "top_notes": [
+      "Roman Chamomile",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Salted Orris",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2020,
+    "perfumer": "Sophie Labbe"
+  },
+  {
+    "id": "givenchy-iii",
+    "house": "Givenchy",
+    "name": "Givenchy III",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Floral Chypre",
+    "top_notes": [
+      "Peach",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Oakmoss",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 1970,
+    "perfumer": null
+  },
+  {
+    "id": "givenchy-ange-ou-demon",
+    "house": "Givenchy",
+    "name": "Ange ou D\u00e9mon",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Oriental Floral",
+    "top_notes": [
+      "Lychee",
+      "Coriander"
+    ],
+    "heart_notes": [
+      "Orchid",
+      "Cinnamon"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2006,
+    "perfumer": null
+  },
+  {
+    "id": "givenchy-gentleman-only",
+    "house": "Givenchy",
+    "name": "Gentleman Only",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Chypre",
+    "top_notes": [
+      "Bergamot",
+      "Pink Pepper"
+    ],
+    "heart_notes": [
+      "Iris",
+      "Cedar"
+    ],
+    "base_notes": [
+      "Patchouli",
+      "Vetiver"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Spring"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2013,
+    "perfumer": null
+  },
+  {
+    "id": "armani-stronger-with-you",
+    "house": "Giorgio Armani",
+    "name": "Emporio Armani Stronger With You",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Amber Spicy",
+    "top_notes": [
+      "Pink Pepper",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Chestnut",
+      "Sage"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2017,
+    "perfumer": null
+  },
+  {
+    "id": "armani-code-absolu",
+    "house": "Giorgio Armani",
+    "name": "Armani Code Absolu",
+    "type": "Parfum",
+    "category": "designer",
+    "scent_family": "Oriental Woody",
+    "top_notes": [
+      "Toffee"
+    ],
+    "heart_notes": [
+      "Tonka Bean",
+      "Sage"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Leather"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Masculine",
+    "release_year": 2019,
+    "perfumer": null
+  },
+  {
+    "id": "armani-si-passione",
+    "house": "Giorgio Armani",
+    "name": "S\u00ec Passione",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Woody",
+    "top_notes": [
+      "Blackcurrant",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "May Rose",
+      "Freesia"
+    ],
+    "base_notes": [
+      "Patchouli",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2019,
+    "perfumer": null
+  },
+  {
+    "id": "prada-luna-rossa-black",
+    "house": "Prada",
+    "name": "Luna Rossa Black",
+    "type": "Parfum",
+    "category": "designer",
+    "scent_family": "Amber Vanilla",
+    "top_notes": [
+      "Bergamot",
+      "Rum"
+    ],
+    "heart_notes": [
+      "Coumarin",
+      "Vanilla"
+    ],
+    "base_notes": [
+      "Cistus Labdanum",
+      "Vetiver"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Masculine",
+    "release_year": 2019,
+    "perfumer": "Daniela Andrier"
+  },
+  {
+    "id": "prada-candy-night",
+    "house": "Prada",
+    "name": "Candy Night",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Oriental Gourmand",
+    "top_notes": [
+      "Bourbon Vanilla"
+    ],
+    "heart_notes": [
+      "Toffee",
+      "Musk"
+    ],
+    "base_notes": [
+      "Benzoin",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2014,
+    "perfumer": "Daniela Andrier"
+  },
+  {
+    "id": "diesel-only-the-brave",
+    "house": "Diesel",
+    "name": "Only The Brave",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Grapefruit",
+      "Mandarin"
+    ],
+    "heart_notes": [
+      "Rosemary",
+      "Cedarleaf"
+    ],
+    "base_notes": [
+      "Guaiac Wood",
+      "Patchouli"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2010,
+    "perfumer": null
+  },
+  {
+    "id": "diesel-fuel-for-life",
+    "house": "Diesel",
+    "name": "Fuel for Life",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Grapefruit",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Ginger",
+      "Lavender"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2007,
+    "perfumer": null
+  },
+  {
+    "id": "diesel-bad",
+    "house": "Diesel",
+    "name": "Bad",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Amber Woody",
+    "top_notes": [
+      "Lavender",
+      "Mint"
+    ],
+    "heart_notes": [
+      "Cocoa",
+      "Patchouli"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Cedarwood"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2017,
+    "perfumer": null
+  },
+  {
+    "id": "moschino-toy-boy",
+    "house": "Moschino",
+    "name": "Toy Boy",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Woody",
+    "top_notes": [
+      "Bergamot",
+      "Ginger"
+    ],
+    "heart_notes": [
+      "Carnation",
+      "Peony"
+    ],
+    "base_notes": [
+      "Ambrette",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2019,
+    "perfumer": null
+  },
+  {
+    "id": "moschino-fresh-couture",
+    "house": "Moschino",
+    "name": "Fresh Couture",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Floral Fruity",
+    "top_notes": [
+      "Pear",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Peony",
+      "Muguet"
+    ],
+    "base_notes": [
+      "Musk",
+      "Cedar"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2016,
+    "perfumer": null
+  },
+  {
+    "id": "moschino-toy-2",
+    "house": "Moschino",
+    "name": "Toy 2",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Green",
+    "top_notes": [
+      "Apple",
+      "Green Notes"
+    ],
+    "heart_notes": [
+      "Peony",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Musk",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2018,
+    "perfumer": null
+  },
+  {
+    "id": "balenciaga-rosabotanica",
+    "house": "Balenciaga",
+    "name": "Rosabotanica",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Green Floral",
+    "top_notes": [
+      "Grapefruit",
+      "Green Tomato Leaf"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Geranium"
+    ],
+    "base_notes": [
+      "Musk",
+      "Vetiver"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2013,
+    "perfumer": null
+  },
+  {
+    "id": "balenciaga-florabotanica",
+    "house": "Balenciaga",
+    "name": "Florabotanica",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Green",
+    "top_notes": [
+      "Grapefruit",
+      "Cucumber"
+    ],
+    "heart_notes": [
+      "Geranium",
+      "Peony"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2012,
+    "perfumer": "Olivier Polge"
+  },
+  {
+    "id": "balmain-ambre-gris",
+    "house": "Balmain",
+    "name": "Ambre Gris",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Amber Woody",
+    "top_notes": [
+      "Bergamot",
+      "Pink Pepper"
+    ],
+    "heart_notes": [
+      "Iris",
+      "Amber"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Unisex",
+    "release_year": 2015,
+    "perfumer": null
+  },
+  {
+    "id": "balmain-homme",
+    "house": "Balmain",
+    "name": "Homme",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Spicy",
+    "top_notes": [
+      "Bergamot",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Cedar",
+      "Nutmeg"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2018,
+    "perfumer": null
+  },
+  {
+    "id": "coach-for-men",
+    "house": "Coach",
+    "name": "Coach for Men",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Woody",
+    "top_notes": [
+      "Pineapple Leaf",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Suede",
+      "Basil"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Cedar"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2017,
+    "perfumer": null
+  },
+  {
+    "id": "coach-floral",
+    "house": "Coach",
+    "name": "Floral",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Fruity",
+    "top_notes": [
+      "Pear Blossom",
+      "Raspberry"
+    ],
+    "heart_notes": [
+      "Wild Rose",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Musk",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2018,
+    "perfumer": null
+  },
+  {
+    "id": "loewe-001",
+    "house": "Loewe",
+    "name": "001 Eau de Parfum",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Woody Musk",
+    "top_notes": [
+      "Grapefruit",
+      "Rosemary"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Iris"
+    ],
+    "base_notes": [
+      "Musk",
+      "Cedar"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Unisex",
+    "release_year": 2018,
+    "perfumer": null
+  },
+  {
+    "id": "loewe-solo",
+    "house": "Loewe",
+    "name": "Solo Loewe",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Fresh",
+    "top_notes": [
+      "Bergamot",
+      "Basil"
+    ],
+    "heart_notes": [
+      "Nutmeg",
+      "Rosemary"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 1996,
+    "perfumer": null
+  },
+  {
+    "id": "amouage-reflection-woman",
+    "house": "Amouage",
+    "name": "Reflection Woman",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Floral Aldehydic",
+    "top_notes": [
+      "Bergamot",
+      "Coriander"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Lily of the Valley"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Feminine",
+    "release_year": 2007,
+    "perfumer": "Karine Vinchon-Spehner"
+  },
+  {
+    "id": "amouage-epic-man",
+    "house": "Amouage",
+    "name": "Epic Man",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Spicy",
+    "top_notes": [
+      "Cumin",
+      "Pink Pepper"
+    ],
+    "heart_notes": [
+      "Frankincense",
+      "Cinnamon"
+    ],
+    "base_notes": [
+      "Oud",
+      "Leather"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Masculine",
+    "release_year": 2009,
+    "perfumer": "Pierre Negrin"
+  },
+  {
+    "id": "amouage-portrayal-man",
+    "house": "Amouage",
+    "name": "Portrayal Man",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Bergamot",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Geranium",
+      "Rose"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Patchouli"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Masculine",
+    "release_year": 2020,
+    "perfumer": null
+  },
+  {
+    "id": "byredo-bibliotheque",
+    "house": "Byredo",
+    "name": "Biblioth\u00e8que",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Spicy",
+    "top_notes": [
+      "Pink Pepper",
+      "Violet"
+    ],
+    "heart_notes": [
+      "Peony",
+      "Cedar"
+    ],
+    "base_notes": [
+      "Woody Notes",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2016,
+    "perfumer": "Jerome Epinette"
+  },
+  {
+    "id": "byredo-blanche",
+    "house": "Byredo",
+    "name": "Blanche",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Floral Musk",
+    "top_notes": [
+      "Rose",
+      "Peony"
+    ],
+    "heart_notes": [
+      "Lily of the Valley",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$",
+    "gender": "Feminine",
+    "release_year": 2011,
+    "perfumer": "Jerome Epinette"
+  },
+  {
+    "id": "byredo-super-cedar",
+    "house": "Byredo",
+    "name": "Super Cedar",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody",
+    "top_notes": [
+      "Cedar"
+    ],
+    "heart_notes": [
+      "Cedar",
+      "Ambroxan"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2016,
+    "perfumer": "Jerome Epinette"
+  },
+  {
+    "id": "diptyque-orpheon",
+    "house": "Diptyque",
+    "name": "Orph\u00e9on",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Leather Woody",
+    "top_notes": [
+      "Pink Pepper",
+      "Saffron"
+    ],
+    "heart_notes": [
+      "Leather",
+      "Elemi"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2018,
+    "perfumer": "Fabrice Pellegrin"
+  },
+  {
+    "id": "diptyque-fleur-de-peau",
+    "house": "Diptyque",
+    "name": "Fleur de Peau",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Musk",
+    "top_notes": [
+      "Iris"
+    ],
+    "heart_notes": [
+      "Violet",
+      "Cedar"
+    ],
+    "base_notes": [
+      "Musk",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Spring"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2019,
+    "perfumer": "Fabrice Pellegrin"
+  },
+  {
+    "id": "diptyque-lombre-dans-leau",
+    "house": "Diptyque",
+    "name": "L'Ombre dans l'Eau",
+    "type": "EDT",
+    "category": "niche",
+    "scent_family": "Green Floral",
+    "top_notes": [
+      "Blackcurrant Leaf",
+      "Rose"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Galbanum"
+    ],
+    "base_notes": [
+      "Musk",
+      "Green Notes"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 1983,
+    "perfumer": "Serge Kalouguine"
+  },
+  {
+    "id": "fm-en-passant",
+    "house": "Fr\u00e9d\u00e9ric Malle",
+    "name": "En Passant",
+    "type": "EDP",
+    "category": "ultra-niche",
+    "scent_family": "Green Floral",
+    "top_notes": [
+      "Lilac",
+      "Green Notes"
+    ],
+    "heart_notes": [
+      "Lilac",
+      "Cucumber"
+    ],
+    "base_notes": [
+      "Musk",
+      "White Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Soft",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Spring"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Feminine",
+    "release_year": 2000,
+    "perfumer": "Olivia Giacobetti"
+  },
+  {
+    "id": "fm-musc-ravageur",
+    "house": "Fr\u00e9d\u00e9ric Malle",
+    "name": "Musc Ravageur",
+    "type": "EDP",
+    "category": "ultra-niche",
+    "scent_family": "Oriental Spicy",
+    "top_notes": [
+      "Bergamot",
+      "Cinnamon"
+    ],
+    "heart_notes": [
+      "Lavender",
+      "Musk"
+    ],
+    "base_notes": [
+      "Musk",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2003,
+    "perfumer": "Maurice Roucel"
+  },
+  {
+    "id": "fm-une-rose",
+    "house": "Fr\u00e9d\u00e9ric Malle",
+    "name": "Une Rose",
+    "type": "EDP",
+    "category": "ultra-niche",
+    "scent_family": "Floral",
+    "top_notes": [
+      "Rose"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Beeswax"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Spring"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Feminine",
+    "release_year": 2003,
+    "perfumer": "Edouard Flechier"
+  },
+  {
+    "id": "initio-rehab",
+    "house": "Initio Parfums Priv\u00e9s",
+    "name": "Rehab",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Amber",
+    "top_notes": [
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Rum",
+      "Tobacco"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2017,
+    "perfumer": null
+  },
+  {
+    "id": "initio-psychedelic-love",
+    "house": "Initio Parfums Priv\u00e9s",
+    "name": "Psychedelic Love",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Floral Fruity",
+    "top_notes": [
+      "Pink Pepper",
+      "Litchi"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Feminine",
+    "release_year": 2018,
+    "perfumer": null
+  },
+  {
+    "id": "kilian-straight-to-heaven",
+    "house": "Kilian",
+    "name": "Straight to Heaven",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Oriental Woody",
+    "top_notes": [
+      "Rum",
+      "Cinnamon"
+    ],
+    "heart_notes": [
+      "Honey",
+      "Orange Blossom"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2007,
+    "perfumer": "Calice Becker"
+  },
+  {
+    "id": "kilian-angels-share",
+    "house": "Kilian",
+    "name": "Angels' Share",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Amber Woody",
+    "top_notes": [
+      "Cognac"
+    ],
+    "heart_notes": [
+      "Cinnamon",
+      "Oak"
+    ],
+    "base_notes": [
+      "Tonka Bean",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2016,
+    "perfumer": "Sidonie Lancesseur"
+  },
+  {
+    "id": "le-labo-tonka-25",
+    "house": "Le Labo",
+    "name": "Tonka 25",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Oriental Vanilla",
+    "top_notes": [
+      "Cocoa"
+    ],
+    "heart_notes": [
+      "Tonka Bean",
+      "Guaiac Wood"
+    ],
+    "base_notes": [
+      "Tobacco",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2011,
+    "perfumer": null
+  },
+  {
+    "id": "le-labo-ambrette-9",
+    "house": "Le Labo",
+    "name": "Ambrette 9",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Musk Woody",
+    "top_notes": [
+      "Ambrette Seeds"
+    ],
+    "heart_notes": [
+      "Iris",
+      "Cedar"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2009,
+    "perfumer": null
+  },
+  {
+    "id": "mfk-aqua-universalis",
+    "house": "Maison Francis Kurkdjian",
+    "name": "Aqua Universalis",
+    "type": "EDT",
+    "category": "niche",
+    "scent_family": "Clean Musk",
+    "top_notes": [
+      "Bergamot",
+      "Lemon"
+    ],
+    "heart_notes": [
+      "Musk",
+      "White Flowers"
+    ],
+    "base_notes": [
+      "Musk",
+      "Cedar"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2011,
+    "perfumer": "Francis Kurkdjian"
+  },
+  {
+    "id": "mfk-a-la-rose",
+    "house": "Maison Francis Kurkdjian",
+    "name": "\u00c0 la Rose",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Floral",
+    "top_notes": [
+      "Rose",
+      "Lychee"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Rose Water"
+    ],
+    "base_notes": [
+      "Musk",
+      "Cedar"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$$",
+    "gender": "Feminine",
+    "release_year": 2015,
+    "perfumer": "Francis Kurkdjian"
+  },
+  {
+    "id": "memo-marfa",
+    "house": "Memo Paris",
+    "name": "Marfa",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Cardamom",
+      "Fig"
+    ],
+    "heart_notes": [
+      "Fig Leaf",
+      "Woods"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2015,
+    "perfumer": "Alienor Massenet"
+  },
+  {
+    "id": "memo-shams-oud",
+    "house": "Memo Paris",
+    "name": "Shams Oud",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Amber",
+    "top_notes": [
+      "Saffron",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Oud",
+      "Rose"
+    ],
+    "base_notes": [
+      "Amber",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2013,
+    "perfumer": "Alienor Massenet"
+  },
+  {
+    "id": "montale-black-aoud",
+    "house": "Montale",
+    "name": "Black Aoud",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Amber",
+    "top_notes": [
+      "Rose"
+    ],
+    "heart_notes": [
+      "Oud",
+      "Rose"
+    ],
+    "base_notes": [
+      "Musk",
+      "Patchouli"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2006,
+    "perfumer": "Pierre Montale"
+  },
+  {
+    "id": "montale-chocolate-greedy",
+    "house": "Montale",
+    "name": "Chocolate Greedy",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Gourmand",
+    "top_notes": [
+      "Cocoa",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Praline",
+      "Almond"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Tonka Bean"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2011,
+    "perfumer": null
+  },
+  {
+    "id": "montale-arabians-tonka",
+    "house": "Montale",
+    "name": "Arabians Tonka",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Oriental Spicy",
+    "top_notes": [
+      "Bergamot",
+      "Saffron"
+    ],
+    "heart_notes": [
+      "Tonka Bean",
+      "Amber"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2016,
+    "perfumer": null
+  },
+  {
+    "id": "pdm-percival",
+    "house": "Parfums de Marly",
+    "name": "Percival",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Aromatic Foug\u00e8re",
+    "top_notes": [
+      "Bergamot",
+      "Green Apple"
+    ],
+    "heart_notes": [
+      "Lavender",
+      "Geranium"
+    ],
+    "base_notes": [
+      "Musk",
+      "Amberwood"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$$",
+    "gender": "Masculine",
+    "release_year": 2017,
+    "perfumer": null
+  },
+  {
+    "id": "pdm-kalan",
+    "house": "Parfums de Marly",
+    "name": "Kalan",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Spicy",
+    "top_notes": [
+      "Grapefruit",
+      "Pink Pepper"
+    ],
+    "heart_notes": [
+      "Cinnamon",
+      "Nutmeg"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Cedar"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Masculine",
+    "release_year": 2020,
+    "perfumer": null
+  },
+  {
+    "id": "penhaligons-blenheim-bouquet",
+    "house": "Penhaligon's",
+    "name": "Blenheim Bouquet",
+    "type": "EDT",
+    "category": "niche",
+    "scent_family": "Citrus Aromatic",
+    "top_notes": [
+      "Lime",
+      "Lavender"
+    ],
+    "heart_notes": [
+      "Pine",
+      "Black Pepper"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$",
+    "gender": "Masculine",
+    "release_year": 1902,
+    "perfumer": null
+  },
+  {
+    "id": "penhaligons-iris-prima",
+    "house": "Penhaligon's",
+    "name": "Iris Prima",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Floral Woody",
+    "top_notes": [
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Iris",
+      "Violet"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Spring"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2016,
+    "perfumer": null
+  },
+  {
+    "id": "serge-lutens-chergui",
+    "house": "Serge Lutens",
+    "name": "Chergui",
+    "type": "EDP",
+    "category": "ultra-niche",
+    "scent_family": "Woody Amber",
+    "top_notes": [
+      "Honey"
+    ],
+    "heart_notes": [
+      "Tobacco",
+      "Iris"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2005,
+    "perfumer": "Christopher Sheldrake"
+  },
+  {
+    "id": "serge-lutens-fille-de-berlin",
+    "house": "Serge Lutens",
+    "name": "La Fille de Berlin",
+    "type": "EDP",
+    "category": "ultra-niche",
+    "scent_family": "Floral Spicy",
+    "top_notes": [
+      "Pink Pepper"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Geranium"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2013,
+    "perfumer": "Christopher Sheldrake"
+  },
+  {
+    "id": "xerjoff-1861-renaissance",
+    "house": "Xerjoff",
+    "name": "XJ 1861 Renaissance",
+    "type": "EDP",
+    "category": "ultra-niche",
+    "scent_family": "Amber Vanilla",
+    "top_notes": [
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Vanilla",
+      "Amber"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2016,
+    "perfumer": null
+  },
+  {
+    "id": "xerjoff-uden",
+    "house": "Xerjoff",
+    "name": "Uden",
+    "type": "EDP",
+    "category": "ultra-niche",
+    "scent_family": "Woody Amber",
+    "top_notes": [
+      "Saffron"
+    ],
+    "heart_notes": [
+      "Oud",
+      "Rose"
+    ],
+    "base_notes": [
+      "Amber",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$$",
+    "gender": "Unisex",
+    "release_year": 2018,
+    "perfumer": null
+  },
+  {
+    "id": "xerjoff-accento",
+    "house": "Xerjoff",
+    "name": "Accento",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Aromatic Fruity",
+    "top_notes": [
+      "Pineapple",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Lavender",
+      "Sage"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2016,
+    "perfumer": null
+  },
+  {
+    "id": "adp-colonia-intensa",
+    "house": "Acqua di Parma",
+    "name": "Colonia Intensa",
+    "type": "EDC",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Bergamot",
+      "Bitter Orange"
+    ],
+    "heart_notes": [
+      "Cedar",
+      "Vetiver"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Patchouli"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Masculine",
+    "release_year": 2007,
+    "perfumer": null
+  },
+  {
+    "id": "adp-colonia-assoluta",
+    "house": "Acqua di Parma",
+    "name": "Colonia Assoluta",
+    "type": "EDC",
+    "category": "designer",
+    "scent_family": "Citrus Aromatic",
+    "top_notes": [
+      "Bergamot",
+      "Lemon"
+    ],
+    "heart_notes": [
+      "Lavender",
+      "Rosemary"
+    ],
+    "base_notes": [
+      "Musk",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$",
+    "gender": "Masculine",
+    "release_year": 2011,
+    "perfumer": null
+  },
+  {
+    "id": "tomford-fucking-fabulous",
+    "house": "Tom Ford",
+    "name": "Fucking Fabulous",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Amber",
+    "top_notes": [
+      "Lavender"
+    ],
+    "heart_notes": [
+      "Leather",
+      "Tonka Bean"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2017,
+    "perfumer": null
+  },
+  {
+    "id": "tomford-soleil-blanc",
+    "house": "Tom Ford",
+    "name": "Soleil Blanc",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Floral Amber",
+    "top_notes": [
+      "Coconut",
+      "Frangipani"
+    ],
+    "heart_notes": [
+      "Ylang-Ylang",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Amber",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Summer"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2016,
+    "perfumer": null
+  },
+  {
+    "id": "guerlain-insolence",
+    "house": "Guerlain",
+    "name": "Insolence",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Powdery",
+    "top_notes": [
+      "Violet",
+      "Raspberry"
+    ],
+    "heart_notes": [
+      "Iris",
+      "Violet"
+    ],
+    "base_notes": [
+      "Musk",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2006,
+    "perfumer": "Maurice Roucel"
+  },
+  {
+    "id": "guerlain-linstant",
+    "house": "Guerlain",
+    "name": "L'Instant",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Fruity",
+    "top_notes": [
+      "Mirabelle Plum",
+      "Mimosa"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Honey"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2003,
+    "perfumer": null
+  },
+  {
+    "id": "creed-millesime-imperial",
+    "house": "Creed",
+    "name": "Mill\u00e9sime Imp\u00e9rial",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Aquatic Fruity",
+    "top_notes": [
+      "Bergamot",
+      "Blackcurrant"
+    ],
+    "heart_notes": [
+      "Iris",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Musk",
+      "Ambergris"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 1995,
+    "perfumer": "Olivier Creed"
+  },
+  {
+    "id": "creed-viking",
+    "house": "Creed",
+    "name": "Viking",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Aromatic Foug\u00e8re",
+    "top_notes": [
+      "Bergamot",
+      "Lavender"
+    ],
+    "heart_notes": [
+      "Sage",
+      "Geranium"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Ambergris"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Spring"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Masculine",
+    "release_year": 2018,
+    "perfumer": "Olivier Creed"
+  },
+  {
+    "id": "nishane-hacivat",
+    "house": "Nishane",
+    "name": "Hacivat",
+    "type": "Extrait de Parfum",
+    "category": "niche",
+    "scent_family": "Fruity Woody",
+    "top_notes": [
+      "Pineapple",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Pink Pepper"
+    ],
+    "base_notes": [
+      "Musk",
+      "Ambergris"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2018,
+    "perfumer": null
+  },
+  {
+    "id": "nishane-ani",
+    "house": "Nishane",
+    "name": "Ani",
+    "type": "Extrait de Parfum",
+    "category": "niche",
+    "scent_family": "Woody Musk",
+    "top_notes": [
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Cedar",
+      "Iris"
+    ],
+    "base_notes": [
+      "Musk",
+      "Ambroxan"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2017,
+    "perfumer": null
+  },
+  {
+    "id": "nishane-hundred-silent-ways",
+    "house": "Nishane",
+    "name": "A Hundred Silent Ways",
+    "type": "Extrait de Parfum",
+    "category": "niche",
+    "scent_family": "Floral Woody",
+    "top_notes": [
+      "Neroli"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Tuberose"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2017,
+    "perfumer": null
+  },
+  {
+    "id": "nishane-wulong-cha",
+    "house": "Nishane",
+    "name": "Wulong Cha",
+    "type": "Extrait de Parfum",
+    "category": "niche",
+    "scent_family": "Green Tea",
+    "top_notes": [
+      "Tea",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Green Tea",
+      "Muguet"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2016,
+    "perfumer": null
+  },
+  {
+    "id": "mancera-cedrat-boise",
+    "house": "Mancera",
+    "name": "Cedrat Bois\u00e9",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Citrus Woody",
+    "top_notes": [
+      "Cedrat",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Cardamom",
+      "Cedar"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2012,
+    "perfumer": null
+  },
+  {
+    "id": "mancera-red-tobacco",
+    "house": "Mancera",
+    "name": "Red Tobacco",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Tobacco Spicy",
+    "top_notes": [
+      "Bergamot",
+      "Saffron"
+    ],
+    "heart_notes": [
+      "Tobacco",
+      "Cinnamon"
+    ],
+    "base_notes": [
+      "Amber",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2013,
+    "perfumer": null
+  },
+  {
+    "id": "mancera-roses-vanille",
+    "house": "Mancera",
+    "name": "Roses Vanille",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Floral Gourmand",
+    "top_notes": [
+      "Rose"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Litchi"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Spring"
+    ],
+    "price_tier": "$$$",
+    "gender": "Feminine",
+    "release_year": 2011,
+    "perfumer": null
+  },
+  {
+    "id": "ormonde-jayne-ormonde-woman",
+    "house": "Ormonde Jayne",
+    "name": "Ormonde Woman",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Cardamom",
+      "Cumin"
+    ],
+    "heart_notes": [
+      "Black Hemlock",
+      "Sandalwood"
+    ],
+    "base_notes": [
+      "Musk",
+      "Cedar"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Spring"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Feminine",
+    "release_year": 2000,
+    "perfumer": "Geza Schoen"
+  },
+  {
+    "id": "ormonde-jayne-tolu",
+    "house": "Ormonde Jayne",
+    "name": "Tolu",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Amber",
+    "top_notes": [
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Tolu Balsam",
+      "Cedar"
+    ],
+    "base_notes": [
+      "Amber",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2015,
+    "perfumer": "Geza Schoen"
+  },
+  {
+    "id": "nasomatto-black-afgano",
+    "house": "Nasomatto",
+    "name": "Black Afgano",
+    "type": "Extrait de Parfum",
+    "category": "ultra-niche",
+    "scent_family": "Woody Resinous",
+    "top_notes": [
+      "Hashish Accord"
+    ],
+    "heart_notes": [
+      "Cannabis Accord",
+      "Coffee"
+    ],
+    "base_notes": [
+      "Oud",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Enormous",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2009,
+    "perfumer": "Alessandro Gualtieri"
+  },
+  {
+    "id": "nasomatto-china-white",
+    "house": "Nasomatto",
+    "name": "China White",
+    "type": "Extrait de Parfum",
+    "category": "ultra-niche",
+    "scent_family": "Floral Musk",
+    "top_notes": [
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Ylang-Ylang",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Musk",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2007,
+    "perfumer": "Alessandro Gualtieri"
+  },
+  {
+    "id": "cdg-black",
+    "house": "Comme des Gar\u00e7ons",
+    "name": "Black",
+    "type": "EDT",
+    "category": "niche",
+    "scent_family": "Woody Spicy",
+    "top_notes": [
+      "Cumin",
+      "Pink Pepper"
+    ],
+    "heart_notes": [
+      "Incense",
+      "Guaiac Wood"
+    ],
+    "base_notes": [
+      "Musk",
+      "Vetiver"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2007,
+    "perfumer": null
+  },
+  {
+    "id": "cdg-2",
+    "house": "Comme des Gar\u00e7ons",
+    "name": "2",
+    "type": "EDT",
+    "category": "niche",
+    "scent_family": "Woody Green",
+    "top_notes": [
+      "Coriander",
+      "Cumin"
+    ],
+    "heart_notes": [
+      "Chamomile",
+      "Silver Birch"
+    ],
+    "base_notes": [
+      "Woods",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Spring"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 1999,
+    "perfumer": null
+  },
+  {
+    "id": "bond9-new-york-oud",
+    "house": "Bond No. 9",
+    "name": "New York Oud",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Amber",
+    "top_notes": [
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Oud",
+      "Rose"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2011,
+    "perfumer": null
+  },
+  {
+    "id": "bond9-bleecker-street",
+    "house": "Bond No. 9",
+    "name": "Bleecker Street",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Bergamot",
+      "Lavender"
+    ],
+    "heart_notes": [
+      "Cedar",
+      "Iris"
+    ],
+    "base_notes": [
+      "Musk",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Masculine",
+    "release_year": 2004,
+    "perfumer": null
+  },
+  {
+    "id": "elo-rien",
+    "house": "Etat Libre d'Orange",
+    "name": "Rien",
+    "type": "EDP",
+    "category": "ultra-niche",
+    "scent_family": "Leather Amber",
+    "top_notes": [
+      "Cumin",
+      "Incense"
+    ],
+    "heart_notes": [
+      "Leather",
+      "Labdanum"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2006,
+    "perfumer": "Antoine Lie"
+  },
+  {
+    "id": "elo-jasmin-et-cigarette",
+    "house": "Etat Libre d'Orange",
+    "name": "Jasmin et Cigarette",
+    "type": "EDP",
+    "category": "ultra-niche",
+    "scent_family": "Floral Tobacco",
+    "top_notes": [
+      "Tobacco"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Tobacco Flower"
+    ],
+    "base_notes": [
+      "Musk",
+      "Tonka Bean"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Feminine",
+    "release_year": 2006,
+    "perfumer": null
+  },
+  {
+    "id": "dsdurga-mississippi-medicine",
+    "house": "D.S. & Durga",
+    "name": "Mississippi Medicine",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Smoky",
+    "top_notes": [
+      "Tobacco Leaf"
+    ],
+    "heart_notes": [
+      "Bourbon Vetiver",
+      "Birch Tar"
+    ],
+    "base_notes": [
+      "Woods",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2013,
+    "perfumer": "David Moltz"
+  },
+  {
+    "id": "dsdurga-cowboy-grass",
+    "house": "D.S. & Durga",
+    "name": "Cowboy Grass",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Green Woody",
+    "top_notes": [
+      "Wild Grass"
+    ],
+    "heart_notes": [
+      "Sage",
+      "Juniper"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2015,
+    "perfumer": "David Moltz"
+  },
+  {
+    "id": "estee-lauder-sensuous",
+    "house": "Est\u00e9e Lauder",
+    "name": "Sensuous",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Oriental Woody",
+    "top_notes": [
+      "Ginger Lily",
+      "Mandarin"
+    ],
+    "heart_notes": [
+      "Magnolia",
+      "Vanilla Orchid"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2008,
+    "perfumer": null
+  },
+  {
+    "id": "estee-lauder-modern-muse",
+    "house": "Est\u00e9e Lauder",
+    "name": "Modern Muse",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Woody",
+    "top_notes": [
+      "Bergamot",
+      "Sambac Jasmine"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Spring"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2013,
+    "perfumer": null
+  },
+  {
+    "id": "estee-lauder-white-linen",
+    "house": "Est\u00e9e Lauder",
+    "name": "White Linen",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Aldehydic",
+    "top_notes": [
+      "Aldehydes",
+      "Peach"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Oakmoss",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 1978,
+    "perfumer": "Sophia Grojsman"
+  },
+  {
+    "id": "hermes-orange-verte",
+    "house": "Herm\u00e8s",
+    "name": "Eau d'Orange Verte",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Citrus",
+    "top_notes": [
+      "Orange",
+      "Lemon"
+    ],
+    "heart_notes": [
+      "Mint",
+      "Basil"
+    ],
+    "base_notes": [
+      "Oakmoss",
+      "Patchouli"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Unisex",
+    "release_year": 1979,
+    "perfumer": "Fran\u00e7oise Caron"
+  },
+  {
+    "id": "hermes-voyage",
+    "house": "Herm\u00e8s",
+    "name": "Voyage d'Herm\u00e8s",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Fresh",
+    "top_notes": [
+      "Cardamom",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Cedar",
+      "Iris"
+    ],
+    "base_notes": [
+      "Musk",
+      "Ambroxan"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2010,
+    "perfumer": "Jean-Claude Ellena"
+  },
+  {
+    "id": "hermes-kelly-caleche",
+    "house": "Herm\u00e8s",
+    "name": "Kelly Cal\u00e8che",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Powdery",
+    "top_notes": [
+      "Fresh Notes"
+    ],
+    "heart_notes": [
+      "Iris",
+      "Rose"
+    ],
+    "base_notes": [
+      "Musk",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$$",
+    "gender": "Feminine",
+    "release_year": 2007,
+    "perfumer": "Jean-Claude Ellena"
+  },
+  {
+    "id": "margiela-whispers-library",
+    "house": "Maison Margiela",
+    "name": "Whispers in the Library",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Powdery",
+    "top_notes": [
+      "Pink Pepper"
+    ],
+    "heart_notes": [
+      "Paper",
+      "Violet"
+    ],
+    "base_notes": [
+      "Woods",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2016,
+    "perfumer": "Nathalie Feisthauer"
+  },
+  {
+    "id": "margiela-flower-market",
+    "house": "Maison Margiela",
+    "name": "Flower Market",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Floral Green",
+    "top_notes": [
+      "Green Notes"
+    ],
+    "heart_notes": [
+      "Freesia",
+      "Muguet"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2016,
+    "perfumer": "Nathalie Feisthauer"
+  },
+  {
+    "id": "margiela-music-festival",
+    "house": "Maison Margiela",
+    "name": "Music Festival",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Bergamot",
+      "Pink Pepper"
+    ],
+    "heart_notes": [
+      "Incense",
+      "Fig"
+    ],
+    "base_notes": [
+      "Woods",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Summer"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2019,
+    "perfumer": "Nathalie Feisthauer"
+  },
+  {
+    "id": "amouage-gold-woman",
+    "house": "Amouage",
+    "name": "Gold Woman",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Floral Oriental",
+    "top_notes": [
+      "Rose",
+      "Jasmine"
+    ],
+    "heart_notes": [
+      "Sandalwood",
+      "Lily of the Valley"
+    ],
+    "base_notes": [
+      "Civet",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Feminine",
+    "release_year": 1983,
+    "perfumer": "Guy Robert"
+  },
+  {
+    "id": "amouage-dia-man",
+    "house": "Amouage",
+    "name": "Dia Man",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Oriental Woody",
+    "top_notes": [
+      "Bergamot",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Geranium"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Masculine",
+    "release_year": 2002,
+    "perfumer": null
+  },
+  {
+    "id": "serge-lutens-fumerie-turque",
+    "house": "Serge Lutens",
+    "name": "Fumerie Turque",
+    "type": "EDP",
+    "category": "ultra-niche",
+    "scent_family": "Tobacco Amber",
+    "top_notes": [
+      "Honey"
+    ],
+    "heart_notes": [
+      "Tobacco",
+      "Rose"
+    ],
+    "base_notes": [
+      "Amber",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2000,
+    "perfumer": "Christopher Sheldrake"
+  },
+  {
+    "id": "serge-lutens-santal-majuscule",
+    "house": "Serge Lutens",
+    "name": "Santal Majuscule",
+    "type": "EDP",
+    "category": "ultra-niche",
+    "scent_family": "Woody",
+    "top_notes": [
+      "Bitter Almond"
+    ],
+    "heart_notes": [
+      "Sandalwood",
+      "Amber"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2015,
+    "perfumer": "Christopher Sheldrake"
+  },
+  {
+    "id": "chopard-casmir",
+    "house": "Chopard",
+    "name": "Casmir",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Oriental Spicy",
+    "top_notes": [
+      "Cardamom",
+      "Mandarin"
+    ],
+    "heart_notes": [
+      "Cinnamon",
+      "Ylang-Ylang"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 1994,
+    "perfumer": null
+  },
+  {
+    "id": "chopard-happy-sport",
+    "house": "Chopard",
+    "name": "Happy Sport",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Fruity Floral",
+    "top_notes": [
+      "Mandarin",
+      "Peach"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Water Lily"
+    ],
+    "base_notes": [
+      "Musk",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 1993,
+    "perfumer": null
+  },
+  {
+    "id": "guess-man",
+    "house": "Guess",
+    "name": "Guess Man",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Bergamot",
+      "Apple"
+    ],
+    "heart_notes": [
+      "Cinnamon",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 1997,
+    "perfumer": null
+  },
+  {
+    "id": "guess-seductive",
+    "house": "Guess",
+    "name": "Seductive",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Fruity Floral",
+    "top_notes": [
+      "Sicilian Lemon",
+      "Peach"
+    ],
+    "heart_notes": [
+      "Freesia",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Musk",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2011,
+    "perfumer": null
+  },
+  {
+    "id": "cartier-baiser-vole",
+    "house": "Cartier",
+    "name": "Baiser Vol\u00e9",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral",
+    "top_notes": [
+      "Green Notes"
+    ],
+    "heart_notes": [
+      "Lily",
+      "Pollen"
+    ],
+    "base_notes": [
+      "Musk",
+      "Cedar"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2011,
+    "perfumer": "Mathilde Laurent"
+  },
+  {
+    "id": "vr-flowerbomb-cloud",
+    "house": "Viktor & Rolf",
+    "name": "Flowerbomb Cloud",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Musk",
+    "top_notes": [
+      "Cotton Candy"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Freesia"
+    ],
+    "base_notes": [
+      "Musk",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2022,
+    "perfumer": null
+  },
+  {
+    "id": "valentino-donna",
+    "house": "Valentino",
+    "name": "Donna",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Chypre Floral",
+    "top_notes": [
+      "Bergamot",
+      "Sicilian Lemon"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Patchouli",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2015,
+    "perfumer": null
+  },
+  {
+    "id": "prada-paradoxe-intense",
+    "house": "Prada",
+    "name": "Paradoxe Intense",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Amber",
+    "top_notes": [
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Neroli"
+    ],
+    "base_notes": [
+      "Amber",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Feminine",
+    "release_year": 2023,
+    "perfumer": null
+  },
+  {
+    "id": "versace-eros-pour-femme",
+    "house": "Versace",
+    "name": "Eros Pour Femme",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Fruity Floral",
+    "top_notes": [
+      "Sicilian Lemon",
+      "Pomegranate"
+    ],
+    "heart_notes": [
+      "Jasmine",
+      "Peony"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2014,
+    "perfumer": null
+  },
+  {
+    "id": "gucci-guilty-pour-femme",
+    "house": "Gucci",
+    "name": "Guilty Pour Femme",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Floral Fruity",
+    "top_notes": [
+      "Mandarin",
+      "Pink Pepper"
+    ],
+    "heart_notes": [
+      "Peach",
+      "Lilac"
+    ],
+    "base_notes": [
+      "Patchouli",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2010,
+    "perfumer": null
+  },
+  {
+    "id": "burberry-brit-rhythm",
+    "house": "Burberry",
+    "name": "Brit Rhythm",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Grapefruit",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Nutmeg",
+      "Cedar"
+    ],
+    "base_notes": [
+      "Amberwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Spring"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2013,
+    "perfumer": null
+  },
+  {
+    "id": "givenchy-amarige",
+    "house": "Givenchy",
+    "name": "Amarige",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Floral",
+    "top_notes": [
+      "Orange Blossom",
+      "Peach"
+    ],
+    "heart_notes": [
+      "Tuberose",
+      "Mimosa"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 1991,
+    "perfumer": "Dominique Ropion"
+  },
+  {
+    "id": "dg-pour-femme",
+    "house": "Dolce & Gabbana",
+    "name": "Pour Femme",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral Fruity",
+    "top_notes": [
+      "Mandarin",
+      "Osmanthus"
+    ],
+    "heart_notes": [
+      "Tuberose",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2012,
+    "perfumer": null
+  },
+  {
+    "id": "ck-euphoria-men",
+    "house": "Calvin Klein",
+    "name": "Euphoria Men",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Woody Spicy",
+    "top_notes": [
+      "Ginger",
+      "Basil"
+    ],
+    "heart_notes": [
+      "Nutmeg",
+      "Sage"
+    ],
+    "base_notes": [
+      "Cedar",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2006,
+    "perfumer": null
+  },
+  {
+    "id": "paco-black-xs",
+    "house": "Paco Rabanne",
+    "name": "Black XS",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Oriental Spicy",
+    "top_notes": [
+      "Cardamom",
+      "Coffee"
+    ],
+    "heart_notes": [
+      "Cedar",
+      "Patchouli"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2005,
+    "perfumer": null
+  },
+  {
+    "id": "armani-my-way",
+    "house": "Giorgio Armani",
+    "name": "My Way",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Floral White",
+    "top_notes": [
+      "Orange Blossom",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Tuberose",
+      "Jasmine"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "White Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2020,
+    "perfumer": null
+  },
+  {
+    "id": "marc-jacobs-daisy-wild",
+    "house": "Marc Jacobs",
+    "name": "Daisy Wild",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Fruity Floral",
+    "top_notes": [
+      "Wild Berries",
+      "Pear"
+    ],
+    "heart_notes": [
+      "Violet Petals",
+      "Muguet"
+    ],
+    "base_notes": [
+      "Musk",
+      "Cashmere Woods"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Feminine",
+    "release_year": 2023,
+    "perfumer": null
+  },
+  {
+    "id": "ralph-lauren-ralph",
+    "house": "Ralph Lauren",
+    "name": "Ralph",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Fruity Green",
+    "top_notes": [
+      "Green Apple",
+      "Grapefruit"
+    ],
+    "heart_notes": [
+      "Iris",
+      "Violet"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Weak",
+      "Sillage: Soft",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$",
+    "gender": "Feminine",
+    "release_year": 2000,
+    "perfumer": null
+  },
+  {
+    "id": "bvlgari-aqva-marine",
+    "house": "Bvlgari",
+    "name": "Aqva Marine",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aquatic Woody",
+    "top_notes": [
+      "Sea Water",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Posidonia",
+      "Sea Notes"
+    ],
+    "base_notes": [
+      "Musk",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2017,
+    "perfumer": null
+  },
+  {
+    "id": "montblanc-emblem",
+    "house": "Montblanc",
+    "name": "Emblem",
+    "type": "EDT",
+    "category": "designer",
+    "scent_family": "Aromatic Fresh",
+    "top_notes": [
+      "Grapefruit",
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Lavender",
+      "Apple"
+    ],
+    "base_notes": [
+      "Patchouli",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Spring",
+      "Fall"
+    ],
+    "price_tier": "$",
+    "gender": "Masculine",
+    "release_year": 2014,
+    "perfumer": null
+  },
+  {
+    "id": "hugo-boss-bottled-elixir",
+    "house": "Hugo Boss",
+    "name": "Boss Bottled Elixir",
+    "type": "Parfum",
+    "category": "designer",
+    "scent_family": "Amber Spicy",
+    "top_notes": [
+      "Cinnamon"
+    ],
+    "heart_notes": [
+      "Cedar",
+      "Nutmeg"
+    ],
+    "base_notes": [
+      "Amber",
+      "Vanilla"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Versatile"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Masculine",
+    "release_year": 2022,
+    "perfumer": null
+  },
+  {
+    "id": "herrera-confidential",
+    "house": "Carolina Herrera",
+    "name": "Herrera Confidential Amber Nights",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Amber Oriental",
+    "top_notes": [
+      "Cardamom"
+    ],
+    "heart_notes": [
+      "Amber",
+      "Labdanum"
+    ],
+    "base_notes": [
+      "Vanilla",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2018,
+    "perfumer": null
+  },
+  {
+    "id": "issey-wood-and-wood",
+    "house": "Issey Miyake",
+    "name": "Wood & Wood",
+    "type": "EDP",
+    "category": "designer",
+    "scent_family": "Woody",
+    "top_notes": [
+      "Cedar"
+    ],
+    "heart_notes": [
+      "Sandalwood",
+      "Woods"
+    ],
+    "base_notes": [
+      "Guaiac Wood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$",
+    "gender": "Unisex",
+    "release_year": 2019,
+    "perfumer": null
+  },
+  {
+    "id": "le-labo-vetiver-46",
+    "house": "Le Labo",
+    "name": "Vetiver 46",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody",
+    "top_notes": [
+      "Vetiver"
+    ],
+    "heart_notes": [
+      "Cedar",
+      "Spearmint"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Spring"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2009,
+    "perfumer": null
+  },
+  {
+    "id": "diptyque-volutes",
+    "house": "Diptyque",
+    "name": "Volutes",
+    "type": "EDT",
+    "category": "niche",
+    "scent_family": "Tobacco Spicy",
+    "top_notes": [
+      "Cardamom",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Plum",
+      "Tobacco Leaf"
+    ],
+    "base_notes": [
+      "Benzoin",
+      "Sandalwood"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2007,
+    "perfumer": null
+  },
+  {
+    "id": "xerjoff-roxelana",
+    "house": "Xerjoff",
+    "name": "Roxelana",
+    "type": "EDP",
+    "category": "ultra-niche",
+    "scent_family": "Floral Oriental",
+    "top_notes": [
+      "Bergamot",
+      "Pink Pepper"
+    ],
+    "heart_notes": [
+      "Rose",
+      "Sandalwood"
+    ],
+    "base_notes": [
+      "Musk",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Feminine",
+    "release_year": 2016,
+    "perfumer": null
+  },
+  {
+    "id": "byredo-slow-dance",
+    "house": "Byredo",
+    "name": "Slow Dance",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Floral Powdery",
+    "top_notes": [
+      "Pink Pepper"
+    ],
+    "heart_notes": [
+      "Violet",
+      "Iris"
+    ],
+    "base_notes": [
+      "Musk",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Moderate",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Spring"
+    ],
+    "price_tier": "$$$",
+    "gender": "Unisex",
+    "release_year": 2020,
+    "perfumer": null
+  },
+  {
+    "id": "penhaligons-sartorial",
+    "house": "Penhaligon's",
+    "name": "Sartorial",
+    "type": "EDT",
+    "category": "niche",
+    "scent_family": "Woody Aromatic",
+    "top_notes": [
+      "Lavender",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Beeswax",
+      "Violet Leaf"
+    ],
+    "base_notes": [
+      "Woods",
+      "Amber"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Spring"
+    ],
+    "price_tier": "$$$",
+    "gender": "Masculine",
+    "release_year": 2010,
+    "perfumer": "Bertrand Duchaufour"
+  },
+  {
+    "id": "initio-magnetic-blend-1",
+    "house": "Initio Parfums Priv\u00e9s",
+    "name": "Magnetic Blend 1",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody Amber",
+    "top_notes": [
+      "Saffron"
+    ],
+    "heart_notes": [
+      "Oud",
+      "Musk"
+    ],
+    "base_notes": [
+      "Amber",
+      "Woods"
+    ],
+    "attributes": [
+      "Longevity: Very Long",
+      "Sillage: Strong",
+      "Versatility: Occasion-specific"
+    ],
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2016,
+    "perfumer": null
+  },
+  {
+    "id": "kilian-sacred-wood",
+    "house": "Kilian",
+    "name": "Sacred Wood",
+    "type": "EDP",
+    "category": "niche",
+    "scent_family": "Woody",
+    "top_notes": [
+      "Elemi"
+    ],
+    "heart_notes": [
+      "Cedar",
+      "Guaiac Wood"
+    ],
+    "base_notes": [
+      "Sandalwood",
+      "Musk"
+    ],
+    "attributes": [
+      "Longevity: Long",
+      "Sillage: Moderate",
+      "Versatility: Everyday"
+    ],
+    "seasons": [
+      "Fall",
+      "Spring"
+    ],
+    "price_tier": "$$$$",
+    "gender": "Unisex",
+    "release_year": 2016,
+    "perfumer": null
+  }
+]
