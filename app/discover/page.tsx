@@ -1,31 +1,44 @@
-import { createClient } from '@/lib/supabase/server'
 import { AppShell } from '@/components/layout/AppShell'
-import { FragranceCard } from '@/components/ui/FragranceCard'
+import { createClient } from '@/lib/supabase/server'
+import { parseDiscoverParams } from '@/lib/fragrances/params'
+import { searchFragrances, type FragranceSearchResult } from '@/lib/fragrances/search'
 import { DiscoverClient } from './DiscoverClient'
+
+type DiscoverSearchParams = {
+  q?: string
+  cat?: string
+  family?: string
+}
 
 export default async function DiscoverPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; cat?: string }>
+  searchParams: Promise<DiscoverSearchParams>
 }) {
   const params = await searchParams
+  // The first page always starts at offset 0; deeper pages are fetched client-side.
+  const request = parseDiscoverParams({ ...params, offset: undefined })
   const supabase = await createClient()
 
-  let query = supabase.from('fragrances').select('*').order('avg_rating', { ascending: false })
-
-  if (params.cat && params.cat !== 'all') {
-    if (params.cat === 'niche') {
-      query = query.in('category', ['niche', 'ultra-niche'])
-    } else {
-      query = query.eq('category', params.cat)
-    }
+  let page: FragranceSearchResult | null = null
+  try {
+    page = await searchFragrances(supabase, request)
+  } catch (error) {
+    // Render the shell with a retryable error rather than a blank or "no results"
+    // grid — the distinction matters when the catalog is simply unreachable.
+    console.error('[discover] initial search failed', error)
   }
-
-  const { data: fragrances } = await query.limit(200)
 
   return (
     <AppShell>
-      <DiscoverClient fragrances={fragrances ?? []} initialSearch={params.q ?? ''} initialCat={params.cat ?? 'all'} />
+      <DiscoverClient
+        initialFragrances={page?.fragrances ?? []}
+        initialTotal={page?.total ?? 0}
+        initialFailed={page === null}
+        initialSearch={request.q}
+        initialCategory={request.category}
+        initialFamily={request.family}
+      />
     </AppShell>
   )
 }
