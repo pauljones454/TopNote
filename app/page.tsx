@@ -1,17 +1,23 @@
 import { createClient } from '@/lib/supabase/server'
 import { AppShell } from '@/components/layout/AppShell'
 import { FragranceCard } from '@/components/ui/FragranceCard'
+import { SignatureScentCard } from '@/components/ui/SignatureScentCard'
+import { signatureScents } from '@/lib/celebrity-scents'
 import Link from 'next/link'
 import Image from 'next/image'
+import type { Fragrance } from '@/lib/supabase/types'
 
 export default async function HomePage() {
   const supabase = await createClient()
+
+  const signatureScentIds = signatureScents.map(s => s.fragranceId)
 
   const [
     { data: featured },
     { data: trending },
     { data: nichePicks },
     { data: ultraNiche },
+    { data: signatureFragrances, error: signatureFragrancesError },
   ] = await Promise.all([
     supabase.from('fragrances').select('*').eq('category', 'niche')
       .order('avg_rating', { ascending: false }).limit(1).single(),
@@ -21,7 +27,27 @@ export default async function HomePage() {
       .order('avg_rating', { ascending: false }).limit(8),
     supabase.from('fragrances').select('*').eq('category', 'ultra-niche')
       .order('avg_rating', { ascending: false }).limit(6),
+    // Fragrances behind the "Signature Scents" row — single batched lookup,
+    // curated order comes from the data file below, not the query result.
+    supabase.from('fragrances').select('*').in('id', signatureScentIds),
   ])
+
+  if (signatureFragrancesError) {
+    console.error('[home] signature scents query failed', signatureFragrancesError)
+  }
+
+  // Pair each sourced entry with its fragrance row, in curated order. A query
+  // failure (or a stale id) drops the entry rather than rendering broken —
+  // never fall back to Postgres's own ordering.
+  const fragranceById = new Map((signatureFragrances ?? []).map(f => [f.id, f as Fragrance]))
+  const signatureScentPairs = signatureFragrancesError
+    ? []
+    : signatureScents
+        .map(scent => {
+          const fragrance = fragranceById.get(scent.fragranceId)
+          return fragrance ? { scent, fragrance } : null
+        })
+        .filter((pair): pair is { scent: typeof signatureScents[number]; fragrance: Fragrance } => pair !== null)
 
   return (
     <AppShell>
@@ -75,6 +101,17 @@ export default async function HomePage() {
           ))}
         </Section>
 
+        {/* ── Signature Scents ── */}
+        {signatureScentPairs.length > 0 && (
+          <Section title="Signature Scents">
+            {signatureScentPairs.map(({ scent, fragrance }) => (
+              <div key={fragrance.id} className="mr-4 last:mr-0">
+                <SignatureScentCard scent={scent} fragrance={fragrance} />
+              </div>
+            ))}
+          </Section>
+        )}
+
         {/* ── Niche Picks ── */}
         <Section title="Niche Picks" href="/discover?cat=niche">
           {nichePicks?.map(f => (
@@ -101,16 +138,18 @@ export default async function HomePage() {
   )
 }
 
-function Section({ title, href, children }: { title: string; href: string; children: React.ReactNode }) {
+function Section({ title, href, children }: { title: string; href?: string; children: React.ReactNode }) {
   return (
     <section className="mb-8">
       <div className="flex items-baseline justify-between px-5 md:px-10 mb-4">
         <h2 className="font-serif text-2xl text-stone-900 tracking-tight">{title}</h2>
-        <Link href={href}
-          className="text-[10px] font-semibold tracking-[0.14em] uppercase text-stone-400 border-b border-stone-300 pb-px"
-          style={{ transition: 'color 200ms var(--ease-out-expo)' }}>
-          See all
-        </Link>
+        {href && (
+          <Link href={href}
+            className="text-[10px] font-semibold tracking-[0.14em] uppercase text-stone-400 border-b border-stone-300 pb-px"
+            style={{ transition: 'color 200ms var(--ease-out-expo)' }}>
+            See all
+          </Link>
+        )}
       </div>
       <div className="flex overflow-x-auto px-5 md:px-10 pb-2 gap-0">
         {children}
