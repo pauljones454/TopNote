@@ -17,6 +17,8 @@ export default function CreateComboPage() {
 
   const [step, setStep]               = useState<Step>('pick-a')
   const [shelf, setShelf]             = useState<Fragrance[]>([])
+  const [shelfLoaded, setShelfLoaded] = useState(false)
+  const [shelfError, setShelfError]   = useState(false)
   const [fragranceA, setFragranceA]   = useState<Fragrance | null>(null)
   const [fragranceB, setFragranceB]   = useState<Fragrance | null>(null)
   const [name, setName]               = useState('')
@@ -29,13 +31,23 @@ export default function CreateComboPage() {
     async function loadShelf() {
       const { data: { user } } = await supabase.auth.getUser()
       if (!user) { router.push('/auth'); return }
-      const { data } = await supabase
+      // Bottles the user owns. `collection_status` only has owned/wishlist/tried
+      // — there is no 'sample' member, so filtering on it made Postgres reject
+      // the whole query and the shelf silently read back as empty.
+      const { data, error } = await supabase
         .from('collection')
         .select('*, fragrance:fragrances(*)')
         .eq('user_id', user.id)
-        .in('status', ['owned', 'sample'])
+        .eq('status', 'owned')
         .order('created_at', { ascending: false })
+      if (error) {
+        console.error('[layers/create] shelf query failed for user', user.id, error)
+        setShelfError(true)
+        setShelfLoaded(true)
+        return
+      }
       setShelf((data ?? []).map((d: any) => d.fragrance).filter(Boolean))
+      setShelfLoaded(true)
     }
     loadShelf()
   }, [])
@@ -91,36 +103,45 @@ export default function CreateComboPage() {
             <p className="text-[14px] text-stone-500 mb-6">
               Pick the fragrance you apply first — usually the heavier, base-forward one.
             </p>
-            <div className="grid grid-cols-3 gap-3">
-              {shelf.map(f => (
-                <button key={f.id} onClick={() => { setFragranceA(f); setStep('pick-b') }}
-                  className="text-left p-3 rounded-xl group"
-                  style={{
-                    border: '1px solid rgba(28,20,16,0.08)',
-                    background: 'rgba(255,255,255,0.5)',
-                    transition: 'box-shadow 200ms var(--ease-out-expo)',
-                  }}>
-                  <div className="relative w-full aspect-[3/4] mb-2">
-                    {f.bottle_image_url ? (
-                      <Image src={f.bottle_image_url} alt={f.name} fill className="object-contain" sizes="120px" />
-                    ) : (
-                      <div className="w-full h-full rounded-lg flex items-center justify-center"
-                        style={{ background: 'rgba(28,20,16,0.05)' }}>
-                        <span className="font-serif text-xl text-stone-300">{f.house.charAt(0)}</span>
-                      </div>
-                    )}
-                  </div>
-                  <p className="text-[9px] font-semibold tracking-widest uppercase text-stone-400 truncate">{f.house}</p>
-                  <p className="font-serif text-[12px] text-stone-800 leading-tight line-clamp-2">{f.name}</p>
-                </button>
-              ))}
-            </div>
-            {shelf.length === 0 && (
+            {shelfError ? (
+              <div className="text-center py-12">
+                <p className="text-stone-400 text-[14px] mb-4">Your shelf couldn't load. Refresh to try again.</p>
+              </div>
+            ) : !shelfLoaded ? (
+              <div className="text-center py-12">
+                <p className="text-stone-400 text-[14px]">Loading your shelf…</p>
+              </div>
+            ) : shelf.length === 0 ? (
               <div className="text-center py-12">
                 <p className="text-stone-400 text-[14px] mb-4">Your shelf is empty.</p>
                 <Link href="/discover" className="text-[12px] font-semibold tracking-widest uppercase text-stone-600 border-b border-stone-300 pb-px">
                   Add fragrances →
                 </Link>
+              </div>
+            ) : (
+              <div className="grid grid-cols-3 gap-3">
+                {shelf.map(f => (
+                  <button key={f.id} onClick={() => { setFragranceA(f); setStep('pick-b') }}
+                    className="text-left p-3 rounded-xl group"
+                    style={{
+                      border: '1px solid rgba(28,20,16,0.08)',
+                      background: 'rgba(255,255,255,0.5)',
+                      transition: 'box-shadow 200ms var(--ease-out-expo)',
+                    }}>
+                    <div className="relative w-full aspect-[3/4] mb-2">
+                      {f.bottle_image_url ? (
+                        <Image src={f.bottle_image_url} alt={f.name} fill className="object-contain" sizes="120px" />
+                      ) : (
+                        <div className="w-full h-full rounded-lg flex items-center justify-center"
+                          style={{ background: 'rgba(28,20,16,0.05)' }}>
+                          <span className="font-serif text-xl text-stone-300">{f.house.charAt(0)}</span>
+                        </div>
+                      )}
+                    </div>
+                    <p className="text-[9px] font-semibold tracking-widest uppercase text-stone-400 truncate">{f.house}</p>
+                    <p className="font-serif text-[12px] text-stone-800 leading-tight line-clamp-2">{f.name}</p>
+                  </button>
+                ))}
               </div>
             )}
           </div>
