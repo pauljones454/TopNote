@@ -7,6 +7,7 @@ import { getCategoryPill } from '@/lib/utils'
 import { ChevronLeft } from 'lucide-react'
 import { AddToShelfButton } from './AddToShelfButton'
 import { AttributeMetrics } from './AttributeMetrics'
+import { WhereToBuy } from './WhereToBuy'
 
 export default async function FragrancePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
@@ -157,6 +158,8 @@ export default async function FragrancePage({ params }: { params: Promise<{ id: 
               <div className="md:hidden mt-8">
                 <AddToShelfButton fragranceId={fragrance.id} fragranceName={fragrance.name} />
               </div>
+
+              <WhereToBuy fragrance={fragrance} />
             </div>
           </div>
 
