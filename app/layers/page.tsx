@@ -12,16 +12,19 @@ export default async function LayersPage() {
   if (!user) redirect('/auth')
 
   const [
-    { data: owned },
-    { data: myCombos },
-    { data: community },
+    { data: owned, error: ownedError },
+    { data: myCombos, error: myCombosError },
+    { data: community, error: communityError },
   ] = await Promise.all([
-    // User's shelf — owned + samples
+    // User's shelf — bottles the user owns. `collection_status` only has
+    // owned/wishlist/tried; there is no 'sample' member, so filtering on it
+    // used to make Postgres reject the whole query (22P02) and silently
+    // read back as an empty shelf.
     supabase
       .from('collection')
       .select('*, fragrance:fragrances(*)')
       .eq('user_id', user.id)
-      .in('status', ['owned', 'sample'])
+      .eq('status', 'owned')
       .order('created_at', { ascending: false }),
 
     // User's saved combos
@@ -41,6 +44,16 @@ export default async function LayersPage() {
       .order('save_count', { ascending: false })
       .limit(12),
   ])
+
+  if (ownedError) {
+    console.error('[layers] shelf query failed for user', user.id, ownedError)
+  }
+  if (myCombosError) {
+    console.error('[layers] my-combos query failed for user', user.id, myCombosError)
+  }
+  if (communityError) {
+    console.error('[layers] community combos query failed', communityError)
+  }
 
   const shelfFragrances: Fragrance[] = (owned ?? [])
     .map((item: any) => item.fragrance)
@@ -114,8 +127,21 @@ export default async function LayersPage() {
           </section>
         )}
 
-        {/* Empty shelf state */}
-        {suggestions.length === 0 && shelfFragrances.length < 2 && (
+        {/* Shelf fetch failed — distinct from a genuinely empty shelf */}
+        {ownedError && (
+          <section className="mb-12">
+            <div className="py-12 text-center rounded-2xl"
+              style={{ background: 'rgba(28,20,16,0.03)', border: '1px solid rgba(28,20,16,0.06)' }}>
+              <p className="font-serif text-xl text-stone-500 mb-2">Your shelf couldn't load</p>
+              <p className="text-[13px] text-stone-400 mb-6 leading-relaxed">
+                Something went wrong reaching your shelf. Refresh to try again.
+              </p>
+            </div>
+          </section>
+        )}
+
+        {/* Empty shelf state — only shown once we know the fetch actually succeeded */}
+        {!ownedError && suggestions.length === 0 && shelfFragrances.length < 2 && (
           <section className="mb-12">
             <div className="py-12 text-center rounded-2xl"
               style={{ background: 'rgba(28,20,16,0.03)', border: '1px solid rgba(28,20,16,0.06)' }}>
@@ -189,13 +215,21 @@ export default async function LayersPage() {
             </div>
             <div className="py-10 text-center rounded-2xl"
               style={{ background: 'rgba(28,20,16,0.03)', border: '1px solid rgba(28,20,16,0.06)' }}>
-              <p className="text-[13px] text-stone-400">
-                Community combos appear here as people share their layers.
-              </p>
-              <Link href="/layers/create"
-                className="inline-block mt-4 text-[11px] font-semibold tracking-[0.1em] uppercase text-stone-600 border-b border-stone-300 pb-px">
-                Be the first to share →
-              </Link>
+              {communityError ? (
+                <p className="text-[13px] text-stone-400">
+                  Community combos couldn't load right now. Refresh to try again.
+                </p>
+              ) : (
+                <>
+                  <p className="text-[13px] text-stone-400">
+                    Community combos appear here as people share their layers.
+                  </p>
+                  <Link href="/layers/create"
+                    className="inline-block mt-4 text-[11px] font-semibold tracking-[0.1em] uppercase text-stone-600 border-b border-stone-300 pb-px">
+                    Be the first to share →
+                  </Link>
+                </>
+              )}
             </div>
           </section>
         )}
