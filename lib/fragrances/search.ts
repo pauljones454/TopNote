@@ -56,11 +56,6 @@ type SearchPlan = {
   noteMatches: string[]
 }
 
-type TierPage = {
-  rows: Fragrance[]
-  total: number
-}
-
 async function buildSearchPlan(supabase: SupabaseClient, query: string): Promise<SearchPlan> {
   const trimmed = query.trim()
   const pattern = trimmed ? buildAccentTolerantPattern(trimmed) : null
@@ -120,38 +115,54 @@ function buildQuery(
   return query.order('avg_rating', { ascending: false }).order('id', { ascending: true })
 }
 
-async function fetchTier(
+/**
+ * Rows for one tier over an explicit range. The caller checks the range against
+ * the tier's count first: PostgREST answers an out-of-range request with 416
+ * rather than an empty page.
+ */
+async function fetchTierRows(
   supabase: SupabaseClient,
   request: FragranceSearchRequest,
   plan: SearchPlan,
   tier: Tier | null,
   offset: number,
   limit: number
-): Promise<TierPage> {
-  const { data, count, error } = await buildQuery(supabase, request, plan, tier, {
-    head: false,
-  }).range(offset, offset + limit - 1)
+): Promise<Fragrance[]> {
+  const { data, error } = await buildQuery(supabase, request, plan, tier, { head: false }).range(
+    offset,
+    offset + limit - 1
+  )
 
   if (error) {
     throw new Error(`Fragrance search failed (${tier ?? 'browse'} tier): ${error.message}`)
   }
 
-  return { rows: (data ?? []) as unknown as Fragrance[], total: count ?? 0 }
+  return (data ?? []) as unknown as Fragrance[]
 }
 
 async function countTier(
   supabase: SupabaseClient,
   request: FragranceSearchRequest,
   plan: SearchPlan,
-  tier: Tier
+  tier: Tier | null
 ): Promise<number> {
   const { count, error } = await buildQuery(supabase, request, plan, tier, { head: true })
 
   if (error) {
-    throw new Error(`Fragrance count failed (${tier} tier): ${error.message}`)
+    throw new Error(`Fragrance count failed (${tier ?? 'browse'} tier): ${error.message}`)
   }
 
   return count ?? 0
+}
+
+/** The slice of `[offset, offset + limit)` that falls inside a tier of `total` rows. */
+function rangeWithin(
+  total: number,
+  offset: number,
+  limit: number
+): { offset: number; limit: number } | null {
+  if (offset >= total || limit <= 0) return null
+  return { offset, limit: Math.min(limit, total - offset) }
 }
 
 /**
@@ -167,30 +178,44 @@ export async function searchFragrances(
   const plan = await buildSearchPlan(supabase, request.q)
 
   if (!plan.pattern) {
-    const browse = await fetchTier(supabase, request, plan, null, offset, limit)
-    return { fragrances: browse.rows, total: browse.total }
+    const total = await countTier(supabase, request, plan, null)
+    const range = rangeWithin(total, offset, limit)
+    const fragrances = range
+      ? await fetchTierRows(supabase, request, plan, null, range.offset, range.limit)
+      : []
+    return { fragrances, total }
   }
 
-  const primary = await fetchTier(supabase, request, plan, 'primary', offset, limit)
-  if (!plan.includeSecondary) {
-    return { fragrances: primary.rows, total: primary.total }
-  }
+  // Counts come first so each tier is only asked for a range it actually has, and
+  // so paging can cross the tier boundary without a gap or a repeat.
+  const [primaryTotal, secondaryTotal] = await Promise.all([
+    countTier(supabase, request, plan, 'primary'),
+    plan.includeSecondary ? countTier(supabase, request, plan, 'secondary') : Promise.resolve(0),
+  ])
 
-  const remaining = limit - primary.rows.length
-  if (remaining <= 0) {
-    return {
-      fragrances: primary.rows,
-      total: primary.total + (await countTier(supabase, request, plan, 'secondary')),
-    }
-  }
+  const primaryRange = rangeWithin(primaryTotal, offset, limit)
+  const primaryRows = primaryRange
+    ? await fetchTierRows(supabase, request, plan, 'primary', primaryRange.offset, primaryRange.limit)
+    : []
 
-  // Once the primary tier is exhausted, paging continues into the secondary tier
-  // at the offset left over after the primary rows are consumed.
-  const secondaryOffset = Math.max(0, offset - primary.total)
-  const secondary = await fetchTier(supabase, request, plan, 'secondary', secondaryOffset, remaining)
+  const secondaryRange = rangeWithin(
+    secondaryTotal,
+    Math.max(0, offset - primaryTotal),
+    limit - primaryRows.length
+  )
+  const secondaryRows = secondaryRange
+    ? await fetchTierRows(
+        supabase,
+        request,
+        plan,
+        'secondary',
+        secondaryRange.offset,
+        secondaryRange.limit
+      )
+    : []
 
   return {
-    fragrances: [...primary.rows, ...secondary.rows],
-    total: primary.total + secondary.total,
+    fragrances: [...primaryRows, ...secondaryRows],
+    total: primaryTotal + secondaryTotal,
   }
 }
