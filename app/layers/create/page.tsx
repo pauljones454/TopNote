@@ -26,6 +26,7 @@ export default function CreateComboPage() {
   const [rating, setRating]           = useState(0)
   const [isPublic, setIsPublic]       = useState(true)
   const [saving, setSaving]           = useState(false)
+  const [saveError, setSaveError]     = useState<string | null>(null)
 
   useEffect(() => {
     async function loadShelf() {
@@ -59,12 +60,13 @@ export default function CreateComboPage() {
   async function save() {
     if (!fragranceA || !fragranceB) return
     setSaving(true)
+    setSaveError(null)
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) { router.push('/auth'); return }
 
     const appOrder = compatibility?.applicationOrder ?? [fragranceA.id, fragranceB.id]
 
-    await supabase.from('combos').insert({
+    const { error } = await supabase.from('combos').insert({
       user_id: user.id,
       fragrance_ids: [fragranceA.id, fragranceB.id],
       application_order: appOrder,
@@ -76,6 +78,13 @@ export default function CreateComboPage() {
     })
 
     setSaving(false)
+
+    if (error) {
+      console.error('[layers/create] combo insert failed for user', user.id, error)
+      setSaveError('Something went wrong saving this combo. Try again.')
+      return
+    }
+
     setStep('done')
   }
 
@@ -291,6 +300,11 @@ export default function CreateComboPage() {
                   }} />
               </button>
             </div>
+
+            {/* Save error — kept on this step, no false success */}
+            {saveError && (
+              <p className="text-red-500 text-[12px] mb-3">{saveError}</p>
+            )}
 
             {/* Save button */}
             <button onClick={save} disabled={saving}
