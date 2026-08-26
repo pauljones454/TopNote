@@ -3,6 +3,7 @@ import { AppShell } from '@/components/layout/AppShell'
 import { redirect } from 'next/navigation'
 import { getRankForXP } from '@/lib/utils'
 import { SignOutButton } from './SignOutButton'
+import { Avatar } from '@/components/ui/Avatar'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
@@ -69,14 +70,21 @@ export default async function ProfilePage() {
       <div className="max-w-[700px] mx-auto px-5 md:px-10 py-6 space-y-8">
 
         {/* ── Profile header ── */}
-        <div className="flex items-center gap-4">
-          <div className="w-16 h-16 rounded-full bg-stone-900 flex items-center justify-center text-white font-serif text-2xl flex-shrink-0">
-            {(profile?.display_name ?? user.email ?? 'U')[0].toUpperCase()}
+        <div>
+          <div className="flex items-center gap-4">
+            <Avatar
+              url={profile?.avatar_url}
+              name={profile?.display_name ?? user.email}
+              size={64}
+            />
+            <div>
+              <h1 className="font-serif text-2xl text-stone-900">{profile?.display_name ?? 'User'}</h1>
+              <p className="text-sm text-stone-400">@{profile?.handle ?? 'unknown'}</p>
+            </div>
           </div>
-          <div>
-            <h1 className="font-serif text-2xl text-stone-900">{profile?.display_name ?? 'User'}</h1>
-            <p className="text-sm text-stone-400">@{profile?.handle ?? 'unknown'}</p>
-          </div>
+          {profile?.bio && (
+            <p className="text-sm text-stone-500 leading-relaxed mt-3 max-w-[52ch]">{profile.bio}</p>
+          )}
         </div>
 
         {/* ── Rank card ── */}

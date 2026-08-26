@@ -1,3 +1,5 @@
+import type { GenderPreference } from '@/lib/profile/validation'
+
 export type Fragrance = {
   id: string
   house: string
@@ -24,8 +26,12 @@ export type Profile = {
   handle: string
   display_name: string
   avatar_url: string | null
+  /** Free-text bio written by the user in Settings. */
   bio: string | null
+  /** The scent preference captured at signup. Not user-editable in Settings. */
+  gender: GenderPreference | null
   created_at: string
+  updated_at: string
 }
 
 export type CollectionItem = {

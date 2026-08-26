@@ -30,7 +30,7 @@ export function AuthForm() {
     })
     if (err) { setError(err.message); setLoading(false); return }
     if (data.user) {
-      await supabase.from('profiles').upsert({ id: data.user.id, handle, display_name: name, bio: gender }, { onConflict: 'id' })
+      await supabase.from('profiles').upsert({ id: data.user.id, handle, display_name: name, gender }, { onConflict: 'id' })
     }
     setMode('verify')
     setLoading(false)

@@ -8,6 +8,7 @@ import { ChevronLeft } from 'lucide-react'
 import { AddToShelfButton } from './AddToShelfButton'
 import { AttributeMetrics } from './AttributeMetrics'
 import { WhereToBuy } from './WhereToBuy'
+import { Avatar } from '@/components/ui/Avatar'
 
 export default async function FragrancePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
@@ -15,7 +16,7 @@ export default async function FragrancePage({ params }: { params: Promise<{ id: 
 
   const [{ data: fragrance }, { data: reviews }] = await Promise.all([
     supabase.from('fragrances').select('*').eq('id', id).single(),
-    supabase.from('reviews').select('*, profiles(display_name, handle)')
+    supabase.from('reviews').select('*, profiles(display_name, handle, avatar_url)')
       .eq('fragrance_id', id).order('created_at', { ascending: false }).limit(10),
   ])
 
@@ -172,10 +173,11 @@ export default async function FragrancePage({ params }: { params: Promise<{ id: 
                   <div key={r.id} style={{ borderBottom: '1px solid rgba(28,20,16,0.06)' }}
                     className="pb-6 last:border-0 last:pb-0">
                     <div className="flex items-center gap-3 mb-3">
-                      <div className="w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-semibold text-white"
-                        style={{ background: 'var(--brand-dark)' }}>
-                        {(r.profiles?.display_name ?? 'U')[0].toUpperCase()}
-                      </div>
+                      <Avatar
+                        url={r.profiles?.avatar_url}
+                        name={r.profiles?.display_name}
+                        size={28}
+                      />
                       <div>
                         <p className="text-[12px] font-semibold text-stone-800">
                           {r.profiles?.display_name ?? 'Anonymous'}
