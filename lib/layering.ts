@@ -28,12 +28,57 @@ const ACCORD_FAMILIES: Record<string, string[]> = {
 // Notes that work as bridges between families
 const BRIDGE_NOTES = ['musk', 'amber', 'sandalwood', 'vanilla', 'cedar', 'bergamot', 'vetiver', 'patchouli']
 
+// ── Concentration & spray guidance ────────────────────────────────────────────
+
+// The `type` column is meant to hold a concentration (EDP, EDT, ...) but
+// roughly 150 catalog rows carry a scent family instead ("Floral Oriental",
+// "designer") — a data-entry artifact, not a real concentration. Anything
+// that isn't positively recognised below is treated as 'moderate', the same
+// tier as EDP: the catalog's dominant type (883 of 1,560 rows) and the
+// safest assumption when we don't actually know the strength of the juice.
+export type ConcentrationTier = 'concentrated' | 'moderate' | 'light'
+
+const CONCENTRATED_TYPES = new Set([
+  'extrait de parfum', 'extrait', 'parfum', 'parfum intense',
+  'perfume', 'perfume extract', 'attar',
+])
+const LIGHT_TYPES = new Set(['edt', 'edc', 'cologne', 'fine fragrance mist'])
+
+export function getConcentrationTier(type: string | null | undefined): ConcentrationTier {
+  const normalized = (type ?? '').trim().toLowerCase()
+  if (CONCENTRATED_TYPES.has(normalized)) return 'concentrated'
+  if (LIGHT_TYPES.has(normalized)) return 'light'
+  return 'moderate'
+}
+
+export type SprayGuidance = {
+  anchorSprays: number   // sprays for the fragrance applied first (heavier base)
+  liftSprays: number     // sprays for the fragrance applied second (lighter top)
+}
+
+// Per-role spray counts, keyed by concentration tier. The anchor carries the
+// larger share at the EDP/EDP baseline (2:1); potent concentrations (extrait,
+// attar) pull a bottle's own count down, light ones (EDT, cologne) pull it
+// up. A single bottle never exceeds 3 sprays. Two very concentrated bottles
+// can legitimately land on the same low count (e.g. two Extraits at 1 spray
+// each) — that reflects real potency, not a bug.
+const ANCHOR_SPRAYS: Record<ConcentrationTier, number> = { concentrated: 1, moderate: 2, light: 3 }
+const LIFT_SPRAYS: Record<ConcentrationTier, number> = { concentrated: 1, moderate: 1, light: 2 }
+
+export function getSprayGuidance(anchorType: string | null | undefined, liftType: string | null | undefined): SprayGuidance {
+  return {
+    anchorSprays: ANCHOR_SPRAYS[getConcentrationTier(anchorType)],
+    liftSprays: LIFT_SPRAYS[getConcentrationTier(liftType)],
+  }
+}
+
 // ── Compatibility score ───────────────────────────────────────────────────────
 
 export type CompatibilityResult = {
   score: number          // 0–100
   reason: string         // short human-readable explanation
   applicationOrder: [string, string]  // [apply_first_id, apply_second_id] — heavier base first
+  sprayGuidance: SprayGuidance        // per-bottle spray counts, matching applicationOrder
 }
 
 export function getCompatibilityScore(a: Fragrance, b: Fragrance): CompatibilityResult {
@@ -98,12 +143,15 @@ export function getCompatibilityScore(a: Fragrance, b: Fragrance): Compatibility
   // lighter/citrus goes on top
   const aIsHeavy = heavyFamilies.some(f => aFamily.includes(f))
   const applicationOrder: [string, string] = aIsHeavy ? [a.id, b.id] : [b.id, a.id]
+  const anchorType = applicationOrder[0] === a.id ? a.type : b.type
+  const liftType = applicationOrder[0] === a.id ? b.type : a.type
+  const sprayGuidance = getSprayGuidance(anchorType, liftType)
 
   const reason = reasons.length > 0
     ? reasons.slice(0, 2).join(', ')
     : 'experimentally compatible'
 
-  return { score, reason, applicationOrder }
+  return { score, reason, applicationOrder, sprayGuidance }
 }
 
 // ── Get all compatible pairs from a shelf ─────────────────────────────────────

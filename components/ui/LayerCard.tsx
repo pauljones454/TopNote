@@ -5,6 +5,11 @@ import type { Fragrance } from '@/lib/supabase/types'
 import type { CompatibilityResult } from '@/lib/layering'
 import { getScoreLabel } from '@/lib/layering'
 
+// Pluralizes a spray count for display: "1 spray", "2 sprays"
+function formatSprayCount(sprays: number): string {
+  return `${sprays} spray${sprays === 1 ? '' : 's'}`
+}
+
 interface LayerCardProps {
   fragranceA: Fragrance
   fragranceB: Fragrance
@@ -33,6 +38,10 @@ export function LayerCard({
   variant = 'suggestion',
 }: LayerCardProps) {
   const scoreInfo = compatibility ? getScoreLabel(compatibility.score) : null
+
+  // Which bottle is applied first (anchor, more sprays) vs. second (lift, fewer)
+  const anchorFragrance = compatibility?.applicationOrder[0] === fragranceA.id ? fragranceA : fragranceB
+  const liftFragrance = anchorFragrance === fragranceA ? fragranceB : fragranceA
 
   const CardContent = (
     <div
@@ -129,15 +138,19 @@ export function LayerCard({
         </div>
       )}
 
-      {/* Application order hint */}
+      {/* Application instruction: which bottle first, how many sprays of each */}
       {compatibility && (
-        <p className="text-[11px] text-stone-400 leading-relaxed mb-3">
-          Apply{' '}
-          <span className="text-stone-600 font-medium">
-            {compatibility.applicationOrder[0] === fragranceA.id ? fragranceA.name : fragranceB.name}
-          </span>{' '}
-          first · {compatibility.reason}
-        </p>
+        <div className="mb-3">
+          <p className="text-[11px] text-stone-600 leading-relaxed">
+            <span className="text-stone-800 font-medium">{anchorFragrance.name}</span>{' '}
+            first, {formatSprayCount(compatibility.sprayGuidance.anchorSprays)} · then{' '}
+            <span className="text-stone-800 font-medium">{liftFragrance.name}</span>,{' '}
+            {formatSprayCount(compatibility.sprayGuidance.liftSprays)}
+          </p>
+          <p className="text-[11px] text-stone-400 leading-relaxed mt-1">
+            {compatibility.reason}
+          </p>
+        </div>
       )}
 
       {/* Rating dots */}
