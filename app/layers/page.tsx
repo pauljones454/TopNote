@@ -27,10 +27,13 @@ export default async function LayersPage() {
       .eq('status', 'owned')
       .order('created_at', { ascending: false }),
 
-    // User's saved combos
+    // User's saved combos — `fragrance_ids` is a text[] column, not a
+    // foreign-key relation, so it cannot be embedded via PostgREST select
+    // syntax. Fetch the combo rows here; fragrances are resolved separately
+    // below (same pattern as the community combos further down).
     supabase
       .from('combos')
-      .select('*, fragrances:fragrance_ids')
+      .select('*')
       .eq('user_id', user.id)
       .order('created_at', { ascending: false })
       .limit(10),
@@ -73,6 +76,37 @@ export default async function LayersPage() {
       return { ...combo, fragrancesData: frags ?? [] }
     })
   ).then(results => results.filter(Boolean))
+
+  // Fetch full fragrance data for the user's own combos. Collect the union
+  // of fragrance_ids across every combo up front so this is one `.in()`
+  // query instead of one round-trip per combo.
+  const myComboFragranceIds = Array.from(
+    new Set((myCombos ?? []).flatMap((combo: Combo) => combo.fragrance_ids ?? []))
+  )
+  const { data: myComboFragranceRows, error: myComboFragrancesError } =
+    myComboFragranceIds.length > 0
+      ? await supabase.from('fragrances').select('*').in('id', myComboFragranceIds)
+      : { data: [] as Fragrance[], error: null }
+  if (myComboFragrancesError) {
+    console.error('[layers] my-combos fragrance lookup failed for user', user.id, myComboFragrancesError)
+  }
+  const fragranceById = new Map((myComboFragranceRows ?? []).map(f => [f.id, f]))
+
+  const myCombosWithFragrances = (myCombos ?? [])
+    .map((combo: Combo) => {
+      const ids = combo.fragrance_ids ?? []
+      const frags = ids.map(id => fragranceById.get(id)).filter(Boolean) as Fragrance[]
+      if (frags.length < 2) return null
+      // application_order holds fragrance IDs, not names — reorder the
+      // resolved rows to match it so the card shows the right bottle first.
+      const order = combo.application_order ?? []
+      const orderedFrags = order
+        .map(id => frags.find(f => f.id === id))
+        .filter(Boolean) as Fragrance[]
+      const [fragranceA, fragranceB] = orderedFrags.length === 2 ? orderedFrags : frags
+      return { ...combo, fragranceA, fragranceB }
+    })
+    .filter(Boolean) as Array<Combo & { fragranceA: Fragrance; fragranceB: Fragrance }>
 
   return (
     <AppShell>
@@ -159,18 +193,41 @@ export default async function LayersPage() {
         )}
 
         {/* ── My combos ── */}
-        {myCombos && myCombos.length > 0 && (
+        {/* Fetch failed — distinct from the user genuinely having no combos yet */}
+        {myCombosError && (
+          <section className="mb-12">
+            <div className="py-12 text-center rounded-2xl"
+              style={{ background: 'rgba(28,20,16,0.03)', border: '1px solid rgba(28,20,16,0.06)' }}>
+              <p className="font-serif text-xl text-stone-500 mb-2">Your combos couldn't load</p>
+              <p className="text-[13px] text-stone-400 mb-6 leading-relaxed">
+                Something went wrong reaching your saved combos. Refresh to try again.
+              </p>
+            </div>
+          </section>
+        )}
+
+        {!myCombosError && myCombosWithFragrances.length > 0 && (
           <section className="mb-12">
             <div className="flex items-center gap-3 mb-5">
               <p className="text-[10px] font-semibold tracking-[0.22em] uppercase text-stone-400">
                 Your combos
               </p>
               <div className="flex-1 h-px" style={{ background: 'rgba(28,20,16,0.08)' }} />
-              <span className="text-[10px] text-stone-300 font-semibold">{myCombos.length}</span>
+              <span className="text-[10px] text-stone-300 font-semibold">{myCombosWithFragrances.length}</span>
             </div>
-            <p className="text-[13px] text-stone-400 italic text-center py-6">
-              Run the Supabase migration to load your saved combos.
-            </p>
+            <div className="space-y-4">
+              {myCombosWithFragrances.map(combo => (
+                <LayerCard
+                  key={combo.id}
+                  fragranceA={combo.fragranceA}
+                  fragranceB={combo.fragranceB}
+                  comboId={combo.id}
+                  comboName={combo.name}
+                  rating={combo.rating}
+                  variant="saved"
+                />
+              ))}
+            </div>
           </section>
         )}
 
