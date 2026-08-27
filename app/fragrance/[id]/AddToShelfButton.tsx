@@ -2,7 +2,18 @@
 import { useState, useEffect } from 'react'
 import { createClient } from '@/lib/supabase/client'
 
-export function AddToShelfButton({ fragranceId, fragranceName }: { fragranceId: string; fragranceName: string }) {
+export function AddToShelfButton({
+  fragranceId,
+  fragranceName,
+  emphasis = 'primary',
+}: {
+  fragranceId: string
+  fragranceName: string
+  /** 'primary' (default) is the original filled treatment. 'secondary' steps down
+   *  in emphasis for contexts — like sitting under the buy CTA — where Add to
+   *  Shelf shouldn't compete with a more important action on the page. */
+  emphasis?: 'primary' | 'secondary'
+}) {
   const [owned, setOwned]     = useState(false)
   const [loading, setLoading] = useState(true)
   const supabase = createClient()
@@ -42,9 +53,9 @@ export function AddToShelfButton({ fragranceId, fragranceName }: { fragranceId: 
       style={{
         borderRadius: '10px',
         transition: 'background 220ms var(--ease-out-expo), color 220ms var(--ease-out-expo)',
-        background: owned ? 'rgba(28,20,16,0.06)' : 'var(--brand-dark)',
-        color: owned ? 'var(--ink-3)' : '#fff',
-        border: owned ? '1px solid rgba(28,20,16,0.12)' : 'none',
+        background: owned ? 'rgba(28,20,16,0.06)' : emphasis === 'primary' ? 'var(--brand-dark)' : 'transparent',
+        color: owned ? 'var(--ink-3)' : emphasis === 'primary' ? '#fff' : 'var(--ink-2)',
+        border: owned ? '1px solid rgba(28,20,16,0.12)' : emphasis === 'primary' ? 'none' : '1px solid rgba(28,20,16,0.14)',
       }}>
       {loading ? (
         <span className="w-4 h-4 rounded-full border border-current border-t-transparent animate-spin" />
