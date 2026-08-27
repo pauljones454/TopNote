@@ -67,7 +67,6 @@ export default async function FragrancePage({ params }: { params: Promise<{ id: 
                   <span className="font-serif text-6xl text-stone-300">{fragrance.house.charAt(0)}</span>
                 </div>
               )}
-              <AddToShelfButton fragranceId={fragrance.id} fragranceName={fragrance.name} />
             </div>
 
             {/* ── Info column ── */}
@@ -104,6 +103,12 @@ export default async function FragrancePage({ params }: { params: Promise<{ id: 
                 {fragrance.type}
                 {fragrance.seasons?.length > 0 && <> · {fragrance.seasons.join(' · ')}</>}
               </p>
+
+              {/* Buy CTA — the page's primary action, right under the name */}
+              <WhereToBuy fragrance={fragrance} />
+              <div className="mb-8">
+                <AddToShelfButton fragranceId={fragrance.id} fragranceName={fragrance.name} emphasis="secondary" />
+              </div>
 
               {/* Notes — bar pyramid */}
               <div className="space-y-6 mb-8">
@@ -153,13 +158,6 @@ export default async function FragrancePage({ params }: { params: Promise<{ id: 
                 attributes={fragrance.attributes ?? []}
                 priceTier={fragrance.price_tier}
               />
-
-              {/* Mobile: Add to shelf */}
-              <div className="md:hidden mt-8">
-                <AddToShelfButton fragranceId={fragrance.id} fragranceName={fragrance.name} />
-              </div>
-
-              <WhereToBuy fragrance={fragrance} />
             </div>
           </div>
 
