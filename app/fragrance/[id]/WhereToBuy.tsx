@@ -10,6 +10,10 @@
  * retailers sit beneath it as a lighter secondary option, so there is one
  * obvious action rather than a lineup of equal choices.
  *
+ * Eyebrow, button, secondary link and disclosure are tightly spaced so the
+ * module reads as one considered unit, and it closes on a hairline rule — the
+ * chapter break out of commerce and into the scent story below.
+ *
  * FTC disclosure is mandatory and ships alongside the links, per the
  * monetization research (art_nR9HbmgF §7) — not an optional footnote.
  */
@@ -24,14 +28,14 @@ function PrimaryRetailerLink({ link }: { link: WhereToBuyLink }) {
       href={link.url}
       target="_blank"
       rel="noopener noreferrer sponsored"
-      className="flex items-center justify-between gap-3 w-full px-6 py-5 group"
+      className="flex items-center justify-between gap-3 w-full px-5 py-4 group"
       style={{
         borderRadius: '14px',
         background: 'var(--brand-dark)',
         transition: 'opacity 200ms var(--ease-out-expo)',
       }}
     >
-      <span className="text-[16px] font-semibold text-white">
+      <span className="text-[15px] font-semibold text-white">
         Shop at {link.label}
       </span>
       <ExternalLink
@@ -65,20 +69,23 @@ export function WhereToBuy({ fragrance }: { fragrance: Pick<Fragrance, 'house' |
   const [primary, ...secondary] = links
 
   return (
-    <section className="mb-8">
-      <p className="text-[10px] font-semibold tracking-[0.2em] uppercase text-stone-400 mb-3">
+    <section
+      className="pb-7 mb-8"
+      style={{ borderBottom: '1px solid rgba(28,20,16,0.07)' }}
+    >
+      <p className="text-[10px] font-semibold tracking-[0.2em] uppercase text-stone-400 mb-2.5">
         Bring It Home
       </p>
       <PrimaryRetailerLink link={primary} />
       {secondary.length > 0 && (
-        <div className="flex flex-wrap gap-x-4 gap-y-1.5 mt-3 px-1">
+        <div className="flex flex-wrap gap-x-4 gap-y-1.5 mt-2.5 px-1">
           {secondary.map((link) => (
             <SecondaryRetailerLink key={link.id} link={link} />
           ))}
         </div>
       )}
       {hasActiveAffiliateLinks(links) && (
-        <p className="text-[10px] text-stone-400 leading-relaxed mt-3">
+        <p className="text-[10px] text-stone-400 leading-relaxed mt-2 px-1">
           Top Note may earn a commission on purchases made through these links, at no extra cost to you.
         </p>
       )}

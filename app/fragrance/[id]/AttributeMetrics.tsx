@@ -1,15 +1,19 @@
 /**
  * AttributeMetrics
  *
- * Renders fragrance attributes from the raw "Key: Value" string array with
- * three distinct visual treatments:
+ * The technical tail of the fragrance profile: Longevity, Sillage, Versatility
+ * and Price, rendered in one shared spec-row treatment — stored term first
+ * (Long / Strong / Versatile / $$$$$), mapped detail beside it (8–10 hrs /
+ * fills the room / All seasons, day & night / $400+).
  *
- *   Scalar bars  — Longevity / Sillage: 4-segment quality bar + precise caption
- *   Tier meter   — Price: 5 filled dollar-sign segments + USD-bracket caption
- *   Text chips   — everything else (Versatility, unknown keys): bordered label
+ * Previously Longevity and Sillage drew 4-segment meters, Price drew a
+ * dollar-sign meter, and Versatility fell through to an orphan chip below a
+ * divider — three encodings for four values of identical "Key: Value" shape.
+ * The split came from a hardcoded key set, not from the data, so it is gone.
  *
- * Fallback: any value that doesn't resolve to a known level or tier degrades
- * gracefully to a text chip — never an empty or broken bar.
+ * Fallbacks, all still plain text and never a broken row:
+ *   known key + unmapped value ("Longevity: Insane") → row with the raw value
+ *   unknown key ("Vibe: Cozy") or no "Key: Value" shape → text chip
  *
  * Server Component — no client state or browser APIs required.
  */
@@ -17,111 +21,48 @@
 import {
   formatAttribute,
   formatAttributeValue,
-  getScalarLevel,
   getPriceTier,
-  SCALAR_METRIC_KEYS,
+  SPEC_ATTRIBUTE_KEYS,
 } from '@/lib/attribute-labels'
 
 interface Props {
   attributes: string[]
   /**
    * Structured price tier ($ – $$$$$) from the fragrances.price_tier column.
-   * This is now the source of truth for the price meter — the legacy
-   * "Price: $$$" string is no longer stored in `attributes`. Kept optional
-   * for defensive rendering against any row that predates backfill.
+   * This is the source of truth for the price row — the legacy "Price: $$$"
+   * string is no longer stored in `attributes`. Kept optional for defensive
+   * rendering against any row that predates backfill.
    */
   priceTier?: string | null
 }
 
-// ─── Scalar bar row ──────────────────────────────────────────────────────────
+/** One spec row: the stored term, plus its mapped detail when one exists. */
+type SpecRow = { key: string; term: string; detail: string | null }
 
-function ScalarBar({
-  label,
-  level,
-  max,
-  caption,
-}: {
-  label: string
-  level: number
-  max: number
-  caption: string
-}) {
-  return (
-    <div className="flex items-center gap-3">
-      <span className="text-[9px] font-semibold tracking-[0.18em] uppercase text-stone-400 w-20 flex-shrink-0">
-        {label}
-      </span>
-      {/* Segmented bar — visual language matches the note pyramid bars */}
-      <div className="flex gap-1">
-        {Array.from({ length: max }).map((_, i) => (
-          <div
-            key={i}
-            className="w-5 h-[3px] rounded-full"
-            style={{
-              background: i < level
-                ? 'rgba(58,46,40,0.72)'
-                : 'rgba(28,20,16,0.10)',
-            }}
-          />
-        ))}
-      </div>
-      <span className="text-[11px] text-stone-400 leading-none">
-        {caption}
-      </span>
-    </div>
-  )
-}
+type TextChip = { raw: string; display: string }
 
-// ─── Price tier row ──────────────────────────────────────────────────────────
+/**
+ * Sorts the raw attribute strings into ordered spec rows and leftover chips.
+ * Pure — no rendering concerns — so the bucketing rules stay readable and the
+ * component below is only layout.
+ */
+function buildAttributeRows(
+  attributes: string[],
+  priceTier: string | null,
+): { specRows: SpecRow[]; textChips: TextChip[] } {
+  const specByKey = new Map<string, SpecRow>()
+  const textChips: TextChip[] = []
 
-function PriceTier({ tier, caption }: { tier: number; caption: string }) {
-  return (
-    <div className="flex items-center gap-3">
-      <span className="text-[9px] font-semibold tracking-[0.18em] uppercase text-stone-400 w-20 flex-shrink-0">
-        Price
-      </span>
-      {/* Dollar-sign segments — tier, not quality; 5 possible levels */}
-      <div className="flex gap-[1px] items-baseline">
-        {Array.from({ length: 5 }).map((_, i) => (
-          <span
-            key={i}
-            className="text-[12px] font-semibold leading-none"
-            style={{
-              color: i < tier
-                ? 'rgba(58,46,40,0.80)'
-                : 'rgba(58,46,40,0.16)',
-            }}
-          >
-            $
-          </span>
-        ))}
-      </div>
-      <span className="text-[11px] text-stone-400 leading-none">
-        {caption}
-      </span>
-    </div>
-  )
-}
-
-// ─── Main component ──────────────────────────────────────────────────────────
-
-export function AttributeMetrics({ attributes, priceTier }: Props) {
-  // Classify each attribute into its rendering bucket.
-  type ScalarRow = { label: string; level: number; max: number; caption: string }
-  const scalarRows: ScalarRow[] = []
-  let priceRow: { tier: number; caption: string } | null = null
-  // Store as { raw, display } so `raw` is a stable React key.
-  const textChips: Array<{ raw: string; display: string }> = []
-
-  // Price now comes from the structured price_tier column, not attributes.
-  if (priceTier) {
-    const tier = getPriceTier(priceTier)
-    if (tier !== null) {
-      priceRow = { tier, caption: formatAttributeValue('Price', priceTier) }
-    }
+  const priceFromColumn = priceTier?.trim() ?? ''
+  if (priceFromColumn && getPriceTier(priceFromColumn) !== null) {
+    specByKey.set('Price', {
+      key: 'Price',
+      term: priceFromColumn,
+      detail: formatAttributeValue('Price', priceFromColumn),
+    })
   }
 
-  for (const raw of attributes ?? []) {
+  for (const raw of attributes) {
     const sep = raw.indexOf(': ')
     if (sep === -1) {
       textChips.push({ raw, display: raw })
@@ -129,61 +70,71 @@ export function AttributeMetrics({ attributes, priceTier }: Props) {
     }
 
     const key = raw.slice(0, sep)
-    const value = raw.slice(sep + 2)
+    const value = raw.slice(sep + 2).trim()
 
-    if (SCALAR_METRIC_KEYS.has(key)) {
-      const scalar = getScalarLevel(key, value)
-      if (scalar) {
-        scalarRows.push({
-          label: key,
-          level: scalar.level,
-          max: scalar.max,
-          caption: formatAttributeValue(key, value),
-        })
-      } else {
-        // Unknown value for a known scalar key — degrade to text chip.
-        textChips.push({ raw, display: formatAttribute(raw) })
-      }
-    } else if (key === 'Price') {
-      // Legacy fallback for any row that still has "Price: $$$" baked into
-      // attributes (shouldn't happen post-backfill, but never crash).
-      if (!priceRow) {
-        const tier = getPriceTier(value)
-        if (tier !== null) {
-          priceRow = { tier, caption: formatAttributeValue('Price', value) }
-          continue
+    if (key === 'Price') {
+      // Legacy "Price: $$$" rows predate the price_tier backfill; the column
+      // wins when both are present, and an unreadable tier still shows as text.
+      if (!specByKey.has('Price')) {
+        if (getPriceTier(value) !== null) {
+          specByKey.set('Price', {
+            key: 'Price',
+            term: value,
+            detail: formatAttributeValue('Price', value),
+          })
+        } else {
+          textChips.push({ raw, display: formatAttribute(raw) })
         }
-      } else {
-        continue
       }
-      textChips.push({ raw, display: formatAttribute(raw) })
-    } else {
-      textChips.push({ raw, display: formatAttribute(raw) })
+      continue
     }
+
+    if (SPEC_ATTRIBUTE_KEYS.includes(key)) {
+      const detail = formatAttributeValue(key, value)
+      specByKey.set(key, { key, term: value, detail: detail === value ? null : detail })
+      continue
+    }
+
+    textChips.push({ raw, display: formatAttribute(raw) })
   }
 
-  if (!attributes?.length && !priceRow) return null
+  const specRows = [...SPEC_ATTRIBUTE_KEYS, 'Price']
+    .map((key) => specByKey.get(key))
+    .filter((row): row is SpecRow => row !== undefined)
 
-  const hasMetricRows = scalarRows.length > 0 || priceRow !== null
+  return { specRows, textChips }
+}
+
+export function AttributeMetrics({ attributes, priceTier }: Props) {
+  const { specRows, textChips } = buildAttributeRows(attributes ?? [], priceTier ?? null)
+
+  if (specRows.length === 0 && textChips.length === 0) return null
 
   return (
-    <div className="pt-5" style={{ borderTop: '1px solid rgba(28,20,16,0.07)' }}>
-      {/* Scalar bars + price tier */}
-      {hasMetricRows && (
-        <div className="space-y-3">
-          {scalarRows.map((row) => (
-            <ScalarBar key={row.label} {...row} />
+    <div className="pt-6" style={{ borderTop: '1px solid rgba(28,20,16,0.07)' }}>
+      {specRows.length > 0 && (
+        <dl>
+          {specRows.map((row, i) => (
+            <div
+              key={row.key}
+              className="flex items-baseline gap-4 py-2.5"
+              style={i === 0 ? undefined : { borderTop: '1px solid rgba(28,20,16,0.05)' }}
+            >
+              <dt className="text-[9px] font-semibold tracking-[0.18em] uppercase text-stone-400 w-[76px] flex-shrink-0">
+                {row.key}
+              </dt>
+              <dd className="flex flex-wrap items-baseline gap-x-2.5 gap-y-0.5">
+                <span className="text-[12px] font-medium text-stone-700">{row.term}</span>
+                {row.detail && <span className="text-[11px] text-stone-400">{row.detail}</span>}
+              </dd>
+            </div>
           ))}
-          {priceRow && <PriceTier {...priceRow} />}
-        </div>
+        </dl>
       )}
 
-      {/* Text chips — Versatility and any unmapped fallbacks */}
+      {/* Anything outside the known spec keys still surfaces, verbatim. */}
       {textChips.length > 0 && (
-        <div
-          className={`flex flex-wrap gap-1.5${hasMetricRows ? ' mt-4 pt-4' : ''}`}
-          style={hasMetricRows ? { borderTop: '1px solid rgba(28,20,16,0.05)' } : {}}
-        >
+        <div className={`flex flex-wrap gap-1.5${specRows.length > 0 ? ' mt-4' : ''}`}>
           {textChips.map(({ raw, display }) => (
             <span
               key={raw}
@@ -198,4 +149,3 @@ export function AttributeMetrics({ attributes, priceTier }: Props) {
     </div>
   )
 }
-

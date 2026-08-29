@@ -85,48 +85,21 @@ export function formatAttributeValue(key: string, value: string): string {
   return valueMap[trimmed] ?? trimmed
 }
 
-// ─── Scalar bar metrics ──────────────────────────────────────────────────────
+// ─── Spec rows ───────────────────────────────────────────────────────────────
 
 /**
- * Keys that render as segmented quality bars rather than text chips.
- * Each maps to a 4-point ordinal scale (1 = lowest, 4 = highest).
+ * Attribute keys that render as rows in the detail page's spec table, in the
+ * order they appear there. Price is appended by the renderer because it comes
+ * from its own column rather than the `attributes` array.
+ *
+ * These four all share the "Key: Value" shape and get one identical treatment.
+ * The previous SCALAR_METRIC_KEYS set singled out Longevity and Sillage for
+ * segmented meters and left Versatility as an orphan chip — a code decision
+ * with no backing in the data, since none of these values carry a magnitude.
  */
-export const SCALAR_METRIC_KEYS = new Set(['Longevity', 'Sillage'])
+export const SPEC_ATTRIBUTE_KEYS: readonly string[] = ['Longevity', 'Sillage', 'Versatility']
 
-/** Ordinal level lookup — value → 1-based position on the 1–4 scale. */
-const SCALAR_LEVELS: Record<string, Record<string, number>> = {
-  Longevity: {
-    'Weak': 1, 'Poor': 1,
-    'Moderate': 2, 'Average': 2,
-    'Long': 3, 'Very Long': 3,
-    'Eternal': 4, 'Immortal': 4,
-  },
-  Sillage: {
-    'Intimate': 1, 'Soft': 1,
-    'Moderate': 2,
-    'Strong': 3, 'Heavy': 3,
-    'Enormous': 4, 'Beast': 4,
-  },
-}
-
-const SCALAR_MAX: Record<string, number> = { Longevity: 4, Sillage: 4 }
-
-/**
- * Returns the ordinal level and scale maximum for a scalar metric, or null
- * when the key/value combination is not recognised.
- */
-export function getScalarLevel(
-  key: string,
-  value: string,
-): { level: number; max: number } | null {
-  const levelMap = SCALAR_LEVELS[key]
-  if (!levelMap) return null
-  const level = levelMap[value.trim()]
-  if (level === undefined) return null
-  return { level, max: SCALAR_MAX[key] }
-}
-
-// ─── Price tier meter ────────────────────────────────────────────────────────
+// ─── Price tier ──────────────────────────────────────────────────────────────
 
 /** Maps a raw Price value ($–$$$$$) to a 1-based tier index (1–5). */
 const PRICE_TIERS: Record<string, number> = {
@@ -135,7 +108,8 @@ const PRICE_TIERS: Record<string, number> = {
 
 /**
  * Returns the price tier (1–5) for a raw price value, or null if unmapped.
- * Drives the dollar-sign tier meter on the detail page.
+ * Used to confirm a stored tier is one we recognise before it reaches the UI;
+ * the tier symbols themselves are what the detail page displays.
  */
 export function getPriceTier(value: string): number | null {
   return PRICE_TIERS[value.trim()] ?? null
