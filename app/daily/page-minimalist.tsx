@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { DailyWearButton } from './DailyWearButton'
+import { getDisplayName } from '@/lib/fragrances/display-name'
 
 export default async function DailyMinimalistPage() {
   const supabase = await createClient()
@@ -116,7 +117,7 @@ export default async function DailyMinimalistPage() {
                               </div>
                             )}
                           </div>
-                          <p className="text-[10px] text-stone-600 leading-tight line-clamp-2 font-medium">{f.name}</p>
+                          <p className="text-[10px] text-stone-600 leading-tight line-clamp-2 font-medium">{getDisplayName(f)}</p>
                         </div>
                       </DailyWearButton>
                     )

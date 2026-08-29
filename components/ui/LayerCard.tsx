@@ -4,6 +4,7 @@ import Link from 'next/link'
 import type { Fragrance } from '@/lib/supabase/types'
 import type { CompatibilityResult } from '@/lib/layering'
 import { getScoreLabel } from '@/lib/layering'
+import { getComboNameFragment, getDisplayName } from '@/lib/fragrances/display-name'
 
 // Pluralizes a spray count for display: "1 spray", "2 sprays"
 function formatSprayCount(sprays: number): string {
@@ -111,7 +112,7 @@ export function LayerCard({
           <p className="font-serif text-[17px] text-stone-900 leading-snug">{comboName}</p>
         ) : (
           <p className="font-serif text-[15px] text-stone-700 leading-snug">
-            {fragranceA.name.split(' ').slice(-1)[0]} + {fragranceB.name.split(' ').slice(-1)[0]}
+            {getComboNameFragment(fragranceA)} + {getComboNameFragment(fragranceB)}
           </p>
         )}
         <p className="text-[10px] text-stone-400 mt-0.5">
@@ -142,9 +143,9 @@ export function LayerCard({
       {compatibility && (
         <div className="mb-3">
           <p className="text-[11px] text-stone-600 leading-relaxed">
-            <span className="text-stone-800 font-medium">{anchorFragrance.name}</span>{' '}
+            <span className="text-stone-800 font-medium">{getDisplayName(anchorFragrance)}</span>{' '}
             first, {formatSprayCount(compatibility.sprayGuidance.anchorSprays)} · then{' '}
-            <span className="text-stone-800 font-medium">{liftFragrance.name}</span>,{' '}
+            <span className="text-stone-800 font-medium">{getDisplayName(liftFragrance)}</span>,{' '}
             {formatSprayCount(compatibility.sprayGuidance.liftSprays)}
           </p>
           <p className="text-[11px] text-stone-400 leading-relaxed mt-1">

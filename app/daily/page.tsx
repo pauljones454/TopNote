@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { DailyWearButton } from './DailyWearButton'
+import { getDisplayName } from '@/lib/fragrances/display-name'
 
 export default async function DailyPage() {
   const supabase = await createClient()
@@ -115,7 +116,7 @@ export default async function DailyPage() {
                               </div>
                             )}
                           </div>
-                          <p className="font-serif text-[11px] text-stone-800 leading-tight line-clamp-2">{f.name}</p>
+                          <p className="font-serif text-[11px] text-stone-800 leading-tight line-clamp-2">{getDisplayName(f)}</p>
                         </div>
                       </DailyWearButton>
                     )
@@ -167,7 +168,7 @@ export default async function DailyPage() {
                         )}
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className="font-serif text-sm text-stone-900 leading-tight truncate">{f?.name}</p>
+                        <p className="font-serif text-sm text-stone-900 leading-tight truncate">{f ? getDisplayName(f) : null}</p>
                         {wear.note && (
                           <p className="text-[11px] text-stone-400 truncate mt-0.5 italic">{wear.note}</p>
                         )}

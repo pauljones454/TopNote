@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
 import type { CollectionItem, Fragrance } from '@/lib/supabase/types'
+import { getDisplayName } from '@/lib/fragrances/display-name'
 
 export default async function ProfilePage() {
   const supabase = await createClient()
@@ -174,7 +175,7 @@ export default async function ProfilePage() {
                       )}
                     </div>
                     <p className="mt-1.5 font-serif text-[10px] text-stone-600 text-center w-14 truncate">
-                      {f.name}
+                      {getDisplayName(f)}
                     </p>
                   </Link>
                 )
