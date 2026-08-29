@@ -5,6 +5,7 @@ import { createClient } from '@/lib/supabase/client'
 import { AppShell } from '@/components/layout/AppShell'
 import { LayerCard } from '@/components/ui/LayerCard'
 import { getCompatibilityScore } from '@/lib/layering'
+import { getComboNameFragment, getDisplayName } from '@/lib/fragrances/display-name'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Fragrance } from '@/lib/supabase/types'
@@ -230,7 +231,7 @@ export default function CreateComboPage() {
               <input
                 value={name}
                 onChange={e => setName(e.target.value)}
-                placeholder={`${fragranceA.name.split(' ').slice(-1)[0]} + ${fragranceB.name.split(' ').slice(-1)[0]}`}
+                placeholder={`${getComboNameFragment(fragranceA)} + ${getComboNameFragment(fragranceB)}`}
                 className="w-full px-4 py-3 text-[14px] text-stone-900 outline-none"
                 style={{
                   background: 'rgba(255,255,255,0.7)',
@@ -331,7 +332,7 @@ export default function CreateComboPage() {
             </div>
             <h2 className="font-serif text-2xl text-stone-900 mb-2">Combo saved</h2>
             <p className="text-[14px] text-stone-400 mb-8">
-              {fragranceA.name} + {fragranceB.name}
+              {getDisplayName(fragranceA)} + {getDisplayName(fragranceB)}
             </p>
             <div className="flex flex-col gap-3">
               <Link href="/layers"
