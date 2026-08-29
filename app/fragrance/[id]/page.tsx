@@ -8,6 +8,7 @@ import { ChevronLeft } from 'lucide-react'
 import { AddToShelfButton } from './AddToShelfButton'
 import { AttributeMetrics } from './AttributeMetrics'
 import { WhereToBuy } from './WhereToBuy'
+import { getRatingDisplay } from '@/lib/fragrances/rating-display'
 
 export default async function FragrancePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
@@ -21,6 +22,7 @@ export default async function FragrancePage({ params }: { params: Promise<{ id: 
 
   if (!fragrance) notFound()
   const pill = getCategoryPill(fragrance.category)
+  const ratingDisplay = getRatingDisplay()
 
   return (
     <AppShell>
@@ -85,19 +87,22 @@ export default async function FragrancePage({ params }: { params: Promise<{ id: 
                 {fragrance.name}
               </h1>
 
-              {/* Rating */}
-              <div className="flex items-center gap-2 mb-3">
-                <div className="flex gap-0.5">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <div key={i} className="w-2.5 h-2.5 rounded-sm"
-                      style={{ background: i < Math.round(fragrance.avg_rating) ? '#c9a227' : 'rgba(28,20,16,0.10)' }} />
-                  ))}
+              {/* Rating — only a genuine community aggregate, never the
+                  scraped avg_rating/review_count catalog fields. */}
+              {ratingDisplay.show && (
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex gap-0.5">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <div key={i} className="w-2.5 h-2.5 rounded-sm"
+                        style={{ background: i < Math.round(ratingDisplay.average) ? '#c9a227' : 'rgba(28,20,16,0.10)' }} />
+                    ))}
+                  </div>
+                  <span className="text-[12px] font-semibold text-stone-700">{ratingDisplay.average}</span>
+                  <span className="text-[11px] text-stone-400">
+                    {ratingDisplay.count.toLocaleString()} ratings
+                  </span>
                 </div>
-                <span className="text-[12px] font-semibold text-stone-700">{fragrance.avg_rating}</span>
-                <span className="text-[11px] text-stone-400">
-                  {fragrance.review_count?.toLocaleString()} ratings
-                </span>
-              </div>
+              )}
 
               <p className="text-[12px] text-stone-400 mb-8">
                 {fragrance.type}
