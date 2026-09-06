@@ -5,7 +5,7 @@ import { AuthForm } from './AuthForm'
  * Anything unrecognised falls back to the generic confirmation message.
  */
 const CALLBACK_ERRORS: Record<string, string> = {
-  link_expired: 'That link has expired. Sign in below, or send yourself a new one.',
+  link_expired: 'That link is no longer valid — email links expire, and each one works once. Sign in below, or send yourself a new one.',
   confirmation_failed: 'We couldn’t confirm that link. Sign in below, or request a new one.',
 }
 
