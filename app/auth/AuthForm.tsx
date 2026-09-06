@@ -3,10 +3,10 @@ import { useState } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
 
-type Mode = 'signin' | 'signup' | 'magic' | 'verify'
+export type Mode = 'signin' | 'signup' | 'magic' | 'verify'
 
-export function AuthForm() {
-  const [mode, setMode] = useState<Mode>('signup')
+export function AuthForm({ initialMode = 'signup' }: { initialMode?: Mode }) {
+  const [mode, setMode] = useState<Mode>(initialMode)
   const [step, setStep] = useState(1)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -17,6 +17,9 @@ export function AuthForm() {
   const [loading, setLoading] = useState(false)
   const router = useRouter()
   const supabase = createClient()
+  const emailRedirectTo = typeof window === 'undefined'
+    ? undefined
+    : `${window.location.origin}/auth/callback`
 
   async function handleSignup() {
     setLoading(true); setError('')
@@ -26,7 +29,7 @@ export function AuthForm() {
 
     const { data, error: err } = await supabase.auth.signUp({
       email, password,
-      options: { data: { display_name: name, handle, gender_pref: gender } }
+      options: { emailRedirectTo, data: { display_name: name, handle, gender_pref: gender } }
     })
     if (err) { setError(err.message); setLoading(false); return }
     if (data.user) {
@@ -46,7 +49,7 @@ export function AuthForm() {
 
   async function handleMagic() {
     setLoading(true); setError('')
-    const { error: err } = await supabase.auth.signInWithOtp({ email })
+    const { error: err } = await supabase.auth.signInWithOtp({ email, options: { emailRedirectTo } })
     if (err) { setError(err.message); setLoading(false); return }
     setMode('verify')
     setLoading(false)
